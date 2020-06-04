@@ -1,0 +1,127 @@
+body{
+
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#principal{
+    width: 75%;
+    border: 2px solid #e3e4e5 ;
+ 
+   /* padding: 35px;*/
+    margin: 0px auto;
+    margin-top: 0em;
+    background: #F9F9F9;
+}
+#encabezado{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 40px;
+}
+
+#encabezado h4{
+    font-size: 18px;
+}
+
+#formulario{
+    width: 85%;
+    margin: 0px auto;
+    
+}
+label{
+    font-weight: bold;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+label1{
+    font-weight: bold;
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 58rem;
+}
+
+form input[type="text"]{
+    padding: 8px; /*15*/
+    border-radius: 2px;
+    border: 1px solid #ccc;
+    color: #333;
+    cursor: pointer;
+    width: 97%;
+    margin: 12px 10px 15px 0;
+    display: inline-block;
+    font-size: 18px;
+}
+
+form input[type="text1"]{
+    padding: 8px; /*15*/
+    border-radius: 2px;
+    border: 1px solid #ccc;
+    color: #333;
+    cursor: pointer;
+    width: 20%;
+    margin-left: 52rem;
+    display: inline-block;
+    font-size: 18px;
+}
+
+#final input[type="submit"]{
+    background: #dc3545;
+    /*background: #1a73e8;*/
+    /*background: orange ;*/
+    opacity: 80%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    color: white;
+    border-radius: 4px;
+    width: 90%;
+    margin-left: -1px;
+    margin: 12px 8px 15px 0;
+    font-size: 15px;
+    font-weight: 700;
+    margin: 0px auto;
+    
+}
+#final span a{
+    margin: 0 auto;
+    text-decoration: none;
+    color: #1a73e8;
+    
+}
+#final{
+    margin-top: 10px;
+    padding: 15px;
+    background-color: #e3e4e5;
+    border: 0px solid #000000;
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+}
+
+table {
+    table-layout: fixed;
+    width: 1048px;
+    height: 100px;
+    border-collapse: collapse;
+    color: gray;
+    text-align: center;
+    color: black;
+    font-size: 15.5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+  }
+  #div1 {
+    overflow:scroll;
+    height:300px;
+ 
+}
+.color {
+    font-size: 12px;
+     background-color: #E6E6E6;
+     height:30px;
+     font-weight: bold;
+
+    }
