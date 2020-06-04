@@ -1,11 +1,77 @@
-body{
 
-    background-repeat: no-repeat;
-    background-size: cover;
+/*Menu*/
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.navegacion img {
+    margin: 5px;
+}
+
+.navegacion {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color:black;
+    overflow-x: hidden;
+    padding-top: 20px;
+   
+}
+
+.navegacion a {
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+    display: block;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 17px;
+   /* border-bottom: 2px solid white;*/
+}
+
+.navegacion a:hover {
+    color:black;
+    background:#85C1E9;
+    opacity: 100%;
+    transition: all 700ms;
+}
+.titulo_menu{
+    color: black;
 }
 
 #principal{
-    width: 75%;
+    margin-left: 200px;
+    background: black;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 10px;
+    font-family: Helvetica, Arial;
+    text-transform: uppercase;
+   
+    color:white;
+}
+
+#palabras {
+    margin-left: 200px;
+    padding-top: 88px;
+    padding-left: 34px;
+}
+
+
+
+
+
+
+/* Notas */
+
+#principal_notas{
+    width: 88%;
     border: 2px solid #e3e4e5 ;
  
    /* padding: 35px;*/
@@ -34,11 +100,11 @@ label{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-label1{
+.label1{
     font-weight: bold;
-    font-size: 34px;
+    font-size: 18px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-left: 88rem;
+    margin-left: 57rem;
 }
 
 form input[type="text"]{
