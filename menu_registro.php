@@ -1,14 +1,30 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>Registro</title>
+    <title>Dar de alta un Registro</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="styles_registro.css"/>
+    <link rel="stylesheet" href="styles_menu_registro.css"/>
 </head>
+
 <body>
-    <section id="principal">
-        <header id="encabezado"><h2>Registro de Productos </h2>
-         
+<div class="navegacion">
+    <img  src="extrella_menu.jpg" title="logo" alt="logo_tienda" width="200" height="70"/>
+    <a href="#">Registrar Nuevo</a>
+    <a href="#">Actualizar Stock</a>
+    <a href="#">Eliminar Producto</a>
+    <a href="#">Ver y Buscar</a>
+    <a href="#">Registrar Nota</a>
+    <a href="#">Estadísticas</a>
+</div>
+
+<nav id="principal">
+  <h2>Tienda de abarrotes estrella</h2>
+</nav>
+<div id="palabras">
+    <section id="registro">
+        <header id="encabezado_registro">
+            <h2>Registro de Productos </h2>
         </header>
         <div id="formulario">    
             <form action="#" method="POST">
@@ -49,5 +65,7 @@
             <input type="submit" value="Registrar "/>
         </div>
     </section>
+</div>
 </body>
+
 </html>
