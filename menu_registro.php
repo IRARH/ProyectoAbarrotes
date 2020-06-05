@@ -10,11 +10,11 @@
 <body>
 <div class="navegacion">
     <img  src="extrella_menu.jpg" title="logo" alt="logo_tienda" width="200" height="70"/>
-    <a href="#">Registrar Nuevo</a>
+    <a href="menu_registro">Registrar Nuevo</a>
     <a href="#">Actualizar Stock</a>
     <a href="#">Eliminar Producto</a>
     <a href="#">Ver y Buscar</a>
-    <a href="#">Registrar Nota</a>
+    <a href="Notas_menu.php">Registrar Nota</a>
     <a href="#">Estadísticas</a>
 </div>
 
