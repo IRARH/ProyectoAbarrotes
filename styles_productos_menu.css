@@ -71,7 +71,7 @@ body {
 /* Notas */
 
 #principal_notas{
-    width: 88%;
+    width: 96%;
     border: 2px solid #e3e4e5 ;
  
    /* padding: 35px;*/
@@ -169,30 +169,28 @@ h3{
 
 table {
     table-layout: fixed;
-    width: 1048px;
+    width: 1160px;
     height: 100px;
     border-collapse: collapse;
     color: gray;
     text-align: center;
     color: black;
-    font-size: 15.5px;
+    font-size: 18.5px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    
     
   }
 
-tr{
+  tr{
     border-bottom: 1.4pt solid darkgrey;
 }
 
-
   #div1 {
     overflow:scroll;
-    height:300px;
+    height:580px;
  
 }
 .color {
-    font-size: 12px;
+    font-size: 14px;
      background-color: #E6E6E6;
      height:30px;
      font-weight: bold;
