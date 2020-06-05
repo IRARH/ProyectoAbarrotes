@@ -2,19 +2,15 @@ body {
     font-family: "Lato", sans-serif;
 }
 
-.navegacion img {
-    margin: 5px;
-}
-
 .navegacion {
     height: 100%;
     width: 200px;
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #333;
+    background-color: black;
     overflow-x: hidden;
-    padding-top: 20px;
+    padding-top: 100px;
 }
 
 .navegacion a {
@@ -23,30 +19,87 @@ body {
     color: white;
     display: block;
     letter-spacing: 1px;
-    text-align: center;
-    padding: 17px;
-    border-bottom: 2px solid white;
+    text-align: right;
+    padding: 18px;
+    margin-top: 13px;
+    /* border-bottom: 2px solid white;*/
 }
 
 .navegacion a:hover {
-    color: white;
-    background: #1d35e8;
+    color: black;
+    background: white;
+    opacity: 100%;
     transition: all 700ms;
+}
+
+.navegacion img {
+    position: fixed;
+    top: 17px;
+    left: 48px;
+}
+
+.navegacion #menu {
+    position: fixed;
+    top: 125px;
+    left: 11px;
+}
+
+.navegacion #nuevo {
+    position: fixed;
+    top: 191px;
+    left: 11px;
+}
+
+.navegacion #actualizar {
+    position: fixed;
+    top: 258px;
+    left: 11px;
+}
+
+.navegacion #eliminar {
+    position: fixed;
+    top: 323px;
+    left: 11px;
+}
+
+.navegacion #buscar {
+    position: fixed;
+    top: 392px;
+    left: 11px;
+}
+
+.navegacion #nota {
+    position: fixed;
+    top: 458px;
+    left: 11px;
+}
+
+.navegacion #estadistica {
+    position: fixed;
+    top: 523px;
+    left: 11px;
+}
+
+.titulo_menu {
+    color: black;
 }
 
 #principal {
     margin-left: 200px;
-    background: #1d35e8;
+    background: black;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    text-align: center;
     letter-spacing: 10px;
     font-family: Helvetica, Arial;
     text-transform: uppercase;
-    border-bottom: 6px solid#333;
     color: white;
+    padding: 5px;
+}
+
+#principal h2 {
+    text-align: left;
 }
 
 #palabras {

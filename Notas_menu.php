@@ -11,14 +11,14 @@
 
 <body>
     <div class="navegacion">
-      <!-- <img src="extrella_menu.jpg" title="logo" alt="logo_tienda" width="200" height="70" />-->
-      <a href="#"></a>  
-      <a href="#">Registrar Nuevo</a>
-        <a href="#">Actualizar Stock</a>
-        <a href="#">Eliminar Producto</a>
-        <a href="#">Ver y Buscar</a>
-        <a href="#">Registrar Nota</a>
-        <a href="#">Estadísticas</a>
+        <img src="estrella_logo.png" height="70px" width="90px"/>
+        <img id="menu" src="principal.png" height="30px" width="30px" /><a href="menu.php">Menú Principal</a>
+        <img id="nuevo" src="registronuevo.png" height="30px" width="30px" /><a href="menu_registro.php">Registrar Nuevo</a>
+        <img id="actualizar" src="actualizar.png" height="30px" width="30px" /><a href="#">Actualizar Stock</a>
+        <img id="eliminar" src="eliminar.png" height="30px" width="30px" /><a href="#">Eliminar Producto</a>
+        <img id="buscar" src="buscar.png" height="30px" width="30px" /><a href="#">Ver y Buscar</a>
+        <img id="nota" src="nota.png" height="30px" width="30px" /><a href="Notas_menu.php">Registrar Nota</a>
+        <img id="estadistica" src="estadisticas.png" height="30px" width="30px" /> <a href="#">Estadísticas</a>
     </div>
 
     <nav id="principal">
