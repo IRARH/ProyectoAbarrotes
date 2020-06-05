@@ -24,28 +24,265 @@
   <h2>Tienda de abarrotes estrella</h2>
 </nav>
 <div id="palabras">
-   <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad architecto adipisci sed corrupti ipsam maxime accusantium 
-        est blanditiis at pariatur,laudantium eos explicabo provident laboriosam totam excepturi repellat esse expedita!
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad architecto adipisci sed corrupti ipsam maxime accusantium 
-        est blanditiis at pariatur,laudantium eos explicabo provident laboriosam totam excepturi repellat esse expedita!
-   </p>
-   <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad architecto adipisci sed corrupti ipsam maxime accusantium 
-        est blanditiis at pariatur,laudantium eos explicabo provident laboriosam totam excepturi repellat esse expedita!
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad architecto adipisci sed corrupti ipsam maxime accusantium 
-        est blanditiis at pariatur,laudantium eos explicabo provident laboriosam totam excepturi repellat esse expedita!
-   </p>
-   <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad architecto adipisci sed corrupti ipsam maxime accusantium 
-        est blanditiis at pariatur,laudantium eos explicabo provident laboriosam totam excepturi repellat esse expedita!
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad architecto adipisci sed corrupti ipsam maxime accusantium 
-        est blanditiis at pariatur,laudantium eos explicabo provident laboriosam totam excepturi repellat esse expedita!
-   </p>
-   <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad architecto adipisci sed corrupti ipsam maxime accusantium 
-        est blanditiis at pariatur,laudantium eos explicabo provident laboriosam totam excepturi repellat esse expedita!
-   </p>
+  
+
+<section id="principal_notas">
+
+<header id="encabezado">
+    <h2>Almacén Estrella</h2>
+</header>
+
+<div id="formulario">
+
+    <form action="#" method="POST">
+        
+
+        <div id="div1">
+            <table>
+                <tr>
+                    <td class=color>Codigo de Barras</td>
+                    <td class=color> Nombre de Producto</td>
+                    <td class=color>Marca</td>
+                    <td class=color>Tipo</td>
+                    <td class=color>Cabtidad</td class=color>
+                    <td class=color>Precio</td>
+                    <td class=color>Subtotal</td>
+                </tr>
+                <tr>
+                    <td>10201021</td>
+                    <td>Cerveza</td>
+                    <td>Corona</td>
+                    <td>Caguama</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>500</td>
+                </tr>
+                <tr>
+                <tr>
+                    <td>10201021</td>
+                    <td>Cerveza</td>
+                    <td>Corona</td>
+                    <td>Caguama</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>500</td>
+                </tr>
+                <tr>
+                <tr>
+                    <td>10201021</td>
+                    <td>Cerveza</td>
+                    <td>Corona</td>
+                    <td>Caguama</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>500</td>
+                </tr>
+                <tr>   <tr>
+                    <td>10201021</td>
+                    <td>Cerveza</td>
+                    <td>Corona</td>
+                    <td>Caguama</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>500</td>
+                </tr>
+                <tr>   <tr>
+                    <td>10201021</td>
+                    <td>Cerveza</td>
+                    <td>Corona</td>
+                    <td>Caguama</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>500</td>
+                </tr>
+                <tr>   <tr>
+                    <td>10201021</td>
+                    <td>Cerveza</td>
+                    <td>Corona</td>
+                    <td>Caguama</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>500</td>
+                </tr>
+                <tr>   <tr>
+                    <td>10201021</td>
+                    <td>Cerveza</td>
+                    <td>Corona</td>
+                    <td>Caguama</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>500</td>
+                </tr>
+                <tr>   <tr>
+                    <td>10201021</td>
+                    <td>Cerveza</td>
+                    <td>Corona</td>
+                    <td>Caguama</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>500</td>
+                </tr>
+                <tr>   <tr>
+                    <td>10201021</td>
+                    <td>Cerveza</td>
+                    <td>Corona</td>
+                    <td>Caguama</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>500</td>
+                </tr>
+                <tr>   <tr>
+                    <td>10201021</td>
+                    <td>Cerveza</td>
+                    <td>Corona</td>
+                    <td>Caguama</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>500</td>
+                </tr>
+                <tr>   <tr>
+                    <td>10201021</td>
+                    <td>Cerveza</td>
+                    <td>Corona</td>
+                    <td>Caguama</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>500</td>
+                </tr>
+                <tr>
+                <tr>
+                    <td>10201021</td>
+                    <td>Cerveza</td>
+                    <td>Corona</td>
+                    <td>Caguama</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>500</td>
+                </tr>
+                <tr>   <tr>
+                    <td>10201021</td>
+                    <td>Cerveza</td>
+                    <td>Corona</td>
+                    <td>Caguama</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>500</td>
+                </tr>
+                <tr>   <tr>
+                    <td>10201021</td>
+                    <td>Cerveza</td>
+                    <td>Corona</td>
+                    <td>Caguama</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>500</td>
+                </tr>
+                <tr>   <tr>
+                    <td>10201021</td>
+                    <td>Cerveza</td>
+                    <td>Corona</td>
+                    <td>Caguama</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>500</td>
+                </tr>
+                <tr>   <tr>
+                    <td>10201021</td>
+                    <td>Cerveza</td>
+                    <td>Corona</td>
+                    <td>Caguama</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>500</td>
+                </tr>
+                <tr>   <tr>
+                    <td>10201021</td>
+                    <td>Cerveza</td>
+                    <td>Corona</td>
+                    <td>Caguama</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>500</td>
+                </tr>
+                <tr>   <tr>
+                    <td>10201021</td>
+                    <td>Cerveza</td>
+                    <td>Corona</td>
+                    <td>Caguama</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>500</td>
+                </tr>
+                <tr>   <tr>
+                    <td>10201021</td>
+                    <td>Cerveza</td>
+                    <td>Corona</td>
+                    <td>Caguama</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>500</td>
+                </tr>
+                <tr>   <tr>
+                    <td>10201021</td>
+                    <td>Cerveza</td>
+                    <td>Corona</td>
+                    <td>Caguama</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>500</td>
+                </tr>
+                <tr>   <tr>
+                    <td>10201021</td>
+                    <td>Cerveza</td>
+                    <td>Corona</td>
+                    <td>Caguama</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>500</td>
+                </tr>
+                <tr>
+                <tr>
+                    <td>10201021</td>
+                    <td>Cerveza</td>
+                    <td>Corona</td>
+                    <td>Caguama</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>500</td>
+                </tr>
+                <tr>   <tr>
+                    <td>10201021</td>
+                    <td>Cerveza</td>
+                    <td>Corona</td>
+                    <td>Caguama</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>500</td>
+                </tr>
+                <tr>   <tr>
+                    <td>10201021</td>
+                    <td>Cerveza</td>
+                    <td>Corona</td>
+                    <td>Caguama</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>500</td>
+                </tr>
+                <tr>
+
+            </table>
+        </div>
+
+    </form>
+
+</div>
+<div id="final">
+   
+
+</div>
+</section>
+
+
 </div>
 </body>
 </html> 
