@@ -1,7 +1,11 @@
-/*Menu*/
 
+/*Menu*/
 body {
     font-family: "Lato", sans-serif;
+}
+
+.navegacion img {
+    margin: 5px;
 }
 
 .navegacion {
@@ -10,9 +14,10 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: black;
+    background-color:black;
     overflow-x: hidden;
-    padding-top: 100px;
+    padding-top: 20px;
+   
 }
 
 .navegacion a {
@@ -21,87 +26,35 @@ body {
     color: white;
     display: block;
     letter-spacing: 1px;
-    text-align: right;
-    padding: 18px;
-    margin-top: 13px;
-    /* border-bottom: 2px solid white;*/
+    text-align: center;
+    padding: 17px;
+   /* border-bottom: 2px solid white;*/
 }
 
 .navegacion a:hover {
-    color: black;
-    background: white;
+    color:black;
+    background:#85C1E9;
     opacity: 100%;
     transition: all 700ms;
 }
-
-.navegacion img {
-    position: fixed;
-    top: 17px;
-    left: 48px;
-}
-
-.navegacion #menu {
-    position: fixed;
-    top: 125px;
-    left: 11px;
-}
-
-.navegacion #nuevo {
-    position: fixed;
-    top: 191px;
-    left: 11px;
-}
-
-.navegacion #actualizar {
-    position: fixed;
-    top: 258px;
-    left: 11px;
-}
-
-.navegacion #eliminar {
-    position: fixed;
-    top: 323px;
-    left: 11px;
-}
-
-.navegacion #buscar {
-    position: fixed;
-    top: 392px;
-    left: 11px;
-}
-
-.navegacion #nota {
-    position: fixed;
-    top: 458px;
-    left: 11px;
-}
-
-.navegacion #estadistica {
-    position: fixed;
-    top: 523px;
-    left: 11px;
-}
-
-.titulo_menu {
+.titulo_menu{
     color: black;
 }
 
-#principal {
+#principal{
     margin-left: 200px;
     background: black;
+
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
+    text-align: center;
     letter-spacing: 10px;
     font-family: Helvetica, Arial;
     text-transform: uppercase;
-    color: white;
-    padding: 5px;
-}
-
-#principal h2 {
-    text-align: left;
+   
+    color:white;
 }
 
 #palabras {
@@ -111,48 +64,51 @@ body {
 }
 
 
+
+
+
+
 /* Notas */
 
-#principal_notas {
-    width: 88%;
-    border: 1px solid #e3e4e5;
-    /* padding: 35px;*/
+#principal_notas{
+    width: 96%;
+    border: 2px solid #e3e4e5 ;
+ 
+   /* padding: 35px;*/
     margin: 0px auto;
-    margin-top: 2em;
+    margin-top: 0em;
     background: #F9F9F9;
 }
-
-#encabezado {
+#encabezado{
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-bottom: 40px;
 }
 
-#encabezado h4 {
+#encabezado h4{
     font-size: 18px;
 }
 
-#formulario {
+#formulario{
     width: 85%;
     margin: 0px auto;
+    
 }
-
-label {
+label{
     font-weight: bold;
     font-size: 15px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.label1 {
+.label1{
     font-weight: bold;
     font-size: 18px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-left: 57rem;
 }
 
-form input[type="text"] {
-    padding: 8px;
-    /*15*/
+form input[type="text"]{
+    padding: 8px; /*15*/
     border-radius: 2px;
     border: 1px solid #ccc;
     color: #333;
@@ -163,9 +119,8 @@ form input[type="text"] {
     font-size: 18px;
 }
 
-form input[type="text1"] {
-    padding: 8px;
-    /*15*/
+form input[type="text1"]{
+    padding: 8px; /*15*/
     border-radius: 2px;
     border: 1px solid #ccc;
     color: #333;
@@ -176,7 +131,7 @@ form input[type="text1"] {
     font-size: 18px;
 }
 
-#final input[type="submit"] {
+#final input[type="submit"]{
     background: #dc3545;
     /*background: #1a73e8;*/
     /*background: orange ;*/
@@ -192,15 +147,15 @@ form input[type="text1"] {
     font-size: 15px;
     font-weight: 700;
     margin: 0px auto;
+    
 }
-
-#final span a {
+#final span a{
     margin: 0 auto;
     text-decoration: none;
     color: #1a73e8;
+    
 }
-
-#final {
+#final{
     margin-top: 10px;
     padding: 15px;
     background-color: #e3e4e5;
@@ -208,39 +163,36 @@ form input[type="text1"] {
     text-align: center;
 }
 
-h3 {
+h3{
     text-align: center;
 }
 
 table {
     table-layout: fixed;
-    width: 1048px;
+    width: 1160px;
     height: 100px;
     border-collapse: collapse;
     color: gray;
     text-align: center;
     color: black;
-    font-size: 15.5px;
+    font-size: 18.5px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
+    
+  }
 
-tr {
+  tr{
     border-bottom: 1.4pt solid darkgrey;
 }
 
-#div1 {
-    overflow: scroll;
-    height: 300px;
+  #div1 {
+    overflow:scroll;
+    height:580px;
+ 
 }
-
-#div1 {
-    overflow: scroll;
-    height: 300px;
-}
-
 .color {
-    font-size: 12px;
-    background-color: #E6E6E6;
-    height: 30px;
-    font-weight: bold;
-}
+    font-size: 14px;
+     background-color: #E6E6E6;
+     height:30px;
+     font-weight: bold;
+
+    }
