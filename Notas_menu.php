@@ -11,14 +11,14 @@
 
 <body>
     <div class="navegacion">
-        <img src="estrella_logo.png" height="70px" width="90px" />
-        <img id="menu" src="principal.png" height="30px" width="30px" /><a href="menu.php">Menú Principal</a>
-        <img id="nuevo" src="registronuevo.png" height="30px" width="30px" /><a href="menu_registro.php">Registrar Nuevo</a>
-        <img id="actualizar" src="actualizar.png" height="30px" width="30px" /><a href="menu_actualizar.php">Actualizar Stock</a>
-        <img id="eliminar" src="eliminar.png" height="30px" width="30px" /><a href="menu_eliminar.php">Eliminar Producto</a>
-        <img id="buscar" src="buscar.png" height="30px" width="30px" /><a href="#">Ver y Buscar</a>
-        <img id="nota" src="nota.png" height="30px" width="30px" /><a href="Notas_menu.php">Registrar Nota</a>
-        <img id="estadistica" src="estadisticas.png" height="30px" width="30px" /> <a href="#">Estadísticas</a>
+    <img src="estrella_logo.png" height="70px" width="90px"/>
+     <img id="menu" src="principal.png" height="30px" width="30px" /><a href="menu.php">Menú Principal</a>
+     <img id="nuevo" src="registronuevo.png" height="30px" width="30px" /><a href="menu_registro.php">Registrar Nuevo</a>
+     <img id="actualizar" src="actualizar.png" height="30px" width="30px" /><a href="menu_actualizar.php">Actualizar Stock</a>
+     <img id="eliminar" src="eliminar.png" height="30px" width="30px" /><a href="menu_eliminar.php">Eliminar Producto</a>
+     <img id="buscar" src="buscar.png" height="30px" width="30px" /><a href="#">Ver y Buscar</a>
+     <img id="nota" src="nota.png" height="30px" width="30px" /><a href="Notas_menu.php">Registrar Nota</a>
+     <img id="estadistica" src="estadisticas.png" height="30px" width="30px" /> <a href="#">Estadísticas</a>
     </div>
 
     <nav id="principal">
@@ -35,9 +35,9 @@
             <div id="formulario">
 
                 <form action="#" method="POST">
-                    <label for="start">Fecha</label>
-                    <input type="date" id="start" name="trip-start" value="2020-06-07" min="2020-01-01" max="2100-12-31"></br></br>
-
+                <label for="start">Fecha</label>
+                <input type="date" id="start" name="trip-start" value="2020-06-07" min="2020-01-01" max="2100-12-31"></br></br>
+                
                     <label for="codigo_barra">Ingresa Codigo de Barra</label>
                     <input type="text" name="correo" id="correo" required placeholder="" />
                     <label for="destinatario">Destinatario</label>
@@ -147,7 +147,7 @@
                                 <td>$15</td>
                                 <td>30</td>
                             </tr>
-
+                          
 
 
                         </table>

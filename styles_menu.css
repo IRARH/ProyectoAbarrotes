@@ -148,19 +148,21 @@ label{
     font-weight: bold;
     font-size: 18px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-left: 57rem;
+    margin-left: 59rem;
+    
 }
 
 form input[type="text"]{
-    padding: 8px; /*15*/
+    padding: 9px; /*15*/
     border-radius: 2px;
     border: 1px solid #ccc;
     color: #333;
     cursor: pointer;
-    width: 97%;
+    width: 99%;
     margin: 12px 10px 15px 0;
     display: inline-block;
     font-size: 18px;
+   
 }
 
 form input[type="text1"]{
@@ -170,10 +172,12 @@ form input[type="text1"]{
     color: #333;
     cursor: pointer;
     width: 20%;
-    margin-left: 52rem;
+    margin-left: 57rem;
     display: inline-block;
     font-size: 18px;
+    font-weight: bold;
 }
+
 
 #final input[type="submit"]{
     background: #dc3545;
@@ -214,7 +218,7 @@ h3{
 table {
     table-layout: fixed;
     width: 1160px;
-    height: 100px;
+    height: 90px;
     border-collapse: collapse;
     color: gray;
     text-align: center;
@@ -230,7 +234,7 @@ table {
 
   #div1 {
     overflow:scroll;
-    height:580px;
+    height:520px;
  
 }
 .color {
