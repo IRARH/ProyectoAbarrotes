@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Dar de alta un Registro</title>
+    <title>Actulizar Stock</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="styles_menu_registro.css" />
 </head>
@@ -25,12 +25,15 @@
     <div id="palabras">
         <section id="registro">
             <header id="encabezado_registro">
-                <h2>Registro de Productos </h2>
+                <h2>Actualizar Stock</h2>
+
             </header>
             <div id="formulario">
+                <label for="start">Fecha</label>
+                <input type="date" id="start" name="trip-start" value="2020-06-07" min="2020-01-01" max="2100-12-31"></br></br>
+
+
                 <form action="#" method="POST">
-                    <label for="start">Fecha</label>
-                    <input type="date" id="start" name="trip-start" value="2020-06-07" min="2020-01-01" max="2100-12-31"></br></br>
 
                     <label for="codigo_barras">Codigo de Barras</label>
                     <input type="text" name="codigo_barras" id="codigo_barras" required />
@@ -64,9 +67,12 @@
                     <label for="precio_total">Precio Total</label>
                     <input type="text" name="precio_total" id="precio_total" required />
                 </form>
+
+
+
             </div>
             <div id="final">
-                <input type="submit" value="Registrar " />
+                <input type="submit" value="Registrar Actulización " />
             </div>
         </section>
     </div>
