@@ -1,39 +1,41 @@
-body{
+body {
     background-image: url("abarrotes.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-#principal{
+#principal {
     width: 40%;
-    border: 5px solid #e3e4e5 ;
+    border: 5px solid #e3e4e5;
     border-radius: 26px;
-   /* padding: 35px;*/
+    /* padding: 35px;*/
     margin: 0px auto;
     margin-top: 8.0em;
     background: #F9F9F9;
 }
-#encabezado{
+
+#encabezado {
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-bottom: 40px;
 }
 
-#encabezado h4{
+#encabezado h4 {
     font-size: 18px;
 }
 
-#formulario{
+#formulario {
     width: 85%;
     margin: 0px auto;
-    
 }
-label{
+
+label {
     font-weight: 600;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 form input[type="email"],
-form input[type="password"]{
+form input[type="password"] {
     padding: 15px;
     border-radius: 2px;
     border: 1px solid #ccc;
@@ -42,13 +44,12 @@ form input[type="password"]{
     width: 92%;
     margin: 12px 10px 15px 0;
     display: inline-block;
-    
 }
 
-#final input[type="submit"]{
+#final input[type="submit"] {
     /*background: #dc3545;
     /*background: #1a73e8;*/
-    background: orange ;
+    background: orange;
     opacity: 60%;
     padding: 15px;
     border: 1px solid #ccc;
@@ -61,13 +62,14 @@ form input[type="password"]{
     font-size: 15px;
     font-weight: 700;
 }
-#final span a{
+
+#final span a {
     margin: 0 auto;
     text-decoration: none;
     color: #1a73e8;
-    
 }
-#final{
+
+#final {
     margin-top: 10px;
     padding: 15px;
     background-color: #e3e4e5;
@@ -78,6 +80,6 @@ form input[type="password"]{
     text-align: center;
 }
 
-h3{
+h3 {
     text-align: center;
 }
