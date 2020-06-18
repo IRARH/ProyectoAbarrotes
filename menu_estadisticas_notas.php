@@ -1,10 +1,11 @@
 <!Doctype html>
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
-    <title>Ver y realizar búsquedas</title>
-    <link rel="stylesheet" href="styles_menu_ver_y_buscar.css" />
+    <title>Estadísticas de Notas</title>
+    <link rel="stylesheet" href="styles_menu_estadisticas_notas.css" />
 </head>
 
 <body>
@@ -23,45 +24,49 @@
         <h2>Tienda de abarrotes estrella</h2>
     </nav>
     <div id="contenedor">
-        <div id="formulario_busqueda">
-            <form>
-                <label for="proveedor">Proveedor</label>
-                <input type="text" name="proveedor" placeholder="proveedor"/>
-                <label id="busqueda1" for="busqueda1">Busqueda por proveedor</label>
-                <input type="checkbox" name="busqueda1"/>
-                <label id="busqueda2" for="busqueda2">Busqueda por código y producto</label>
-                <input type="checkbox" name="busqueda2"/>
-                <hr>
-                <label for="codigo">Código de producto</label>
-                <input type="text" name="codigo" placeholder="código producto"/>
-                <label for="producto">Nombre producto</label>
-                <input type="text" name="producto" placeholder="nombre producto"/>
-                <label for="encolar">Encolar búsquedas</label>
-                <input type="checkbox" name="encolar"/></br>
-                <input type="submit" value="BUSCAR"/>
-            </form>
 
+        <div id="formulario_busqueda">
+
+            <h2 id='titulo_estadistica'>Estadísticas de Notas</h2>
+            <h3>Busqueda Especifica</h3>
+            <form>
+                <label id='fecha_inicial'>Seleccionar Tienda</label>
+
+                <select name="select" id="selector">
+                    <option value="value1" selected>Rayo</option>
+                    <option value="value2">Estrella</option>
+                </select>
+
+                <label id='fecha_final'>Fecha Inicial</label>
+                <input type="date" id="start" name="trip-start" value="2020-06-07" min="2020-01-01" max="2100-12-31">
+
+                <input type="submit" value="BUSCAR" />
+                <br>
+                <label id='url'>URL del archivo: </label>
+                <input type="text" name="codigo" placeholder="código producto" />
+            </form>
         </div>
+
+
+
+
 
         <section id="productos_busqueda">
             <header id="encabezado">
-                <h2>Búsqueda</h2>
+                <h2>Tabla de Nota</h2>
             </header>
-
             <div id="tabla_busqueda">
                 <div id="div1">
                     <table>
                         <tr>
                             <td class=color>Codigo de Barras</td>
-                            <td class=color>Surtidor</td>
-                            <td class=color>Nombre de Producto</td>
+                            <td class=color>Nombre del Producto</td>
                             <td class=color>Marca</td>
                             <td class=color>Tipo</td>
-                            <td class=color>Costo compra</td>
-                            <td class=color>Costo venta</td>
                             <td class=color>Cantidad</td>
-                            <td class=color>Piezas p/caja</td>
+                            <td class=color>Precio</td>
                             <td class=color>Subtotal</td>
+
                         </tr>
                         <tr>
                             <td>10201021</td>
@@ -71,9 +76,7 @@
                             <td>Caguama</td>
                             <td>20</td>
                             <td>35</td>
-                            <td>50</td>
-                            <td>12</td>
-                            <td>21000</td>
+
                         </tr>
                         <tr>
                             <td>10201021</td>
@@ -83,9 +86,6 @@
                             <td>Caguama</td>
                             <td>20</td>
                             <td>35</td>
-                            <td>50</td>
-                            <td>12</td>
-                            <td>21000</td>
                         </tr>
                         <tr>
                             <td>10201021</td>
@@ -95,9 +95,6 @@
                             <td>Caguama</td>
                             <td>20</td>
                             <td>35</td>
-                            <td>50</td>
-                            <td>12</td>
-                            <td>21000</td>
                         </tr>
                         <tr>
                             <td>10201021</td>
@@ -107,9 +104,6 @@
                             <td>Caguama</td>
                             <td>20</td>
                             <td>35</td>
-                            <td>50</td>
-                            <td>12</td>
-                            <td>21000</td>
                         </tr>
                         <tr>
                             <td>10201021</td>
@@ -119,9 +113,6 @@
                             <td>Caguama</td>
                             <td>20</td>
                             <td>35</td>
-                            <td>50</td>
-                            <td>12</td>
-                            <td>21000</td>
                         </tr>
                         <tr>
                             <td>10201021</td>
@@ -131,9 +122,6 @@
                             <td>Caguama</td>
                             <td>20</td>
                             <td>35</td>
-                            <td>50</td>
-                            <td>12</td>
-                            <td>21000</td>
                         </tr>
                         <tr>
                             <td>10201021</td>
@@ -143,137 +131,74 @@
                             <td>Caguama</td>
                             <td>20</td>
                             <td>35</td>
-                            <td>50</td>
-                            <td>12</td>
-                            <td>21000</td>
                         </tr>
                     </table>
                 </div>
             </div>
         </section>
-    
+
+
+
+
+
         <div id="resultados_busqueda">
-                <label for="total_piezas_busqueda">Total / pza</label>
-                <input type="text" name="total_piezas_busqueda" />
-                <label for="total_busqueda">Total dinero</label>
-                <input type="text" name="total_busqueda"/>
+            <label for="total_piezas_busqueda">Total / pza</label>
+            <input type="text" name="total_piezas_busqueda" />
+
+            <label for="total_busqueda">Total dinero</label>
+            <input type="text" name="total_busqueda" />
         </div>
 
 
+    
         <section id="productos_generales">
             <header id="encabezado">
-                <h2>Productos Generales</h2>
+                <h2>Arhivos encontrados</h2>
             </header>
 
             <div id="tabla_general">
-                <div id="div1">
+                <div id="div3">
                     <table>
                         <tr>
-                            <td class=color>Codigo de Barras</td>
-                            <td class=color>Surtidor</td>
-                            <td class=color>Nombre de Producto</td>
-                            <td class=color>Marca</td>
-                            <td class=color>Tipo</td>
-                            <td class=color>Costo compra</td>
-                            <td class=color>Costo venta</td>
-                            <td class=color>Cantidad</td>
-                            <td class=color>Piezas p/caja</td>
-                            <td class=color>Subtotal</td>
+                            <td class=color>Fecha</td>
+                            <td class=color>URL</td>
                         </tr>
                         <tr>
-                            <td>10201021</td>
-                            <td>Corona</td>
-                            <td>Cerveza</td>
-                            <td>Corona</td>
-                            <td>Caguama</td>
-                            <td>20</td>
-                            <td>35</td>
-                            <td>50</td>
-                            <td>12</td>
-                            <td>21000</td>
+                            <td>22 Junio</td>
+                            <td>http://servidor.gio/1234</td>
                         </tr>
                         <tr>
-                            <td>10201021</td>
-                            <td>Corona</td>
-                            <td>Cerveza</td>
-                            <td>Corona</td>
-                            <td>Caguama</td>
-                            <td>20</td>
-                            <td>35</td>
-                            <td>50</td>
-                            <td>12</td>
-                            <td>21000</td>
-                        </tr>
-                        <tr>
-                            <td>10201021</td>
-                            <td>Corona</td>
-                            <td>Cerveza</td>
-                            <td>Corona</td>
-                            <td>Caguama</td>
-                            <td>20</td>
-                            <td>35</td>
-                            <td>50</td>
-                            <td>12</td>
-                            <td>21000</td>
-                        </tr>
-                        <tr>
-                            <td>10201021</td>
-                            <td>Corona</td>
-                            <td>Cerveza</td>
-                            <td>Corona</td>
-                            <td>Caguama</td>
-                            <td>20</td>
-                            <td>35</td>
-                            <td>50</td>
-                            <td>12</td>
-                            <td>21000</td>
-                        </tr>
-                        <tr>
-                            <td>10201021</td>
-                            <td>Corona</td>
-                            <td>Cerveza</td>
-                            <td>Corona</td>
-                            <td>Caguama</td>
-                            <td>20</td>
-                            <td>35</td>
-                            <td>50</td>
-                            <td>12</td>
-                            <td>21000</td>
-                        </tr>
-                        <tr>
-                            <td>10201021</td>
-                            <td>Corona</td>
-                            <td>Cerveza</td>
-                            <td>Corona</td>
-                            <td>Caguama</td>
-                            <td>20</td>
-                            <td>35</td>
-                            <td>50</td>
-                            <td>12</td>
-                            <td>21000</td>
-                        </tr>
-                        <tr>
-                            <td>10201021</td>
-                            <td>Corona</td>
-                            <td>Cerveza</td>
-                            <td>Corona</td>
-                            <td>Caguama</td>
-                            <td>20</td>
-                            <td>35</td>
-                            <td>50</td>
-                            <td>12</td>
-                            <td>21000</td>
+                            <td>22 Junio</td>
+                            <td>http://servidor.gio/1234</td>
+                        </tr><tr>
+                            <td>22 Junio</td>
+                            <td>http://servidor.gio/1234</td>
+                        </tr><tr>
+                            <td>22 Junio</td>
+                            <td>http://servidor.gio/1234</td>
+                        </tr><tr>
+                            <td>22 Junio</td>
+                            <td>http://servidor.gio/1234</td>
+                        </tr><tr>
+                            <td>22 Junio</td>
+                            <td>http://servidor.gio/1234</td>
+                        </tr><tr>
+                            <td>22 Junio</td>
+                            <td>http://servidor.gio/1234</td>
                         </tr>
                     </table>
                 </div>
             </div>
+
+
+
+
         </section>
         <div id="final">
-            <label for="total_piezas">Total / pza</label>
+            <label id="dinero">Dinero en Notas: </label>
             <input type="text" name="total_piezas" />
-            <label for="total">Total dinero</label>
-            <input type="text" name="total"/>
         </div>
     </div>
+
 </body>
 </html>

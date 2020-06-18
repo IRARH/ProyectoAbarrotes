@@ -1,0 +1,361 @@
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.navegacion {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: black;
+    overflow-x: hidden;
+    padding-top: 100px;
+}
+
+.navegacion a {
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+    display: block;
+    letter-spacing: 1px;
+    text-align: right;
+    padding: 18px;
+    margin-top: 13px;
+    /* border-bottom: 2px solid white;*/
+}
+
+.navegacion a:hover {
+    color: black;
+    background: white;
+    opacity: 100%;
+    transition: all 700ms;
+}
+
+.navegacion img {
+    position: fixed;
+    top: 17px;
+    left: 48px;
+}
+
+.navegacion #menu {
+    position: fixed;
+    top: 125px;
+    left: 11px;
+}
+
+.navegacion #nuevo {
+    position: fixed;
+    top: 191px;
+    left: 11px;
+}
+
+.navegacion #actualizar {
+    position: fixed;
+    top: 258px;
+    left: 11px;
+}
+
+.navegacion #eliminar {
+    position: fixed;
+    top: 323px;
+    left: 11px;
+}
+
+.navegacion #buscar {
+    position: fixed;
+    top: 392px;
+    left: 11px;
+}
+
+.navegacion #nota {
+    position: fixed;
+    top: 458px;
+    left: 11px;
+}
+
+.navegacion #estadistica {
+    position: fixed;
+    top: 523px;
+    left: 11px;
+}
+
+.titulo_menu {
+    color: black;
+}
+
+
+
+
+#principal {
+    margin-left: 200px;
+    background: black; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    letter-spacing: 10px;
+    font-family: Helvetica, Arial;
+    text-transform: uppercase;
+    color: white;
+    padding: 5px;
+}
+
+#principal h2 {
+    text-align: left;
+}
+
+#contenedor {
+    margin-left: 200px;
+    padding-top: 100px;
+    padding-left: 34px;
+}
+
+
+/* Estilo de la tabla generalesy para buscar*/
+
+#productos_busqueda {
+    width: 96%;
+    border: 2px solid #e3e4e5;
+    margin: 0px auto;
+    margin-top: 2em;
+    background: #F9F9F9;
+    padding-bottom: 70px;
+}
+
+
+#encabezado {
+    text-align: left;
+    font-family: arial, Geneva, Tahoma, sans-serif;
+    margin-bottom: 40px;
+    margin-left: 42px;
+}
+
+
+
+#tabla_busqueda {
+    width: 93%;
+    margin: 0px auto;
+}
+
+#tabla_general {
+    width: 93%;
+    margin: 0px auto;
+}
+
+
+
+#div1 {
+    overflow: scroll;
+    height: 400px;
+}
+
+#div1 table {
+    table-layout: fixed;
+    width: 150%;
+    border-collapse: collapse;
+    color: gray;
+    text-align: center;
+    color: black;
+    font-size: 18.5px;
+    font-family: arial, Geneva, Tahoma, sans-serif;
+    letter-spacing: 1px;
+    border: 2px solid #EDECEC;
+}
+
+
+#contenedor #formulario_busqueda label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+#contenedor #formulario_busqueda {
+    margin-left: 23px;
+    width: 95%;
+    background-color: #F9F9F9;
+    padding: 8px;
+    margin-top: 40px;
+    border: 2px solid #e3e4e5;
+}
+
+#contenedor #formulario_busqueda #busqueda1 {
+    margin-left: 76px;
+}
+
+#contenedor #formulario_busqueda #busqueda2 {
+    margin-left: 167px;
+}
+
+#contenedor form input[type="text"] {
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    color: #333;
+    cursor: pointer;
+    width: 40%;
+    margin: 30px 80px 30px 7px;
+    display: inline-block;
+}
+
+#contenedor form input[type="submit"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    width: 20%;
+    background-color: #dc3545;
+    display: inline-block;
+    border-radius: 10px;
+    font-weight: bold;
+    color: white;
+    margin-left: 50px;
+}
+
+#contenedor #resultados_busqueda {
+    margin-left: 553px;
+    margin-top: 20px;
+}
+
+
+
+#contenedor #final {
+    margin-left: 553px;
+    margin-top: 20px;
+}
+
+#contenedor #final label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+#contenedor #final input[type="text"] {
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    color: #333;
+    cursor: pointer;
+    width: 20%;
+    margin: 30px 80px 30px 7px;
+    display: inline-block;
+}
+
+
+/* Notas estadisticas */
+
+
+
+#contenedor #formulario_busqueda #fecha_inicial
+{    
+    text-align: center;
+    font-size: 18px;
+}
+
+#contenedor #formulario_busqueda #fecha_final
+{    
+    text-align: center;
+    font-size: 18px;
+    width: 20px;
+    margin-left: 50px;
+    
+}
+
+#contenedor #formulario_busqueda #titulo_estadistica{
+text-align: center;
+font-size: 1.5em;
+}
+
+#contenedor #formulario_busqueda #url{
+    text-align: center;
+    }
+#contenedor #resultados_busqueda input[type="text"] {
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        color: #333;
+        cursor: pointer;
+        width: 20%;
+        margin: 30px 80px 30px 7px;
+        display: inline-block;
+       
+    }
+#contenedor #resultados_busqueda label {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        font-weight: bold;
+        margin-left: 63px;
+    }
+    
+#contenedor #formulario_busqueda #selector {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    #div1 tr {
+        border-bottom: 15pt solid #EDECEC;
+    }
+    #div3 tr {
+        border-bottom: 10pt solid #EDECEC;
+    }
+
+    
+    .color {
+        font-size: 18px;
+        background-color: darkgray;
+        height: 30px;
+        font-weight: bold;
+        padding: 10px;
+    }
+
+    #productos_generales {
+        width: 96%;
+        border: 2px solid #e3e4e5;
+        margin: 0px auto;
+        margin-top: 2em;
+        background: #F9F9F9;
+        padding-bottom: 40px;
+    }
+
+
+    #div3 table {
+        table-layout: fixed;
+        width: 100%;
+        border-collapse: collapse;
+        color: gray;
+        text-align: center;
+        color: black;
+        font-size: 18.5px;
+        font-family: arial, Geneva, Tahoma, sans-serif;
+        letter-spacing: 1px;
+        border: 2px solid #EDECEC;
+    }
+
+
+    #contenedor #final input[type="text1"] {
+        padding: 12px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        color: #333;
+        cursor: pointer;
+        width: 20%;
+        margin: 30px 80px 30px 7px;
+        display: inline-block;
+        margin-left: 30px;
+    }
+
+    #contenedor #final #dinero{
+    font-size: 18px;
+    margin-left: 420px;
+    }
+    
+    #tabla_general {
+    width: 90%;
+    margin: 0px auto;
+    }
+
+    #div3 {
+        overflow: scroll;
+        height: 300px;
+    }
