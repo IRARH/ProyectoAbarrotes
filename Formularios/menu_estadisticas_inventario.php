@@ -31,14 +31,14 @@
     <div id="contenedor">
         <div id="formulario_busqueda">
             <h2 id='titulo_estadistica'>Estadísticas de Inventario</h2>
-            <h3>Busqueda de Registro Entrada y Salida</h3>
+            <h2 id='titulo_reg'>Busqueda de Registro Entrada y Salida</h2>
             <form>
-
+            
                 <label id='fecha_final'>Fecha</label>
                 <input type="date" id="start" name="trip-start" value="2020-06-07" min="2020-01-01" max="2100-12-31">
                 <input type="submit" value="BUSCAR" />
                 <br>
-                <label id='inv_inicial'>Inventario Incial</label>
+                <label id='inv_inicial'>Inventario Inicial</label>
                 <input type="text" name="codigo" />
 
                 <label id='inv_final'>Inventario Incial</label>
@@ -52,9 +52,10 @@
 
         <section id="productos_busqueda">
             <header id="encabezado">
-                <h2>Registro Encontrado</h2>
+               
             </header>
             <div id="tabla_busqueda">
+            <h3>Registro Encontrado</h3>
                 <div id="div1">
                     <table>
                         <tr>
@@ -77,19 +78,22 @@
         </section>
 
         <section id="productos_generales">
+        
             <header id="encabezado">
-                <h2>Busqueda por Rango</h2>
-
+            <h2>Busqueda por Rango</h2>
                 <label id='fecha_inicia'>Fecha Inicial</label>
                 <input type="date" id="start" name="trip-start" value="2020-06-07" min="2020-01-01" max="2100-12-31">
 
                 <label id='fecha_final'>Fecha Final</label>
                 <input type="date" id="start" name="trip-start" value="2020-06-07" min="2020-01-01" max="2100-12-31">
-
                 <input type="submit" value="BUSCAR" />
-                <h2>Arhivos encontrados</h2>
+               
             </header>
+            
+
+            
             <div id="tabla_general">
+            <h3>Registros Encontrados</h3>
                 <div id="div3">
                     <table>
                         <tr>
