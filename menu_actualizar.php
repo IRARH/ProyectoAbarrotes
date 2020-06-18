@@ -4,7 +4,7 @@
 <head>
     <title>Actulizar Stock</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="styles_menu_registro.css" />
+    <link rel="stylesheet" href="styles_menu_actualizar.css" />
 </head>
 
 <body>
@@ -15,7 +15,7 @@
         <img id="actualizar" src="actualizar.png" height="30px" width="30px" /><a href="menu_actualizar.php">Actualizar Stock</a>
         <img id="eliminar" src="eliminar.png" height="30px" width="30px" /><a href="menu_eliminar.php">Eliminar Producto</a>
         <img id="buscar" src="buscar.png" height="30px" width="30px" /><a href="menu_ver_y_buscar.php">Ver y Buscar</a>
-        <img id="nota" src="nota.png" height="30px" width="30px" /><a href="Notas_menu.php">Registrar Nota</a>
+        <img id="nota" src="nota.png" height="30px" width="30px" /><a href="menu_notas.php">Registrar Nota</a>
         <img id="estadistica" src="estadisticas.png" height="30px" width="30px" /> <a href="#">Estadísticas</a>
     </div>
 
