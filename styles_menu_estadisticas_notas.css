@@ -1,5 +1,3 @@
-/* estilo menu.php */
-
 body {
     font-family: "Lato", sans-serif;
 }
@@ -24,6 +22,7 @@ body {
     text-align: right;
     padding: 18px;
     margin-top: 13px;
+    /* border-bottom: 2px solid white;*/
 }
 
 .navegacion a:hover {
@@ -85,9 +84,12 @@ body {
     color: black;
 }
 
+
+
+
 #principal {
     margin-left: 200px;
-    background: black;
+    background: black; 
     position: fixed;
     top: 0;
     left: 0;
@@ -110,18 +112,9 @@ body {
 }
 
 
-/* Estilo para menu_ver_y_buscar.php */
+/* Estilo de la tabla generalesy para buscar*/
 
 #productos_busqueda {
-    width: 96%;
-    border: 2px solid #e3e4e5;
-    margin: 0px auto;
-    margin-top: 5em;
-    background: #F9F9F9;
-    padding-bottom: 70px;
-}
-
-#productos_generales {
     width: 96%;
     border: 2px solid #e3e4e5;
     margin: 0px auto;
@@ -130,12 +123,15 @@ body {
     padding-bottom: 70px;
 }
 
+
 #encabezado {
     text-align: left;
     font-family: arial, Geneva, Tahoma, sans-serif;
     margin-bottom: 40px;
     margin-left: 42px;
 }
+
+
 
 #tabla_busqueda {
     width: 93%;
@@ -147,6 +143,8 @@ body {
     margin: 0px auto;
 }
 
+
+
 #div1 {
     overflow: scroll;
     height: 400px;
@@ -156,6 +154,7 @@ body {
     table-layout: fixed;
     width: 150%;
     border-collapse: collapse;
+    color: gray;
     text-align: center;
     color: black;
     font-size: 18.5px;
@@ -164,17 +163,6 @@ body {
     border: 2px solid #EDECEC;
 }
 
-#div1 tr {
-    border-bottom: 15pt solid #EDECEC;
-}
-
-#div1 .color {
-    font-size: 18px;
-    background-color: darkgray;
-    height: 30px;
-    font-weight: bold;
-    padding: 10px;
-}
 
 #contenedor #formulario_busqueda label {
     font-family: Arial, Helvetica, sans-serif;
@@ -205,13 +193,13 @@ body {
     border: 1px solid #ccc;
     color: #333;
     cursor: pointer;
-    width: 20%;
+    width: 40%;
     margin: 30px 80px 30px 7px;
     display: inline-block;
 }
 
 #contenedor form input[type="submit"] {
-    padding: 10px;
+    padding: 5px;
     border: 1px solid #ccc;
     cursor: pointer;
     width: 20%;
@@ -220,6 +208,7 @@ body {
     border-radius: 10px;
     font-weight: bold;
     color: white;
+    margin-left: 50px;
 }
 
 #contenedor #resultados_busqueda {
@@ -227,23 +216,7 @@ body {
     margin-top: 20px;
 }
 
-#contenedor #resultados_busqueda label {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    letter-spacing: 1px;
-    font-weight: bold;
-}
 
-#contenedor #resultados_busqueda input[type="text"] {
-    padding: 12px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    color: #333;
-    cursor: pointer;
-    width: 20%;
-    margin: 30px 80px 30px 7px;
-    display: inline-block;
-}
 
 #contenedor #final {
     margin-left: 553px;
@@ -267,3 +240,122 @@ body {
     margin: 30px 80px 30px 7px;
     display: inline-block;
 }
+
+
+/* Notas estadisticas */
+
+
+
+#contenedor #formulario_busqueda #fecha_inicial
+{    
+    text-align: center;
+    font-size: 18px;
+}
+
+#contenedor #formulario_busqueda #fecha_final
+{    
+    text-align: center;
+    font-size: 18px;
+    width: 20px;
+    margin-left: 50px;
+    
+}
+
+#contenedor #formulario_busqueda #titulo_estadistica{
+text-align: center;
+font-size: 1.5em;
+}
+
+#contenedor #formulario_busqueda #url{
+    text-align: center;
+    }
+#contenedor #resultados_busqueda input[type="text"] {
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        color: #333;
+        cursor: pointer;
+        width: 20%;
+        margin: 30px 80px 30px 7px;
+        display: inline-block;
+       
+    }
+#contenedor #resultados_busqueda label {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        font-weight: bold;
+        margin-left: 63px;
+    }
+    
+#contenedor #formulario_busqueda #selector {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    #div1 tr {
+        border-bottom: 15pt solid #EDECEC;
+    }
+    #div3 tr {
+        border-bottom: 10pt solid #EDECEC;
+    }
+
+    
+    .color {
+        font-size: 18px;
+        background-color: darkgray;
+        height: 30px;
+        font-weight: bold;
+        padding: 10px;
+    }
+
+    #productos_generales {
+        width: 96%;
+        border: 2px solid #e3e4e5;
+        margin: 0px auto;
+        margin-top: 2em;
+        background: #F9F9F9;
+        padding-bottom: 40px;
+    }
+
+
+    #div3 table {
+        table-layout: fixed;
+        width: 100%;
+        border-collapse: collapse;
+        color: gray;
+        text-align: center;
+        color: black;
+        font-size: 18.5px;
+        font-family: arial, Geneva, Tahoma, sans-serif;
+        letter-spacing: 1px;
+        border: 2px solid #EDECEC;
+    }
+
+
+    #contenedor #final input[type="text1"] {
+        padding: 12px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        color: #333;
+        cursor: pointer;
+        width: 20%;
+        margin: 30px 80px 30px 7px;
+        display: inline-block;
+        margin-left: 30px;
+    }
+
+    #contenedor #final #dinero{
+    font-size: 18px;
+    margin-left: 420px;
+    }
+    
+    #tabla_general {
+    width: 90%;
+    margin: 0px auto;
+    }
+
+    #div3 {
+        overflow: scroll;
+        height: 300px;
+    }
