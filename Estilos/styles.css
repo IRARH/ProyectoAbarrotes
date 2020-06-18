@@ -1,5 +1,5 @@
 body {
-    background-image: url("abarrotes.jpg");
+    background-image: url("../Formularios/Imagenes/abarrotes.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -8,7 +8,6 @@ body {
     width: 40%;
     border: 5px solid #e3e4e5;
     border-radius: 26px;
-    /* padding: 35px;*/
     margin: 0px auto;
     margin-top: 8.0em;
     background: #F9F9F9;
