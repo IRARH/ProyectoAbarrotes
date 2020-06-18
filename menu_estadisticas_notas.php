@@ -37,7 +37,7 @@
                     <option value="value2">Estrella</option>
                 </select>
 
-                <label id='fecha_final'>Fecha Inicial</label>
+                <label id='fecha_final'>Fecha </label>
                 <input type="date" id="start" name="trip-start" value="2020-06-07" min="2020-01-01" max="2100-12-31">
 
                 <input type="submit" value="BUSCAR" />
@@ -149,10 +149,17 @@
             <input type="text" name="total_busqueda" />
         </div>
 
-
-    
         <section id="productos_generales">
             <header id="encabezado">
+                <h2>Busqueda por Rango</h2>
+            <label id='fecha_inicial'>Fecha Inicial</label>
+                <input type="date" id="start" name="trip-start" value="2020-06-07" min="2020-01-01" max="2100-12-31">
+
+                <label id='fecha_final'>Fecha Final</label>
+                <input type="date" id="start" name="trip-start" value="2020-06-07" min="2020-01-01" max="2100-12-31">
+                
+                <input type="submit" value="BUSCAR" />
+
                 <h2>Arhivos encontrados</h2>
             </header>
 
@@ -189,9 +196,6 @@
                     </table>
                 </div>
             </div>
-
-
-
 
         </section>
         <div id="final">

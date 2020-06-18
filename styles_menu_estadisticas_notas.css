@@ -171,7 +171,7 @@ body {
 }
 
 #contenedor #formulario_busqueda {
-    margin-left: 23px;
+    margin-left: 10px;
     width: 95%;
     background-color: #F9F9F9;
     padding: 8px;
@@ -208,7 +208,7 @@ body {
     border-radius: 10px;
     font-weight: bold;
     color: white;
-    margin-left: 50px;
+    margin-left: 30px;
 }
 
 #contenedor #resultados_busqueda {
@@ -284,7 +284,7 @@ font-size: 1.5em;
         font-family: Arial, Helvetica, sans-serif;
         font-size: 16px;
         font-weight: bold;
-        margin-left: 63px;
+        margin-left: 11px;
     }
     
 #contenedor #formulario_busqueda #selector {
@@ -347,7 +347,7 @@ font-size: 1.5em;
 
     #contenedor #final #dinero{
     font-size: 18px;
-    margin-left: 420px;
+    margin-left: 320px;
     }
     
     #tabla_general {
@@ -359,3 +359,25 @@ font-size: 1.5em;
         overflow: scroll;
         height: 300px;
     }
+    #contenedor #productos_generales #fecha_inicial{
+        font-size: 18px ;
+    }
+
+    #contenedor #productos_generales #fecha_final{
+        font-size: 18px  ;
+        margin-left: 50px;
+    }
+
+
+#contenedor #productos_generales input[type="submit"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    width: 20%;
+    background-color: #dc3545;
+    display: inline-block;
+    border-radius: 10px;
+    font-weight: bold;
+    color: white;
+    margin-left: 25px;
+}
