@@ -5,7 +5,7 @@
     <title>Eliminar Producto</title>
     <meta charset="utf-8">
 
-    <link rel="stylesheet" href="styles_menu_notas.css" />
+    <link rel="stylesheet" href="styles_menu_eliminar.css" />
 </head>
 
 
@@ -46,10 +46,10 @@
                         <table>
                             <tr>
                                 <td class=color>Codigo de Barras</td>
-                                <td class=color> Nombre de Producto</td>
+                                <td class=color>Nombre de Producto</td>
                                 <td class=color>Marca</td>
                                 <td class=color>Tipo</td>
-                                <td class=color>Cabtidad</td class=color>
+                                <td class=color>Cantidad</td class=color>
                                 <td class=color>Precio</td>
                                 <td class=color>Subtotal</td>
                             </tr>

@@ -50,7 +50,7 @@
                                 <td class=color> Nombre de Producto</td>
                                 <td class=color>Marca</td>
                                 <td class=color>Tipo</td>
-                                <td class=color>Cabtidad</td class=color>
+                                <td class=color>Cantidad</td class=color>
                                 <td class=color>Precio</td>
                                 <td class=color>Subtotal</td>
                             </tr>

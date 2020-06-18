@@ -46,7 +46,7 @@
                                 <td class=color> Nombre de Producto</td>
                                 <td class=color>Marca</td>
                                 <td class=color>Tipo</td>
-                                <td class=color>Cabtidad</td class=color>
+                                <td class=color>Cantidad</td class=color>
                                 <td class=color>Precio</td>
                                 <td class=color>Subtotal</td>
                             </tr>
@@ -235,14 +235,10 @@
                         </table>
                     </div>
                     <label class="label1">Total en Almacén</label>
-                    <input type="text1" name="total" id="total" value="$9000" required placeholder="" />
+                    <input type="text" name="total" id="total" value="$9000" required placeholder="" />
                 </form>
 
-                </form>
-
-            </div>
-            <div id="final">
-
+                
 
             </div>
         </section>

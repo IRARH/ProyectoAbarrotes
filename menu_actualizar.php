@@ -4,7 +4,7 @@
 <head>
     <title>Actulizar Stock</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="styles_menu_registro.css" />
+    <link rel="stylesheet" href="styles_menu_actualizar.css" />
 </head>
 
 <body>

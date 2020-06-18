@@ -1,3 +1,5 @@
+/* estilo menu.php */
+
 body {
     font-family: "Lato", sans-serif;
 }
@@ -22,7 +24,6 @@ body {
     text-align: right;
     padding: 18px;
     margin-top: 13px;
-    /* border-bottom: 2px solid white;*/
 }
 
 .navegacion a:hover {
@@ -109,7 +110,7 @@ body {
 }
 
 
-/* Estilo de la tabla generalesy para buscar*/
+/* Estilo para menu_ver_y_buscar.php */
 
 #productos_busqueda {
     width: 96%;
@@ -155,7 +156,6 @@ body {
     table-layout: fixed;
     width: 150%;
     border-collapse: collapse;
-    color: gray;
     text-align: center;
     color: black;
     font-size: 18.5px;
@@ -168,7 +168,7 @@ body {
     border-bottom: 15pt solid #EDECEC;
 }
 
-.color {
+#div1 .color {
     font-size: 18px;
     background-color: darkgray;
     height: 30px;
