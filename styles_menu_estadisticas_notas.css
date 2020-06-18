@@ -171,7 +171,7 @@ body {
 }
 
 #contenedor #formulario_busqueda {
-    margin-left: 10px;
+    margin-left: 25px;
     width: 95%;
     background-color: #F9F9F9;
     padding: 8px;
@@ -347,7 +347,7 @@ font-size: 1.5em;
 
     #contenedor #final #dinero{
     font-size: 18px;
-    margin-left: 320px;
+    margin-left: 220px;
     }
     
     #tabla_general {
