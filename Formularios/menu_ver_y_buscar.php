@@ -30,16 +30,10 @@
             <form>
                 <center> <h2> Buscar Productos y Proveedores </h2></center>
                 <h3>Busqueda por Proveedor</h3>
-
-
                 <label id="busqueda1" for="busqueda1">Busqueda por proveedor</label>
                 <input type="checkbox" name="busqueda1"/></br>
                 <label for="proveedor">Proveedor</label>
                 <input type="text" name="proveedor" placeholder="proveedor"/>
-
-               
-
-               
                 <hr>
                 <h3>Busqueda por Producto</h3>
                 
@@ -55,10 +49,7 @@
 
                 <label for="producto">Nombre producto</label>
                 <input type="text" name="producto" placeholder="nombre producto"/>
-
-                
             </br><br>
-
                 <input type="submit" value="BUSCAR"/>
             </form>
         </div>
