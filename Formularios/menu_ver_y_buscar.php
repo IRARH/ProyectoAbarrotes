@@ -4,8 +4,11 @@
     <title>Visualizar y realizar búsquedas</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="../Estilos/styles_menu_ver_y_buscar.css" />
+  
 </head>
 <body>
+
+
     <div class="navegacion">
         <img src="Imagenes/estrella_logo.png" height="70px" width="90px" />
         <img id="menu" src="Imagenes/principal.png" height="25px" width="25px" /><a href="menu.php">Menú Principal</a>
@@ -15,31 +18,46 @@
         <img id="buscar" src="Imagenes/buscar.png" height="25px" width="25px" /><a href="menu_ver_y_buscar.php">Ver y Buscar</a>
         <img id="nota" src="Imagenes/nota.png" height="25px" width="25px" /><a href="menu_notas.php">Registrar Nota</a>
         <img id="estadistica" src="Imagenes/estadisticas.png" height="25px" width="25px" /> <a href="menu_estadisticas_notas.php">Estadísticas Notas</a>
-        <a href="#">Inventario</a>
+        <a href="menu_estadisticas_inventario.php">Inventario</a>
     </div>
     <nav id="principal">
         <h2>Tienda de abarrotes estrella</h2>
     </nav>
+   
     <div id="contenedor">
+   
         <div id="formulario_busqueda">
             <form>
+                <center> <h2> Buscar Productos y Proveedores </h2></center>
+                <h3>Busqueda por Proveedor</h3>
+
+
+                <label id="busqueda1" for="busqueda1">Busqueda por proveedor</label>
+                <input type="checkbox" name="busqueda1"/></br>
                 <label for="proveedor">Proveedor</label>
                 <input type="text" name="proveedor" placeholder="proveedor"/>
 
-                <label id="busqueda1" for="busqueda1">Busqueda por proveedor</label>
-                <input type="checkbox" name="busqueda1"/>
+               
 
+               
+                <hr>
+                <h3>Busqueda por Producto</h3>
+                
                 <label id="busqueda2" for="busqueda2">Busqueda por código y producto</label>
                 <input type="checkbox" name="busqueda2"/>
-                <hr>
+
+                <label for="encolar">Encolar búsquedas</label>
+                <input type="checkbox" name="encolar"/></br>
+
+                
                 <label for="codigo">Código de producto</label>
                 <input type="text" name="codigo" placeholder="código producto"/>
 
                 <label for="producto">Nombre producto</label>
                 <input type="text" name="producto" placeholder="nombre producto"/>
 
-                <label for="encolar">Encolar búsquedas</label>
-                <input type="checkbox" name="encolar"/></br>
+                
+            </br><br>
 
                 <input type="submit" value="BUSCAR"/>
             </form>

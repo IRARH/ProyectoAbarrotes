@@ -20,7 +20,7 @@
         <img id="buscar" src="Imagenes/buscar.png" height="25px" width="25px" /><a href="menu_ver_y_buscar.php">Ver y Buscar</a>
         <img id="nota" src="Imagenes/nota.png" height="25px" width="25px" /><a href="menu_notas.php">Registrar Nota</a>
         <img id="estadistica" src="Imagenes/estadisticas.png" height="25px" width="25px" /> <a href="menu_estadisticas_notas.php">Estadísticas Notas</a>
-        <a href="#">Inventario</a>
+        <a href="menu_estadisticas_inventario.php">Inventario</a>
     </div>
     <nav id="principal">
         <h2>Tienda de abarrotes estrella</h2>
