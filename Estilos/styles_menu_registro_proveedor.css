@@ -1,4 +1,4 @@
-/* estilos menu.php */
+/*Estilos para menu*/
 
 body {
     font-family: "Lato", sans-serif;
@@ -105,18 +105,53 @@ body {
 
 #palabras {
     margin-left: 200px;
-    padding-top: 88px;
+    padding-top: 100px;
     padding-left: 34px;
 }
 
 
-/* estilo notas */
+/*Estilos para menu_registro_proveedor.php*/
 
-#principal_notas {
-    width: 88%;
+#opciones {
+    font-family: Helvetica, Arial;
+    background: rgb(51, 51, 51, 0.70);
+    width: 85%;
+    text-transform: uppercase;
+    margin: 0px auto;
+}
+
+#opciones ul {
+    line-height: 46px;
+    list-style: none;
+    padding-left: 50px;
+}
+
+#opciones ul li {
+    height: 46px;
+    display: inline-block;
+}
+
+#opciones a:hover {
+    background: white;
+    color: #333;
+    transition: all 700ms;
+    padding-left: 40px;
+    cursor: pointer;
+}
+
+#opciones a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#registro {
+    width: 85%;
     border: 1px solid #e3e4e5;
     margin: 0px auto;
-    margin-top: 2em;
+    margin-top: 3em;
     background: #F9F9F9;
 }
 
@@ -141,13 +176,6 @@ label {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.label1 {
-    font-weight: bold;
-    font-size: 18px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-left: 39rem;
-}
-
 form input[type="text"] {
     padding: 8px;
     border-radius: 2px;
@@ -156,19 +184,6 @@ form input[type="text"] {
     cursor: pointer;
     width: 97%;
     margin: 12px 10px 15px 0;
-    display: inline-block;
-    font-size: 18px;
-}
-
-form input[type="text1"] {
-    padding: 8px;
-    border-radius: 2px;
-    border: 1px solid #ccc;
-    color: #333;
-    cursor: pointer;
-    margin-top: 27px;
-    margin-left: 50px;
-    margin-bottom: 15px;
     display: inline-block;
     font-size: 18px;
 }
@@ -203,38 +218,10 @@ form input[type="text1"] {
     text-align: center;
 }
 
-h3 {
+#encabezado_registro {
     text-align: center;
-}
-
-#div1 {
-    overflow: scroll;
-    height: 300px;
-    margin-top: 30px;
-}
-
-#div1 table {
-    table-layout: fixed;
-    width: 103%;
-    border-collapse: collapse;
-    text-align: center;
-    color: black;
-    font-size: 18.5px;
-    font-family: arial, Geneva, Tahoma, sans-serif;
-    letter-spacing: 1px;
-    border: 2px solid #EDECEC;
-}
-
-#div1 tr {
-    border-bottom: 15pt solid #EDECEC;
-}
-
-#div1 .color {
+    margin-bottom: 45px;
     font-size: 18px;
-    background-color: darkgray;
-    height: 30px;
-    font-weight: bold;
-    padding: 10px;
 }
 
 footer {

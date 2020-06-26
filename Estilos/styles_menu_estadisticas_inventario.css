@@ -84,12 +84,9 @@ body {
     color: black;
 }
 
-
-
-
 #principal {
     margin-left: 200px;
-    background: black; 
+    background: black;
     position: fixed;
     top: 0;
     left: 0;
@@ -123,15 +120,12 @@ body {
     padding-bottom: 70px;
 }
 
-
 #encabezado {
     text-align: left;
     font-family: arial, Geneva, Tahoma, sans-serif;
     margin-bottom: 40px;
     margin-left: 42px;
 }
-
-
 
 #tabla_busqueda {
     width: 93%;
@@ -161,9 +155,6 @@ body {
     border: 2px solid #EDECEC;
 }
 
-
-
-
 #contenedor #formulario_busqueda {
     margin-left: 25px;
     width: 95%;
@@ -192,14 +183,10 @@ body {
     display: inline-block;
 }
 
-
-
 #contenedor #resultados_busqueda {
     margin-left: 553px;
     margin-top: 20px;
 }
-
-
 
 #contenedor #final {
     margin-left: 553px;
@@ -227,144 +214,129 @@ body {
 
 /* Notas estadisticas */
 
-
-
-#contenedor #formulario_busqueda #fecha_inicial
-{    
+#contenedor #formulario_busqueda #fecha_inicial {
     text-align: center;
     font-size: 18px;
-   
 }
 
-
-
-#contenedor #formulario_busqueda #fecha_final
-{    
+#contenedor #formulario_busqueda #fecha_final {
     text-align: center;
     font-size: 18px;
     width: 20px;
     margin-left: 50px;
-    
 }
 
-#contenedor #formulario_busqueda #titulo_estadistica{
-text-align: center;
-font-size: 1.5em;
-}
-
-#contenedor #formulario_busqueda #titulo_reg{
-    margin-left: 34px;
-    
-    }
-    
-
-#contenedor #formulario_busqueda #url{
+#contenedor #formulario_busqueda #titulo_estadistica {
     text-align: center;
-    }
+    font-size: 1.5em;
+}
 
+#contenedor #formulario_busqueda #titulo_reg {
+    margin-left: 34px;
+}
 
+#contenedor #formulario_busqueda #url {
+    text-align: center;
+}
 
 #contenedor #resultados_busqueda input[type="text"] {
-        padding: 10px;
-        border-radius: 5px;
-        border: 1px solid #ccc;
-        color: #333;
-        cursor: pointer;
-        width: 10%;
-        margin: 30px 80px 30px 7px;
-        display: inline-block;
-       
-    }
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    color: #333;
+    cursor: pointer;
+    width: 10%;
+    margin: 30px 80px 30px 7px;
+    display: inline-block;
+}
+
 #contenedor #resultados_busqueda label {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 16px;
-        font-weight: bold;
-        margin-left: 11px;
-     
-    }
-    
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 11px;
+}
+
 #contenedor #formulario_busqueda #selector {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 16px;
-        font-weight: bold;
-    }
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
 
-    #div1 tr {
-        border-bottom: 15pt solid #EDECEC;
-    }
-    #div3 tr {
-        border-bottom: 10pt solid #EDECEC;
-    }
+#div1 tr {
+    border-bottom: 15pt solid #EDECEC;
+}
 
-    
-    .color {
-        font-size: 18px;
-        background-color: darkgray;
-        height: 30px;
-        font-weight: bold;
-        padding: 10px;
-    }
+#div3 tr {
+    border-bottom: 10pt solid #EDECEC;
+}
 
-    #productos_generales {
-        width: 96%;
-        border: 2px solid #e3e4e5;
-        margin: 0px auto;
-        margin-top: 2em;
-        background: #F9F9F9;
-        padding-bottom: 40px;
-    }
+.color {
+    font-size: 18px;
+    background-color: darkgray;
+    height: 30px;
+    font-weight: bold;
+    padding: 10px;
+}
 
+#productos_generales {
+    width: 96%;
+    border: 2px solid #e3e4e5;
+    margin: 0px auto;
+    margin-top: 2em;
+    background: #F9F9F9;
+    padding-bottom: 40px;
+}
 
-    #div3 table {
-        table-layout: fixed;
-        width: 100%;
-        border-collapse: collapse;
-        color: gray;
-        text-align: center;
-        color: black;
-        font-size: 18.5px;
-        font-family: arial, Geneva, Tahoma, sans-serif;
-        letter-spacing: 1px;
-        border: 2px solid #EDECEC;
-    }
+#div3 table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    color: gray;
+    text-align: center;
+    color: black;
+    font-size: 18.5px;
+    font-family: arial, Geneva, Tahoma, sans-serif;
+    letter-spacing: 1px;
+    border: 2px solid #EDECEC;
+}
 
+#contenedor #final input[type="text1"] {
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    color: #333;
+    cursor: pointer;
+    width: 20%;
+    margin: 30px 80px 30px 7px;
+    display: inline-block;
+    margin-left: 30px;
+}
 
-    #contenedor #final input[type="text1"] {
-        padding: 12px;
-        border-radius: 5px;
-        border: 1px solid #ccc;
-        color: #333;
-        cursor: pointer;
-        width: 20%;
-        margin: 30px 80px 30px 7px;
-        display: inline-block;
-        margin-left: 30px;
-    }
-
-    #contenedor #final #dinero{
+#contenedor #final #dinero {
     font-size: 18px;
     margin-left: 220px;
-    }
-    
-    #tabla_general {
+}
+
+#tabla_general {
     width: 90%;
     margin: 0px auto;
-    }
+}
 
-    #div3 {
-        overflow: scroll;
-        height: 300px;
-    }
-    #contenedor #productos_generales #fecha_inicia{
-        font-size: 18px ;
-        margin-left: 15px;
-    }
+#div3 {
+    overflow: scroll;
+    height: 300px;
+}
 
-    #contenedor #productos_generales #fecha_final{
-        font-size: 18px  ;
-        margin-left: 50px;
-    }
+#contenedor #productos_generales #fecha_inicia {
+    font-size: 18px;
+    margin-left: 15px;
+}
 
+#contenedor #productos_generales #fecha_final {
+    font-size: 18px;
+    margin-left: 50px;
+}
 
 #contenedor #productos_generales input[type="submit"] {
     padding: 5px;
@@ -379,8 +351,7 @@ font-size: 1.5em;
     margin-left: 25px;
 }
 
-#contenedor #productos_generales #tienda
-{    
+#contenedor #productos_generales #tienda {
     text-align: center;
     font-size: 18px;
 }
@@ -389,7 +360,6 @@ font-size: 1.5em;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     font-weight: bold;
-    
 }
 
 #contenedor form input[type="submit"] {
@@ -410,4 +380,24 @@ font-size: 1.5em;
     font-size: 16px;
     letter-spacing: 1px;
     margin-left: 50px;
+}
+
+footer {
+    font-family: Helvetica, Arial;
+    color: white;
+    height: 65px;
+    background: rgb(51, 51, 51, 0.70);
+    margin: 0px auto;
+    width: 66%;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 75px;
+    line-height: 60px;
+}
+
+.subir {
+    color: white;
+    text-decoration: none;
+    display: block;
+    float: right;
 }

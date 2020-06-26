@@ -4,7 +4,8 @@
     <title>Visualizar y realizar búsquedas</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="../Estilos/styles_menu_ver_y_buscar.css" />
-  
+    <script src="../js/jquery.min.js"></script> <!--Libreria Jquery -->
+    <script type="text/javascript" src="../js/main.js"></script><!-- Script -->
 </head>
 <body>
 
@@ -28,7 +29,7 @@
    
         <div id="formulario_busqueda">
             <form>
-                <center> <h2> Buscar Productos y Proveedores </h2></center>
+                <h2> Buscar Productos y Proveedores </h2>
                 <h3>Busqueda por Proveedor</h3>
                 <label id="busqueda1" for="busqueda1">Busqueda por proveedor</label>
                 <input type="checkbox" name="busqueda1"/></br>
@@ -280,6 +281,11 @@
             <label for="total">Total dinero</label>
             <input type="text" name="total"/>
         </div>
+        <footer>
+	        Abarrotes Estrella &copy;
+
+	        <a href="#" class="subir">Ir arriba</a>
+        </footer>
     </div>
 </body>
 </html>

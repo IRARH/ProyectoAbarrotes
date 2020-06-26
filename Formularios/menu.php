@@ -4,6 +4,8 @@
     <title>Menú Principal</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="../Estilos/styles_menu.css" />
+    <script src="../js/jquery.min.js"></script> <!--Libreria Jquery -->
+    <script type="text/javascript" src="../js/main.js"></script><!-- Script -->
 </head>
 <body>
     <div class="navegacion">
@@ -208,6 +210,11 @@
                 </form>
             </div>
         </section>
+        <footer>
+	        Abarrotes Estrella &copy;
+
+	        <a href="#" class="subir">Ir arriba</a>
+        </footer>
     </div>
 </body>
 </html>

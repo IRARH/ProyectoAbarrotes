@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <title>Menu de opciones de registro</title>
+    <title>Dar de alta un tipo de producto</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="../Estilos/styles_menu_registro.css" />
+    <link rel="stylesheet" href="../Estilos/styles_menu_registro_tipoProducto.css" />
+    <script src="../js/jquery.min.js"></script> <!--Libreria Jquery -->
+    <script type="text/javascript" src="../js/main.js"></script><!-- Script -->
 </head>
 <body>
     <div class="navegacion">
@@ -28,6 +30,31 @@
 				<li><a href="menu_registro_tipoProducto.php">Registrar tipo de producto</a></li>
 			</ul>
 		</nav>
+        <section id="registro">
+            <header id="encabezado_registro">
+                <h2>Registro de tipo de productos </h2>
+            </header>
+            <div id="formulario">
+                <form action="#" method="POST">
+                    <label for="start">Fecha</label>
+                    <input type="date" id="start" name="trip-start" value="2020-06-07" min="2020-01-01" max="2100-12-31"></br></br>
+
+                    <label for="tipo">Tipo de producto</label>
+                    <input type="text" name="tipo" id="tipo" required />
+
+                    <label for="nombre">Nombre del producto</label>
+                    <input type="text" name="nombre" id="nombre" required />
+                </form>
+            </div>
+            <div id="final">
+                <input type="submit" value="Dar de alta tipo de producto" />
+            </div>
+        </section>
+        <footer>
+	        Abarrotes Estrella &copy;
+
+	        <a href="#" class="subir">Ir arriba</a>
+        </footer>
     </div>
 </body>
 </html>

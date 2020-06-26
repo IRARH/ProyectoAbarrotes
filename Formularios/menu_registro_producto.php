@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <title>Actulizar Stock</title>
+    <title>Dar de alta un Producto Nuevo</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="../Estilos/styles_menu_actualizar.css" />
+    <link rel="stylesheet" href="../Estilos/styles_menu_registro_producto.css" />
     <script src="../js/jquery.min.js"></script> <!--Libreria Jquery -->
     <script type="text/javascript" src="../js/main.js"></script><!-- Script -->
 </head>
@@ -23,14 +23,22 @@
         <h2>Tienda de abarrotes estrella</h2>
     </nav>
     <div id="palabras">
+        <nav id="opciones">
+			<ul>
+				<li><a href="menu_registro_producto.php">Registrar Producto</a></li>
+				<li><a href="menu_registro_proveedor.php">Registrar Proveedor</a></li>
+				<li><a href="menu_registro_tipoProducto.php">Registrar tipo de producto</a></li>
+			</ul>
+		</nav>
         <section id="registro">
             <header id="encabezado_registro">
-                <h2>Actualizar Stock</h2>
+                <h2>Registro de Productos </h2>
             </header>
             <div id="formulario">
-                <label for="start">Fecha</label>
-                <input type="date" id="start" name="trip-start" value="2020-06-07" min="2020-01-01" max="2100-12-31"></br></br>
                 <form action="#" method="POST">
+                    <label for="start">Fecha</label>
+                    <input type="date" id="start" name="trip-start" value="2020-06-07" min="2020-01-01" max="2100-12-31"></br></br>
+
                     <label for="codigo_barras">Codigo de Barras</label>
                     <input type="text" name="codigo_barras" id="codigo_barras" required />
 
@@ -63,7 +71,7 @@
                 </form>
             </div>
             <div id="final">
-                <input type="submit" value="Registrar Actulización " />
+                <input type="submit" value="Registrar producto" />
             </div>
         </section>
         <footer>

@@ -4,6 +4,8 @@
     <title>Eliminar Producto</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="../Estilos/styles_menu_eliminar.css" />
+    <script src="../js/jquery.min.js"></script> <!--Libreria Jquery -->
+    <script type="text/javascript" src="../js/main.js"></script><!-- Script -->
 </head>
 <body>
     <div class="navegacion">
@@ -60,6 +62,11 @@
                 <input type="submit" value="Eliminar Producto" />
             </div>
         </section>
+        <footer>
+	        Abarrotes Estrella &copy;
+
+	        <a href="#" class="subir">Ir arriba</a>
+        </footer>
     </div>
 </body>
 </html>
