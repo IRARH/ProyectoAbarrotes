@@ -68,10 +68,8 @@
 
                     <label for="precio_total">Precio Total</label>
                     <input type="text" name="precio_total" id="precio_total" required />
+                    <span id="botonEnviar"><input type="submit" value="Registrar producto" /></span>
                 </form>
-            </div>
-            <div id="final">
-                <input type="submit" value="Registrar producto" />
             </div>
         </section>
         <footer>
