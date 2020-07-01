@@ -148,6 +148,23 @@ label {
     margin-left: 39rem;
 }
 
+#fecha_final {
+    text-align: center;
+    font-size: 18px;
+    width: 20px;
+    margin-left: 50px;
+}
+
+input[type="date" i] {
+    align-items: center;
+    display: -webkit-inline-flex;
+    font-family: monospace;
+    padding-inline-start: 1px;
+    cursor: default;
+    overflow: hidden;
+    padding: 0px;
+}
+
 form input[type="text"] {
     padding: 8px;
     border-radius: 2px;
@@ -255,6 +272,13 @@ footer {
     text-decoration: none;
     display: block;
     float: right;
+}
+
+
+#selector {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 /* Menú de actualizar notas */

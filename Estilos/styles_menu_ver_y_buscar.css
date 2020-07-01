@@ -103,6 +103,10 @@ body {
     text-align: left;
 }
 
+#contenedor #formulario_busqueda h2{
+    text-align: center; 
+}
+
 #contenedor {
     margin-left: 200px;
     padding-top: 100px;

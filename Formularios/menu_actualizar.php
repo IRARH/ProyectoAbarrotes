@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <title>Actulizar Stock</title>
+    <title>Medu de actualizacion</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="../Estilos/styles_menu_actualizar.css" />
-    <script src="../js/jquery.min.js"></script> <!--Libreria Jquery -->
-    <script type="text/javascript" src="../js/main.js"></script><!-- Script -->
 </head>
 <body>
     <div class="navegacion">
@@ -22,55 +20,16 @@
     <nav id="principal">
         <h2>Tienda de abarrotes estrella</h2>
     </nav>
+
     <div id="palabras">
-        <section id="registro">
-            <header id="encabezado_registro">
-                <h2>Actualizar Stock</h2>
-            </header>
-            <div id="formulario">
-                <label for="start">Fecha</label>
-                <input type="date" id="start" name="trip-start" value="2020-06-07" min="2020-01-01" max="2100-12-31"></br></br>
-                <form action="#" method="POST">
-                    <label for="codigo_barras">Codigo de Barras</label>
-                    <input type="text" name="codigo_barras" id="codigo_barras" required />
-
-                    <label for="nombre_producto">Nombre del Proveedor</label>
-                    <input type="text" name="nombre_producto" id="nombre_producto" required />
-
-                    <label for="marca_producto">Marca del Producto</label>
-                    <input type="text" name="marca_producto" id="marca_producto" required />
-
-                    <label for="tipo_producto">Tipo de Producto</label>
-                    <input type="text" name="tipo_producto" id="tipo_producto" required />
-
-                    <label for="precio_pieza">Costo Compra</label>
-                    <input type="text" name="precio_pieza" id="precio_pieza" required />
-
-                    <label for="precio_pieza">Costo Venta</label>
-                    <input type="text" name="precio_pieza" id="precio_pieza" required />
-
-                    <label for="cantidad_pieza">Cantidad de Piezas</label>
-                    <input type="text" name="cantidad_pieza" id="cantidad_pieza" required />
-
-                    <label for="pieza_caja">Piezas por Caja</label>
-                    <input type="text" name="pieza_caja" id="pieza_caja" required />
-
-                    <label for="cantidad_cajas">Cantidad de Cajas</label>
-                    <input type="text" name="cantidad_pieza" id="cantidad_pieza" required />
-
-                    <label for="precio_total">Precio Total</label>
-                    <input type="text" name="precio_total" id="precio_total" required />
-                </form>
-            </div>
-            <div id="final">
-                <input type="submit" value="Registrar Actulización " />
-            </div>
-        </section>
-        <footer>
-	        Abarrotes Estrella &copy;
-
-	        <a href="#" class="subir">Ir arriba</a>
-        </footer>
+        <nav id="opciones">
+			<ul>
+                <li><a href="menu_actualizar_producto.php">Actualizar Stock</a></li>
+				<li><a href="menu_actualizar_precios.php">Actualizar Precios</a></li>
+			</ul>
+		</nav>
     </div>
+
+    
 </body>
 </html>

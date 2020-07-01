@@ -20,6 +20,7 @@
     <nav id="principal">
         <h2>Tienda de abarrotes estrella</h2>
     </nav>
+
     <div id="palabras">
         <nav id="opciones">
 			<ul>
@@ -29,5 +30,7 @@
 			</ul>
 		</nav>
     </div>
+
+    
 </body>
 </html>

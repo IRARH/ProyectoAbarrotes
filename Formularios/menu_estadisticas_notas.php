@@ -28,6 +28,7 @@
             <h3>Busqueda Especifica</h3>
             <form>
                 <label id='fecha_inicial'>Seleccionar Tienda</label>
+                
                 <select name="select" id="selector">
                     <option value="value1" selected>Rayo</option>
                     <option value="value2">Estrella</option>
