@@ -36,15 +36,13 @@
             </header>
             <div id="formulario">
                 <form action="#" method="POST">
-                    <label for="start">Fecha</label>
-                    <input type="date" id="start" name="trip-start" value="2020-06-07" min="2020-01-01" max="2100-12-31"></br></br>
+                    <label for="fecha">Fecha</label>
+                    <input type="date" id="fecha" name="fecha"  min="2020-01-01" max="2100-12-31"></br></br>
 
                     <label for="proveedor">Nombre del Proveedor</label>
-                    <input type="text" name="proveedor" id="proveedor" required />
+                    <input type="text" name="proveedor" id="proveedor" placeholder="proveedor" required />
+                    <span id="botonEnviar"><input type="submit" value="Registrar proveedor" /></span>
                 </form>
-            </div>
-            <div id="final">
-                <input type="submit" value="Dar de alta Proveedor " />
             </div>
         </section>
         <footer>

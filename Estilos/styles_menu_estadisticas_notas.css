@@ -233,16 +233,27 @@ body {
 
 /* Notas estadisticas */
 
-#contenedor #formulario_busqueda #fecha_inicial {
+#contenedor #formulario_busqueda #fecha {
+    text-align: center;
+    font-size: 18px;
+    margin-left: 20px;
+}
+
+#contenedor #formulario_busqueda #destinatario {
     text-align: center;
     font-size: 18px;
 }
 
-#contenedor #formulario_busqueda #fecha_final {
+#contenedor #busqueda_rango #fecha_inicial {
     text-align: center;
     font-size: 18px;
-    width: 20px;
-    margin-left: 50px;
+    margin-left: 20px;
+}
+
+#contenedor #busqueda_rango #fecha_final {
+    text-align: center;
+    font-size: 18px;
+    margin-left: 10px;
 }
 
 #contenedor #formulario_busqueda #titulo_estadistica {
@@ -343,14 +354,14 @@ body {
     height: 300px;
 }
 
-#contenedor #productos_generales #fecha_inicia {
+#contenedor #productos_generales #fecha_inicial {
     font-size: 18px;
-    margin-left: 15px;
+    margin-left: 25px;
 }
 
 #contenedor #productos_generales #fecha_final {
     font-size: 18px;
-    margin-left: 50px;
+    margin-left: 20px;
 }
 
 #contenedor #productos_generales input[type="submit"] {

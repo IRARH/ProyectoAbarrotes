@@ -36,38 +36,42 @@
             </header>
             <div id="formulario">
                 <form action="#" method="POST">
-                    <label for="start">Fecha</label>
-                    <input type="date" id="start" name="trip-start" value="2020-06-07" min="2020-01-01" max="2100-12-31"></br></br>
+                    <label for="fecha">Fecha</label>
+                    <input type="date" id="fecha" name="fecha" min="2020-01-01" max="2100-12-31"></br></br>
 
-                    <label for="codigo_barras">Codigo de Barras</label>
-                    <input type="text" name="codigo_barras" id="codigo_barras" required />
+                    <label for="codigo">Codigo de Barras</label>
+                    <input type="text" name="codigo" id="codigo" placeholder="escaneo código" required  />
 
-                    <label for="nombre_producto">Nombre del Proveedor</label>
-                    <input type="text" name="nombre_producto" id="nombre_producto" required />
+                    <label for="proveedor">Nombre del Proveedor</label>
+                    <input type="text" name="proveedor" id="proveedor" placeholder="proveedor" required />
 
-                    <label for="marca_producto">Marca del Producto</label>
-                    <input type="text" name="marca_producto" id="marca_producto" required />
+                    <label for="marca">Marca del Producto</label>
+                    <input type="text" name="marca" id="marca" placeholder="marca" required />
 
-                    <label for="tipo_producto">Tipo de Producto</label>
-                    <input type="text" name="tipo_producto" id="tipo_producto" required />
+                    <label for="tipo">Tipo de Producto</label>
+                    <input type="text" name="tipo" id="tipo" placeholder="tipo" required />
 
-                    <label for="precio_pieza">Costo Compra</label>
-                    <input type="text" name="precio_pieza" id="precio_pieza" required />
+                    <label for="costo_compra">Costo Compra</label>
+                    <input type="text" name="costo_compra" id="costo_compra" placeholder="costo compra" required />
 
-                    <label for="precio_pieza">Costo Venta</label>
-                    <input type="text" name="precio_pieza" id="precio_pieza" required />
+                    <label for="costo_venta">Costo Venta</label>
+                    <input type="text" name="costo_venta" id="costo_venta" placeholder="costo venta" required />
 
-                    <label for="cantidad_pieza">Cantidad de Piezas</label>
-                    <input type="text" name="cantidad_pieza" id="cantidad_pieza" required />
+                    <label for="cantidad_piezas">Cantidad de Piezas</label>
+                    <input type="text" name="cantidad_piezas" id="cantidad_piezas" placeholder="cantidad piezas" required />
 
-                    <label for="pieza_caja">Piezas por Caja</label>
-                    <input type="text" name="pieza_caja" id="pieza_caja" required />
+                    <label for="piezas_caja">Piezas por Caja</label>
+                    <input type="text" name="piezas_caja" id="piezas_caja" placeholder="piezas por caja" required />
 
                     <label for="cantidad_cajas">Cantidad de Cajas</label>
-                    <input type="text" name="cantidad_pieza" id="cantidad_pieza" required />
+                    <input type="text" name="cantidad_pieza" id="cantidad_pieza" placeholder="cantidad cajas" required />
 
-                    <label for="precio_total">Precio Total</label>
-                    <input type="text" name="precio_total" id="precio_total" required />
+                    <label for="total_venta">Precio Total de Venta</label>
+                    <input type="text" name="total_venta" id="total_venta" placeholder="total venta" required />
+
+                    <label for="total_compra">Precio Total de Compra</label>
+                    <input type="text" name="total_compra" id="total_compra" placeholder="total compra" required />
+
                     <span id="botonEnviar"><input type="submit" value="Registrar producto" /></span>
                 </form>
             </div>

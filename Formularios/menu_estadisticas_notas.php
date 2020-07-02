@@ -26,22 +26,21 @@
         <div id="formulario_busqueda">
             <h2 id='titulo_estadistica'>Estadísticas de Notas</h2>
             <h3>Busqueda Especifica</h3>
-            <form>
-                <label id='fecha_inicial'>Seleccionar Tienda</label>
-                
-                <select name="select" id="selector">
-                    <option value="value1" selected>Rayo</option>
-                    <option value="value2">Estrella</option>
+            <form action="#" method="POST">
+                <label id='destinatario'>Seleccionar Tienda</label>
+                <select name="destinatario" id="destinatario">
+                    <option>Rayo</option>
+                    <option>Estrella</option>
                 </select>
 
-                <label id='fecha_final'>Fecha </label>
-                <input type="date" id="start" name="trip-start" value="2020-06-07" min="2020-01-01" max="2100-12-31">
+                <label id='fecha'>Fecha </label>
+                <input type="date" id="fecha" name="fecha"  min="2020-01-01" max="2100-12-31">
 
                 <input type="submit" value="BUSCAR" />
                 <br>
 
-                <label id='url'>URL del archivo: </label>
-                <input type="text" name="codigo" placeholder="código producto" />
+                <label id='url' >URL del archivo: </label>
+                <input type="text" name="url" id="url" placeholder="url de búsqueda" />
             </form>
         </div>
         <section id="productos_busqueda">
@@ -129,31 +128,31 @@
         </section>
         <div id="resultados_busqueda">
             <label for="total_piezas_busqueda">Total / pza</label>
-            <input type="text" name="total_piezas_busqueda" />
+            <input type="text" name="total_piezas_busqueda" id="total_piezas_busqueda" />
 
             <label for="total_busqueda">Total dinero</label>
-            <input type="text" name="total_busqueda" />
+            <input type="text" name="total_busqueda" id="total_busqueda" />
         </div>
         <section id="productos_generales">
             <header id="encabezado">
-                <h2>Busqueda por Rango</h2>
-                
+                <form id="busqueda_rango" action="#" method="POST">
+                    <h2>Busqueda por Rango</h2>
+                    
 
-                <label id='tienda'>Seleccionar Tienda</label>
-                <select name="select" id="selector">
-                    <option value="value1" selected>Rayo</option>
-                    <option value="value2">Estrella</option>
-                </select>
+                    <label id='tienda'>Seleccionar Tienda</label>
+                    <select name="tienda" id="tienda">
+                        <option>Rayo</option>
+                        <option>Estrella</option>
+                    </select>
 
+                    <label id='fecha_inicial'>Fecha Inicial</label>
+                    <input type="date" id="fecha_inicial" name="fecha_inicial" min="2020-01-01" max="2100-12-31">
 
+                    <label id='fecha_final'>Fecha Final</label>
+                    <input type="date" id="fecha_final" name="fecha_final" min="2020-01-01" max="2100-12-31">
 
-                <label id='fecha_inicia'>Fecha Inicial</label>
-                <input type="date" id="start" name="trip-start" value="2020-06-07" min="2020-01-01" max="2100-12-31">
-
-                <label id='fecha_final'>Fecha Final</label>
-                <input type="date" id="start" name="trip-start" value="2020-06-07" min="2020-01-01" max="2100-12-31">
-
-                <input type="submit" value="BUSCAR" />
+                    <input type="submit" value="BUSCAR" />
+                </form>
                 <h2>Arhivos encontrados</h2>
             </header>
             <div id="tabla_general">

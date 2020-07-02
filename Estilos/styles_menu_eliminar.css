@@ -148,7 +148,7 @@ label {
     margin-left: 57rem;
 }
 
-form input[type="text"] {
+#formulario input[type="text"] {
     padding: 8px;
     border-radius: 2px;
     border: 1px solid #ccc;
@@ -160,7 +160,7 @@ form input[type="text"] {
     font-size: 18px;
 }
 
-#final input[type="submit"] {
+#formulario span input[type="submit"] {
     background: #dc3545;
     opacity: 80%;
     padding: 15px;
@@ -169,25 +169,19 @@ form input[type="text"] {
     color: white;
     border-radius: 4px;
     width: 90%;
-    margin-left: 0px;
-    margin: 12px 8px 15px 0;
     font-size: 15px;
     font-weight: 700;
-    margin: 0px auto;
+    margin: 15px;
 }
 
-#final span a {
-    margin: 0 auto;
-    text-decoration: none;
-    color: #1a73e8;
-}
-
-#final {
-    margin-top: 10px;
-    padding: 15px;
+#formulario #botonEnviar {
+    margin: 40px 0px 0px 0px;
+    padding: 6px;
     background-color: #e3e4e5;
     border: 0px solid #000000;
     text-align: center;
+    width: 97.3%;
+    display: inline-block;
 }
 
 h3 {
@@ -197,11 +191,12 @@ h3 {
 #div1 {
     overflow: scroll;
     height: 300px;
+    width: 98.7%;
 }
 
 #div1 table {
     table-layout: fixed;
-    width: 150%;
+    width: 145%;
     border-collapse: collapse;
     text-align: center;
     color: black;

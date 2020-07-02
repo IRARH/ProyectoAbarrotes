@@ -28,30 +28,33 @@
     <div id="contenedor">
    
         <div id="formulario_busqueda">
-            <form>
+            <form action="#" method="POST">
                 <h2> Buscar Productos y Proveedores </h2>
                 <h3>Busqueda por Proveedor</h3>
+
                 <label id="busqueda1" for="busqueda1">Busqueda por proveedor</label>
-                <input type="checkbox" name="busqueda1"/></br>
+                <input type="checkbox" name="busqueda1" id="busqueda1"/></br>
+
                 <label for="proveedor">Proveedor</label>
                 <input type="text" name="proveedor" placeholder="proveedor"/>
                 <hr>
+                
                 <h3>Busqueda por Producto</h3>
                 
                 <label id="busqueda2" for="busqueda2">Busqueda por código y producto</label>
-                <input type="checkbox" name="busqueda2"/>
+                <input type="checkbox" name="busqueda2" id="busqueda2"/>
 
                 <label for="encolar">Encolar búsquedas</label>
-                <input type="checkbox" name="encolar"/></br>
+                <input type="checkbox" name="encolar" id="encolar"/></br>
 
                 
                 <label for="codigo">Código de producto</label>
-                <input type="text" name="codigo" placeholder="código producto"/>
+                <input type="text" name="codigo" id="codigo" placeholder="escaneo producto"/>
 
                 <label for="producto">Nombre producto</label>
-                <input type="text" name="producto" placeholder="nombre producto"/>
+                <input type="text" name="producto" id="producto" placeholder="nombre producto"/>
             </br><br>
-                <input type="submit" value="BUSCAR"/>
+                <input type="submit" value="Realizar Búsqueda"/>
             </form>
         </div>
         <section id="productos_busqueda">

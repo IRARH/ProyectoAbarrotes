@@ -29,11 +29,11 @@
             </header>
             <div id="formulario">
                 <form action="#" method="POST">
-                    <label for="start">Fecha</label>
-                    <input type="date" id="start" name="trip-start" value="2020-06-07" min="2020-01-01" max="2100-12-31"></br></br>
+                    <label for="fecha">Fecha</label>
+                    <input type="date" id="fecha" name="fecha" min="2020-01-01" max="2100-12-31"></br></br>
 
-                    <label for="codigo_barra">Ingresa Codigo de Barra</label>
-                    <input type="text" name="correo" id="correo" required placeholder="" />
+                    <label for="codigo">Ingresa Codigo de Barra</label>
+                    <input type="text" name="codigo" id="codigo" placeholder="escaneo codigo" required />
                     <div id="div1">
                         <table>
                             <tr>
@@ -41,7 +41,7 @@
                                 <td class=color>Nombre de Producto</td>
                                 <td class=color>Marca</td>
                                 <td class=color>Tipo</td>
-                                <td class=color>Cantidad</td class=color>
+                                <td class=color>Cantidad
                                 <td class=color>Precio</td>
                                 <td class=color>Subtotal</td>
                             </tr>
@@ -56,10 +56,8 @@
                             </tr>
                         </table>
                     </div>
+                    <span id="botonEnviar"><input type="submit" value="Eliminar producto" /></span>
                 </form>
-            </div>
-            <div id="final">
-                <input type="submit" value="Eliminar Producto" />
             </div>
         </section>
         <footer>

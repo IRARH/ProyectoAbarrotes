@@ -105,7 +105,7 @@ body {
 
 #palabras {
     margin-left: 200px;
-    padding-top: 88px;
+    padding-top: 100px;
     padding-left: 34px;
 }
 
@@ -160,7 +160,7 @@ form input[type="text"] {
     font-size: 18px;
 }
 
-form input[type="text1"] {
+#formulario input[type="text1"] {
     padding: 8px;
     border-radius: 2px;
     border: 1px solid #ccc;
@@ -173,7 +173,7 @@ form input[type="text1"] {
     font-size: 18px;
 }
 
-#final input[type="submit"] {
+#formulario span input[type="submit"] {
     background: #dc3545;
     opacity: 80%;
     padding: 15px;
@@ -182,25 +182,19 @@ form input[type="text1"] {
     color: white;
     border-radius: 4px;
     width: 90%;
-    margin-left: -1px;
-    margin: 12px 8px 15px 0;
     font-size: 15px;
     font-weight: 700;
-    margin: 0px auto;
+    margin: 15px;
 }
 
-#final span a {
-    margin: 0 auto;
-    text-decoration: none;
-    color: #1a73e8;
-}
-
-#final {
-    margin-top: 10px;
-    padding: 15px;
+#formulario #botonEnviar {
+    margin: 30px 0px 0px 0px;
+    padding: 6px;
     background-color: #e3e4e5;
     border: 0px solid #000000;
     text-align: center;
+    width: 97.3%;
+    display: inline-block;
 }
 
 h3 {
@@ -211,6 +205,7 @@ h3 {
     overflow: scroll;
     height: 300px;
     margin-top: 30px;
+    width: 98.7%;
 }
 
 #div1 table {
@@ -258,7 +253,8 @@ footer {
 }
 
 
-/* Menú de actualizar notas */
+/* Menú de registro notas */
+
 #opciones {
     font-family: Helvetica, Arial;
     background: rgb(51, 51, 51, 0.70);

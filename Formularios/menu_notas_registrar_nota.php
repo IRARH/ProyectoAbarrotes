@@ -5,8 +5,7 @@
     <title>Actualizar Precios</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="../Estilos/styles_notas_registrar_nota.css" />
-    <script src="../js/jquery.min.js"></script>
-    <!--Libreria Jquery -->
+    <script src="../js/jquery.min.js"></script><!--Libreria Jquery -->
     <script type="text/javascript" src="../js/main.js"></script><!-- Script -->
 </head>
 
@@ -29,27 +28,24 @@
 
         <nav id="opciones">
             <ul>
-
-            <li><a href="menu_notas_registrar_nota.php">Registrar Nota</a></li>
+                <li><a href="menu_notas_registrar_nota.php">Registrar Nota</a></li>
                 <li><a href="menu_notas_actualizar_nota.php">Actualizar Nota</a></li>
             </ul>
         </nav>
-
-
         <section id="principal_notas">
             <header id="encabezado">
                 <h2>Registro de Nota </h2>
             </header>
             <div id="formulario">
                 <form action="#" method="POST">
-                    <label for="start">Fecha</label>
-                    <input type="date" id="start" name="trip-start" value="2020-06-07" min="2020-01-01" max="2100-12-31"></br></br>
+                    <label for="fecha">Fecha</label>
+                    <input type="date" id="fecha" name="fecha" min="2020-01-01" max="2100-12-31"></br></br>
 
-                    <label for="codigo_barra">Ingresa Codigo de Barra</label>
-                    <input type="text" name="correo" id="correo" required placeholder="" />
+                    <label for="codigo">Ingresa Codigo de Barra</label>
+                    <input type="text" name="codigo" id="codigo" required placeholder="escaneo codigo" />
 
                     <label for="destinatario">Destinatario</label>
-                    <input type="text" name="correo" id="correo" required placeholder="" />
+                    <input type="text" name="destinatario" id="destinatario" required placeholder="destinatario" />
                     <div id="div1">
                         <table>
                             <tr>
@@ -153,15 +149,13 @@
                             </tr>
                         </table>
                     </div>
+
                     <label class="label1">Total</label>
-                    <input type="text1" name="correo" id="correo" value="$2500" required placeholder="" />
+                    <input type="text1" name="total" id="total" required />
+                    
+                    <span id="botonEnviar"><input type="submit" value="Registrar producto" /></span>
                 </form>
             </div>
-            <div id="final">
-                <input type="submit" value="Crear nota" />
-            </div>
-
-
         </section>
         <footer>
             Abarrotes Estrella &copy;

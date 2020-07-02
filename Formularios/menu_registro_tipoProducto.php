@@ -36,18 +36,16 @@
             </header>
             <div id="formulario">
                 <form action="#" method="POST">
-                    <label for="start">Fecha</label>
-                    <input type="date" id="start" name="trip-start" value="2020-06-07" min="2020-01-01" max="2100-12-31"></br></br>
+                    <label for="fecha">Fecha</label>
+                    <input type="date" id="fecha" name="fecha" min="2020-01-01" max="2100-12-31"></br></br>
 
                     <label for="tipo">Tipo de producto</label>
-                    <input type="text" name="tipo" id="tipo" required />
+                    <input type="text" name="tipo" id="tipo" placeholder="tipo" required />
 
-                    <label for="nombre">Nombre del producto</label>
-                    <input type="text" name="nombre" id="nombre" required />
+                    <label for="marca">Marca del producto</label>
+                    <input type="text" name="marca" id="marca" placeholder="marca" required />
+                    <span id="botonEnviar"><input type="submit" value="Registrar tipo" /></span>
                 </form>
-            </div>
-            <div id="final">
-                <input type="submit" value="Dar de alta tipo de producto" />
             </div>
         </section>
         <footer>

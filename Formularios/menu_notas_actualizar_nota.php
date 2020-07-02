@@ -29,10 +29,8 @@
 
         <nav id="opciones">
             <ul>
-
                 <li><a href="menu_notas_registrar_nota.php">Registrar Nota</a></li>
                 <li><a href="menu_notas_actualizar_nota.php">Actualizar Nota</a></li>
-
             </ul>
         </nav>
 
@@ -50,7 +48,7 @@
                 </select>
 
                 <label id='fecha_final'>Fecha</label>
-                    <input type="date" id="start" name="trip-start" value="2020-06-07" min="2020-01-01" max="2100-12-31"></br></br>
+                    <input type="date" id="fecha" name="fecha"  min="2020-01-01" max="2100-12-31"></br></br>
 
                     
                     <div id="div1">
@@ -158,10 +156,8 @@
                     </div>
                     <label class="label1">Total</label>
                     <input type="text1" name="correo" id="correo" value="$2500" required placeholder="" />
+                    <span id="botonEnviar"><input type="submit" value="Registrar producto" /></span>
                 </form>
-            </div>
-            <div id="final">
-                <input type="submit" value="Actualizar nota" />
             </div>
 
 

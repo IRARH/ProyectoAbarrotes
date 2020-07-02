@@ -105,7 +105,7 @@ body {
 
 #palabras {
     margin-left: 200px;
-    padding-top: 88px;
+    padding-top: 100px;
     padding-left: 34px;
 }
 
@@ -257,7 +257,9 @@ footer {
     float: right;
 }
 
+
 /* Menú de actualizar notas */
+
 #opciones {
     font-family: Helvetica, Arial;
     background: rgb(51, 51, 51, 0.70);

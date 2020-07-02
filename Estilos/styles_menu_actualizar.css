@@ -105,7 +105,7 @@ body {
 
 #palabras {
     margin-left: 200px;
-    padding-top: 88px;
+    padding-top: 100px;
     padding-left: 34px;
 }
 
@@ -210,12 +210,12 @@ footer {
 }
 
 
+/* Estilos para menu_actualizar.php*/
 
-/* Estilos para menu_registro.php*/
 #opciones {
     font-family: Helvetica, Arial;
     background: rgb(51, 51, 51, 0.70);
-    width: 40%;
+    width: 43%;
     text-transform: uppercase;
     margin: 0px auto;
 }
@@ -223,7 +223,7 @@ footer {
 #opciones ul {
     line-height: 46px;
     list-style: none;
-    padding-left: 60px;
+    padding-left: 35px;
 }
 
 #opciones ul li {

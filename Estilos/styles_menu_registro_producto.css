@@ -176,7 +176,7 @@ label {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-form input[type="text"] {
+#formulario input[type="text"] {
     padding: 8px;
     border-radius: 2px;
     border: 1px solid #ccc;

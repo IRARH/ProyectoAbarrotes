@@ -34,18 +34,17 @@
         <div id="formulario_busqueda">
             <h2 id='titulo_estadistica'>Estadísticas de Inventario</h2>
             <h2 id='titulo_reg'>Busqueda de Registro Entrada y Salida</h2>
-            <form>
+            <form action="#" method="POST">
             
                 <label id='fecha_final'>Fecha</label>
-                <input type="date" id="start" name="trip-start" value="2020-06-07" min="2020-01-01" max="2100-12-31">
+                <input type="date" id="fecha" name="fecha" min="2020-01-01" max="2100-12-31">
                 <input type="submit" value="BUSCAR" />
                 <br>
                 <label id='inv_inicial'>Inventario Inicial</label>
-                <input type="text" name="codigo" />
+                <input type="text" name="inv_inicial" id="inv_inicial"/>
 
                 <label id='inv_final'>Inventario Incial</label>
-                <input type="text" name="codigo" />
-
+                <input type="text" name="inv_final" id="inv_final" />
 
             </form>
         </div>
@@ -83,13 +82,15 @@
         
             <header id="encabezado">
             <h2>Busqueda por Rango</h2>
+            <form action="#" method="POST">
                 <label id='fecha_inicia'>Fecha Inicial</label>
-                <input type="date" id="start" name="trip-start" value="2020-06-07" min="2020-01-01" max="2100-12-31">
+                <input type="date" id="fecha_inicio" name="fecha_inicio" min="2020-01-01" max="2100-12-31">
 
                 <label id='fecha_final'>Fecha Final</label>
-                <input type="date" id="start" name="trip-start" value="2020-06-07" min="2020-01-01" max="2100-12-31">
-                <input type="submit" value="BUSCAR" />
+                <input type="date" id="fecha_termino" name="fecha_termino"min="2020-01-01" max="2100-12-31">
                
+                <input type="submit" value="BUSCAR" />
+            </form>   
             </header>
             
 
