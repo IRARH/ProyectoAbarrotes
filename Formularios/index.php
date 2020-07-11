@@ -12,19 +12,18 @@
         </header>
         
         <div id="formulario">    
-            <form action="#" method="POST">
-                <label for="correo">Ingresa correo</label>
-                <input type="email" name="correo" id="correo" required placeholder="Digita correo"/>
+            <form action="../Clases/validarLogin.php" method="POST">
+                <label for="usuario">Ingresa usuario</label>
+                <input type="text" name="usuario" required placeholder="Usuario"/>
                 
                 <label for="password">Password</label>
-                <input type="password" name="password" id="password" required placeholder="Digita Contraseña"/>
+                <input type="password" name="password" minlength="7" required placeholder= "Contraseña"/>
                 
+                <span id="final"><input type="submit" value="Iniciar Sesión"/>
+                <p><a href="#">¿Olvidaste tu contraseña?</a></p>
             </form>
         </div>
-        <div id="final">
-            <input type="submit" value="Iniciar Sesión"/>
-            <span><a href="#">¿Olvidaste tu contraseña?</a></span>
-        </div>
+            
     </section>
 </body>
 </html>
