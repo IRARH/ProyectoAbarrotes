@@ -99,13 +99,31 @@ body {
     padding: 5px;
 }
 
+#principal #salir {
+    position: absolute;
+    right: 15rem;
+    top: 9px;
+}
+
+#principal #salir #sesion {
+    position: absolute;
+    right: 22rem;
+    top: 0px;
+}
+
+#principal #salir a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 #principal h2 {
     text-align: left;
 }
 
 #palabras {
     margin-left: 200px;
-    padding-top: 100px;
+    padding-top: 88px;
     padding-left: 34px;
 }
 
