@@ -63,7 +63,7 @@
         <section id="productos_generales">
         
             <header id="encabezado">
-            <h2>Busqueda por Rango</h2>
+            <h2>Búsqueda por Rango</h2>
             <form action="#" method="POST">
                 <label id='fecha_inicia'>Fecha Inicial</label>
                 <input type="date" id="fecha_inicio" name="fecha_inicio" min="2020-01-01" max="2100-12-31">

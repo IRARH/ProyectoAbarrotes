@@ -81,6 +81,12 @@ body {
     left: 11px;
 }
 
+.navegacion #inventario {
+    position: fixed;
+    top: 590px;
+    left: 13px;
+}
+
 .titulo_menu {
     color: black;
 }
@@ -107,8 +113,9 @@ body {
 
 #principal #salir #sesion {
     position: absolute;
-    right: 22rem;
+    right: 15rem;
     top: 0px;
+    text-transform: none;
 }
 
 #principal #salir a {

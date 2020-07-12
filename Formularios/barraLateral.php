@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 
     <div class="navegacion">
         <img src="Imagenes/estrella_logo.png" height="70px" width="90px" />
@@ -8,12 +9,22 @@
         <img id="buscar" src="Imagenes/buscar.png" height="25px" width="25px" /><a href="menu_ver_y_buscar.php">Ver y Buscar</a>
         <img id="nota" src="Imagenes/nota.png" height="25px" width="25px" /><a href="menu_notas.php">Registrar Nota</a>
         <img id="estadistica" src="Imagenes/estadisticas.png" height="25px" width="25px" /> <a href="menu_estadisticas_notas.php">Estadísticas Notas</a>
-        <a href="menu_estadisticas_inventario.php">Inventario</a>
+        <img id="inventario" src="Imagenes/inventario.png" height="25px" width="25px" /><a href="menu_estadisticas_inventario.php">Inventario</a>
     </div>
     <nav id="principal">
         <h2>Tienda de abarrotes estrella</h2>
+
+        <?php if(isset($_SESSION['usuario'])){ ?>
+
         <div id="salir">
-            <h5 id="sesion">Sesión: </h5>
-            <h5><a  href="index.php">Salir</a></h5>
+            <h6 id="sesion"><?= $_SESSION['usuario']['user'];  ?></h6>
+            <h6><a  href="../Clases/cerrarSesion.php">Salir</a></h6>
         </div>
+
+        <?php }else{  
+            header("Location:index.php");
+            }
+        ?>
+
+        
     </nav>
