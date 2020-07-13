@@ -17,8 +17,8 @@
         <?php if(isset($_SESSION['usuario'])){ ?>
 
         <div id="salir">
-            <h6 id="sesion"><?= $_SESSION['usuario']['user'];  ?></h6>
-            <h6><a  href="../Clases/cerrarSesion.php">Salir</a></h6>
+            <h5 id="sesion"><?= $_SESSION['usuario']['user'];  ?></h5>
+            <h5><a  href="../Clases/cerrarSesion.php">Salir</a></h5>
         </div>
 
         <?php }else{  

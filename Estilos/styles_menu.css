@@ -186,22 +186,6 @@ form input[type="text"] {
     font-size: 18px;
 }
 
-#final input[type="submit"] {
-    background: #dc3545;
-    opacity: 80%;
-    padding: 15px;
-    border: 1px solid #ccc;
-    cursor: pointer;
-    color: white;
-    border-radius: 4px;
-    width: 90%;
-    margin-left: -1px;
-    margin: 12px 8px 15px 0;
-    font-size: 15px;
-    font-weight: 700;
-    margin: 0px auto;
-}
-
 #final span a {
     margin: 0 auto;
     text-decoration: none;
@@ -227,7 +211,7 @@ h3 {
 
 #div1 table {
     table-layout: fixed;
-    width: 103%;
+    width: 140%;
     border-collapse: collapse;
     text-align: center;
     color: black;
@@ -235,10 +219,11 @@ h3 {
     font-family: arial, Geneva, Tahoma, sans-serif;
     letter-spacing: 1px;
     border: 2px solid #EDECEC;
+    line-height: 38px;
 }
 
-#div1 tr {
-    border-bottom: 15pt solid #EDECEC;
+#div1 td {
+    border-bottom: 2pt solid #EDECEC;
 }
 
 #div1 .color {

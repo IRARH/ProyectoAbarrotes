@@ -1,6 +1,7 @@
 <?php
 session_start();
 require_once 'conexion.php';
+$conexion = conexion();
 
 if(isset($_POST)){
     $error = "";
