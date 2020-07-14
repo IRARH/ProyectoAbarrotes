@@ -17,7 +17,6 @@ function conexion(){
 
     //consulta para confimar codificación de caracteres
     mysqli_query($conexion, "SET NAMES 'utf8'");
-
     return $conexion;
 }
     
