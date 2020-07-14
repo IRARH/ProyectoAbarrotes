@@ -48,6 +48,8 @@
                                         //variable que obtiene el arreglo con el query solicitado
                                         $dato_usuario = mysqli_fetch_assoc($obtener_usuario);
                             ?>
+
+
                             <tr>
                                 <td><?php echo $datos['codigo_barras'] ?></td>
                                 <td><?php echo $datos['proveedor'] ?></td>
@@ -67,6 +69,7 @@
                                 } 
                                 ?>
                         </table>
+                        
                     </div>
                     <label class="label1">Total en Almacén</label>
                     <input type="text" name="total" id="total" value="$ <?= $total_venta ?>"/>
