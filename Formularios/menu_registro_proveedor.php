@@ -15,7 +15,6 @@
 			<ul>
 				<li><a href="menu_registro_producto.php">Registrar Producto</a></li>
 				<li><a href="menu_registro_proveedor.php">Registrar Proveedor</a></li>
-				<li><a href="menu_registro_tipoProducto.php">Registrar tipo de producto</a></li>
 			</ul>
 		</nav>
         <section id="registro">

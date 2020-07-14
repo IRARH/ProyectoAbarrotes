@@ -15,7 +15,7 @@
         endif
     ?>
     <section id="principal">
-        <header id="encabezado"><h2>Tienda Estrella</h2>
+        <header id="encabezado"><h1>Tienda Estrella</h1>
             <h4>Administración</h4>
         </header>
 

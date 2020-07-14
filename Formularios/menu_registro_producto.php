@@ -15,7 +15,6 @@
 			<ul>
 				<li><a href="menu_registro_producto.php">Registrar Producto</a></li>
 				<li><a href="menu_registro_proveedor.php">Registrar Proveedor</a></li>
-				<li><a href="menu_registro_tipoProducto.php">Registrar tipo de producto</a></li>
 			</ul>
 		</nav>
         <section id="registro">
@@ -33,11 +32,8 @@
                     <label for="proveedor">Nombre del Proveedor</label>
                     <input type="text" name="proveedor" id="proveedor" placeholder="proveedor" required />
 
-                    <label for="marca">Marca del Producto</label>
+                    <label for="marca">Nombre del Producto</label>
                     <input type="text" name="marca" id="marca" placeholder="marca" required />
-
-                    <label for="tipo">Tipo de Producto</label>
-                    <input type="text" name="tipo" id="tipo" placeholder="tipo" required />
 
                     <label for="costo_compra">Costo Compra</label>
                     <input type="text" name="costo_compra" id="costo_compra" placeholder="costo compra" required />

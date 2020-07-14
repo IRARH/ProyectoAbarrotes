@@ -13,6 +13,10 @@
         background: #F9F9F9;
     }
     
+    #principal #encabezado h1 {
+        font-size: 27px;
+    }
+    
     #encabezado {
         text-align: center;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -29,7 +33,8 @@
     }
     
     label {
-        font-weight: 600;
+        font-size: 20px;
+        font-weight: 900;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
     
@@ -42,6 +47,7 @@
         cursor: pointer;
         width: 92%;
         margin: 12px 10px 15px 0;
+        font-size: 17px;
         display: inline-block;
     }
     

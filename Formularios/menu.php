@@ -24,7 +24,6 @@
                                 <td class="color">Codigo de Barras</td>
                                 <td class="color">Proveedor</td>
                                 <td class="color">Nombre de Producto</td>
-                                <td class="color">Tipo</td>
                                 <td class="color">Costo compra</td>
                                 <td class="color">Costo venta</td>
                                 <td class="color">Cantidad piezas</td>
@@ -52,7 +51,6 @@
                                 <td><?php echo $datos['codigo_barras'] ?></td>
                                 <td><?php echo $datos['proveedor'] ?></td>
                                 <td><?php echo $datos['nombre_producto'] ?></td>
-                                <td><?php echo $datos['tipo_producto'] ?></td>
                                 <td><?php echo $datos['costo_compra'] ?></td>
                                 <td><?php echo $datos['costo_venta'] ?></td>
                                 <td><?php echo $datos['cantidad_piezas'] ?></td>
