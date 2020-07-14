@@ -44,7 +44,7 @@
                     <label for="costo_venta">Costo Venta</label>
                     <input type="text" name="costo_venta" id="costo_venta" required />
 
-                    <span id="botonEnviar"><input type="submit" value="Actualizar Precio" /></span>
+                    <span id="botonEnviar"><input type="submit" value="Actualizar Precio" name="btn_actualizar"/></span>
                 </form>
             </div>
         </section>
@@ -52,6 +52,9 @@
             Abarrotes Estrella &copy;
             <a href="#" class="subir">Ir arriba</a>
         </footer>
+
+
+
     </div>
 </body>
 
