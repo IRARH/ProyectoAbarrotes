@@ -16,45 +16,62 @@
 				<li><a href="menu_registro_producto.php">Registrar Producto</a></li>
 				<li><a href="menu_registro_proveedor.php">Registrar Proveedor</a></li>
 			</ul>
-		</nav>
+        </nav>
+        <?php
+            if(isset($_GET['mensaje'])):
+                $mensaje = $_GET['mensaje'];
+
+                if($mensaje == 'exitoso'):
+                    echo "<strong id='mensaje'>Datos insertados correctamente</strong>";
+                endif;
+                
+                if($mensaje == 'error'):
+                    echo "<strong id='mensaje'>Hubo un error en la inserción</strong>";
+                endif;
+            endif;
+        ?>
         <section id="registro">
             <header id="encabezado_registro">
                 <h2>Registro de Productos </h2>
             </header>
             <div id="formulario">
-                <form action="#" method="POST">
-                    <label for="fecha">Fecha</label>
-                    <input type="date" id="fecha" name="fecha" min="2020-01-01" max="2100-12-31"></br></br>
+                <form action="../Clases/registrarProducto.php" method="POST">
 
                     <label for="codigo">Codigo de Barras</label>
                     <input type="text" name="codigo" id="codigo" placeholder="escaneo código" required  />
 
                     <label for="proveedor">Nombre del Proveedor</label>
-                    <input type="text" name="proveedor" id="proveedor" placeholder="proveedor" required />
+                    <select name="proveedor">
+                    <?php 
+                        require_once '../Clases/conexion.php';
+                        $conexion = conexion();
+
+                        //consulta para obtener proveedores 
+                        $query = mysqli_query($conexion, "SELECT* FROM proveedores");
+                        if(mysqli_num_rows($query) > 0):
+                            while($mostrar = mysqli_fetch_assoc($query)):
+                    ?>
+                        <option><?= $mostrar['nombre']; ?></option>
+                    <?php 
+                            endwhile;
+                        endif;
+                    ?>
+                    </select>
 
                     <label for="marca">Nombre del Producto</label>
-                    <input type="text" name="marca" id="marca" placeholder="marca" required />
+                    <input type="text" name="producto" id="marca" placeholder="producto" required />
 
                     <label for="costo_compra">Costo Compra</label>
-                    <input type="text" name="costo_compra" id="costo_compra" placeholder="costo compra" required />
+                    <input type="text" name="costo_compra" id="costo_compra"  placeholder="costo compra" required />
 
                     <label for="costo_venta">Costo Venta</label>
                     <input type="text" name="costo_venta" id="costo_venta" placeholder="costo venta" required />
 
-                    <label for="cantidad_piezas">Cantidad de Piezas</label>
-                    <input type="text" name="cantidad_piezas" id="cantidad_piezas" placeholder="cantidad piezas" required />
-
                     <label for="piezas_caja">Piezas por Caja</label>
-                    <input type="text" name="piezas_caja" id="piezas_caja" placeholder="piezas por caja" required />
+                    <input type="text" name="piezas_caja" id="piezas_caja" pattern="[0-9]+" placeholder="piezas por caja" required />
 
                     <label for="cantidad_cajas">Cantidad de Cajas</label>
-                    <input type="text" name="cantidad_pieza" id="cantidad_pieza" placeholder="cantidad cajas" required />
-
-                    <label for="total_venta">Precio Total de Venta</label>
-                    <input type="text" name="total_venta" id="total_venta" placeholder="total venta" required />
-
-                    <label for="total_compra">Precio Total de Compra</label>
-                    <input type="text" name="total_compra" id="total_compra" placeholder="total compra" required />
+                    <input type="text" name="cantidad_cajas" id="cantidad_cajas" pattern="[0-9]+" placeholder="cantidad cajas" required />
 
                     <span id="botonEnviar"><input type="submit" value="Registrar producto" /></span>
                 </form>

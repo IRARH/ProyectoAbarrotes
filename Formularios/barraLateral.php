@@ -25,6 +25,5 @@
             header("Location:index.php");
             }
         ?>
-
-        
     </nav>
+    

@@ -6,7 +6,7 @@ function query(){
     $conexion =  conexion();
 
     //consulta para obtener datos
-    $query = "SELECT * FROM productos";
+    $query = "SELECT * FROM productos ORDER BY fecha ASC";
     $resultado = mysqli_query($conexion, $query);
     
     if(mysqli_num_rows($resultado) > 0){

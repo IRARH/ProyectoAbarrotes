@@ -137,6 +137,12 @@ body {
 
 /*Estilos para menu_registro_proveedor.php*/
 
+#mensaje {
+    color: red;
+    margin-left: 95px;
+    line-height: 69px;
+}
+
 #opciones {
     font-family: Helvetica, Arial;
     background: rgb(51, 51, 51, 0.70);
