@@ -33,6 +33,7 @@
                             </tr>
                             <?php  
                                 require_once '../Clases/obtenerDatos.php';
+                            
 
                                 //traer la consulta de los datos
                                 $query = query();
@@ -72,6 +73,9 @@
                     <label class="label1">Total en Almacén</label>
                     <input type="text" name="total" id="total" value="$ <?= $total_venta ?>"/>
                 </form>
+
+
+                
             </div>
         </section>
         <footer>

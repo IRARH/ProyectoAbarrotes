@@ -219,6 +219,22 @@ h3 {
     width: 98.7%;
 }
 
+#div1 table td #botonEliminar {
+    background: #dc3545;
+    opacity: 80%;
+    padding: 7px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    color: white;
+    border-radius: 4px;
+    width: 100%;
+    font-size: 15px;
+    font-weight: 10;
+    margin: 15px;
+}
+
+
+
 #div1 table {
     table-layout: fixed;
     width: 145%;
@@ -262,3 +278,4 @@ footer {
     display: block;
     float: right;
 }
+

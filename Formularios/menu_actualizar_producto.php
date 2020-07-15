@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="../Estilos/styles_menu_actualizar_producto.css" />
     <script src="../js/jquery.min.js"></script><!--Libreria Jquery -->
     <script type="text/javascript" src="../js/main.js"></script><!-- Script -->
+    <script type="text/javascript" src="../js/busqueda.js"></script>
+    
 </head>
 
 <body>
@@ -27,13 +29,14 @@
                 <h2>Actualizar Stock </h2>
             </header>
             <div id="formulario">
-                <form action="#" method="POST">
+                <form action="../Clases/buscar_para_actualizar.php" method="POST">
+
                     <label for="fecha">Fecha</label>
                     <input type="date" id="fecha" name="fecha" min="2020-01-01" max="2100-12-31"></br></br>
 
                     <label for="codigo">Codigo de Barras</label>
                     <input type="text" name="codigo" id="codigo" required />
-
+                   
                     <label for="proveedor">Nombre del Proveedor</label>
                     <input type="text" name="proveedor" id="proveedor" required />
 
@@ -62,6 +65,7 @@
                     <input type="text" name="total_compra" id="total_compra"  required>
 
                     <span id="botonEnviar"><input type="submit" value="Actualizar Stock" /></span>
+
                 </form>
             </div>
         </section>
