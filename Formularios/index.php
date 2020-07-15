@@ -12,7 +12,7 @@
         $error = null;
         if(isset($_GET['error'])):
             $error = $_GET['error'];
-        endif
+        endif;
     ?>
     <section id="principal">
         <header id="encabezado"><h1>Tienda Estrella</h1>

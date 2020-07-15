@@ -16,15 +16,26 @@
 				<li><a href="menu_registro_producto.php">Registrar Producto</a></li>
 				<li><a href="menu_registro_proveedor.php">Registrar Proveedor</a></li>
 			</ul>
-		</nav>
+        </nav>
+        <?php
+            if(isset($_GET['mensaje'])):
+                $mensaje = $_GET['mensaje'];
+
+                if($mensaje == 'exitoso'):
+                    echo "<strong id='mensaje'>Datos insertados correctamente</strong>";
+                endif;
+                
+                if($mensaje == 'error'):
+                    echo "<strong id='mensaje'>Hubo un error en la inserción</strong>";
+                endif;
+            endif;
+        ?>
         <section id="registro">
             <header id="encabezado_registro">
                 <h2>Registro de Proveedores </h2>
             </header>
             <div id="formulario">
-                <form action="#" method="POST">
-                    <label for="fecha">Fecha</label>
-                    <input type="date" id="fecha" name="fecha"  min="2020-01-01" max="2100-12-31"></br></br>
+                <form action="../Clases/registrarProveedor.php" method="POST">
 
                     <label for="proveedor">Nombre del Proveedor</label>
                     <input type="text" name="proveedor" id="proveedor" placeholder="proveedor" required />

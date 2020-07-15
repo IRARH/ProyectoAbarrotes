@@ -10,7 +10,7 @@ if(isset($_POST)){
     $usuario = isset($_POST['usuario']) ? $_POST['usuario'] : false;
     $password = isset($_POST['password']) ? $_POST['password'] : false;
 
-    //errores
+    //arreglo de errores
     $errores = array();
 
     //Validar los datos de los campos 

@@ -137,6 +137,12 @@ body {
 
 /*Estilos para menu_registro_producto.php*/
 
+#mensaje {
+    color: red;
+    margin-left: 95px;
+    line-height: 69px;
+}
+
 #opciones {
     font-family: Helvetica, Arial;
     background: rgb(51, 51, 51, 0.70);
@@ -208,6 +214,18 @@ label {
     color: #333;
     cursor: pointer;
     width: 97%;
+    margin: 12px 10px 15px 0;
+    display: inline-block;
+    font-size: 18px;
+}
+
+select {
+    padding: 8px;
+    border-radius: 2px;
+    border: 1px solid #ccc;
+    color: #333;
+    cursor: pointer;
+    width: 99%;
     margin: 12px 10px 15px 0;
     display: inline-block;
     font-size: 18px;
