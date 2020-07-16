@@ -13,13 +13,27 @@
 <body>
     <?php require_once 'barraLateral.php'; ?>
 
+
     <div id="palabras">
+        <?php
+
+        if (isset($_GET['mensaje'])) {
+            $mensaje = $_GET['mensaje'];
+            if ($mensaje == 'exitoso') {
+                echo 'Se eliminó';
+            }
+            if ($mensaje == 'error') {
+                echo 'No se pudo eliminar';
+            }
+        }
+        ?>
+
         <section id="principal_notas">
             <header id="encabezado">
                 <h2>Eliminar Producto</h2>
             </header>
             <div id="formulario">
-                <form action="menu_eliminar.php" method="POST">
+                <form action="#" method="POST">
                     <label for="fecha">Fecha</label>
                     <input type="date" id="fecha" name="fecha" min="2020-01-01" max="2100-12-31"></br></br>
 
@@ -44,16 +58,14 @@
 
                             <?php
                             require_once '../Clases/busqueda_para_eliminacion.php';
-                            
+
                             while ($muestra = mysqli_fetch_array($busqueda)) {
                                 echo '<tr>';
                                 echo '<td>' . $muestra['codigo_barras'] . '</td>';
                                 echo '<td>' . $muestra['proveedor'] . '</td>';
                                 echo '<td>' . $muestra['nombre_producto'] . '</td>';
-
-                                echo '<td>' . "<a href='../Clases/eliminar_registro.php?res=$muestra[codigo_barras]'>".'eliminar'.'</a>' . '</td>';
+                                echo '<td>' . "<a href='../Clases/eliminar_registro.php?res=$muestra[codigo_barras]'>" . 'eliminar' . '</a>' . '</td>';
                             }
-
                             ?>
                         </table>
 
@@ -61,13 +73,11 @@
                     <span id="botonEnviar"><input type="submit" value="Eliminar producto" /></span>
                 </form>
 
-
-
+                
             </div>
         </section>
         <footer>
             Abarrotes Estrella &copy;
-
             <a href="#" class="subir">Ir arriba</a>
         </footer>
     </div>

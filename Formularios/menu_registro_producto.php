@@ -37,6 +37,7 @@
             <div id="formulario">
                 <form action="../Clases/registrarProducto.php" method="POST">
 
+                    
                     <label for="codigo">Codigo de Barras</label>
                     <input type="text" name="codigo" id="codigo" placeholder="escaneo código" required  />
 
@@ -74,6 +75,9 @@
                     <input type="text" name="cantidad_cajas" id="cantidad_cajas" pattern="[0-9]+" placeholder="cantidad cajas" required />
 
                     <span id="botonEnviar"><input type="submit" value="Registrar producto" /></span>
+
+
+
                 </form>
             </div>
         </section>

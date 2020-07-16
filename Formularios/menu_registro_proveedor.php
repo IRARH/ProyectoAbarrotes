@@ -35,8 +35,8 @@
                 <h2>Registro de Proveedores </h2>
             </header>
             <div id="formulario">
-                <form action="../Clases/registrarProveedor.php" method="POST">
 
+                <form action="../Clases/registrarProveedor.php" method="POST">
                     <label for="proveedor">Nombre del Proveedor</label>
                     <input type="text" name="proveedor" id="proveedor" placeholder="proveedor" required />
                     <span id="botonEnviar"><input type="submit" value="Registrar proveedor" /></span>
