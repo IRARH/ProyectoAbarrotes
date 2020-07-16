@@ -44,11 +44,10 @@
 
                     <span id="botonEnviar"><input type="submit" value="Validar" name="btn_buscar" /></span>
                     </form>
+
                     <?php
                     require_once '../Clases/busqueda_para_actualizacion_precio.php';
-
                     while ($muestra = mysqli_fetch_array($busqueda)) {
-
                     ?>
                     <form action="../Clases/actualizar_precio.php" method="POST">
                         <label for="codigo1">Codigo de Barras</label>
@@ -66,7 +65,7 @@
                         <label for="costo_venta">Costo Venta</label>
                         <input type="text" name="costo_venta" id="costo_venta" value="<?php echo $muestra['costo_venta'] ?>" required />
 
-                        <span id="botonEnviar"><input type="submit" value="Busccar" name="btn_buscar" /></span>
+                        <span id="botonEnviar"><input type="submit" value="Actualizar" name="btn_buscar" /></span>
                     
                        
                         </form>

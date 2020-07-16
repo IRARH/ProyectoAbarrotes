@@ -9,10 +9,6 @@ if ($_POST) {
     $costo_compra =  $_POST['costo_compra'];
     $costo_venta = $_POST['costo_venta'];
     $fecha = date("Y") . "/" . date("m") . "/" . date("d");
-   
-
-  echo $codigo_barras,"         ", $costo_compra,"         ", $costo_venta, "      ", $fecha;
-
     if(mysqli_query(conexion(), "UPDATE productos SET costo_compra='$costo_compra', costo_venta='$costo_venta', fecha='$fecha' WHERE codigo_barras='$codigo_barras'")){
       
       $mensaje = "exitoso";
