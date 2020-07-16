@@ -22,11 +22,15 @@
                 $mensaje = $_GET['mensaje'];
 
                 if($mensaje == 'exitoso'):
-                    echo "<strong id='mensaje'>Datos insertados correctamente</strong>";
+                    echo "<div id='mensajeExitoso'>Datos insertados correctamente</div>";
                 endif;
                 
                 if($mensaje == 'error'):
-                    echo "<strong id='mensaje'>Hubo un error en la inserción</strong>";
+                    echo "<div id='mensajeError'>Hubo un error en la inserción</div>";
+                endif;
+
+                if($mensaje == 'existente'):
+                    echo "<div id='mensajeExistente'>El código de barras ya está registrado</div>";
                 endif;
             endif;
         ?>
@@ -70,8 +74,8 @@
                     <label for="piezas_caja">Piezas por Caja</label>
                     <input type="text" name="piezas_caja" id="piezas_caja" pattern="[0-9]+" placeholder="piezas por caja" required />
 
-                    <label for="cantidad_cajas">Cantidad de Cajas</label>
-                    <input type="text" name="cantidad_cajas" id="cantidad_cajas" pattern="[0-9]+" placeholder="cantidad cajas" required />
+                    <label for="cantidad_piezas">Cantidad de Piezas</label>
+                    <input type="text" name="cantidad_piezas" id="cantidad_piezas" pattern="[0-9]+" placeholder="cantidad cajas" required />
 
                     <span id="botonEnviar"><input type="submit" value="Registrar producto" /></span>
                 </form>
