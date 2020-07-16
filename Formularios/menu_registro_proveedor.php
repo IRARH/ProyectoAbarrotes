@@ -22,11 +22,15 @@
                 $mensaje = $_GET['mensaje'];
 
                 if($mensaje == 'exitoso'):
-                    echo "<strong id='mensaje'>Datos insertados correctamente</strong>";
+                    echo "<div id='mensajeExitoso'>Datos insertados correctamente</div>";
                 endif;
                 
                 if($mensaje == 'error'):
-                    echo "<strong id='mensaje'>Hubo un error en la inserción</strong>";
+                    echo "<div id='mensajeError'>Hubo un error en la inserción</div>";
+                endif;
+
+                if($mensaje == 'existente'):
+                    echo "<div id='mensajeExistente'>El proveedor ya existe</div>";
                 endif;
             endif;
         ?>
@@ -38,7 +42,7 @@
 
                 <form action="../Clases/registrarProveedor.php" method="POST">
                     <label for="proveedor">Nombre del Proveedor</label>
-                    <input type="text" name="proveedor" id="proveedor" placeholder="proveedor" required />
+                    <input type="text" name="proveedor" id="proveedor" pattern="[A-Z]{1}[a-z ñ\s]+" placeholder="proveedor" required />
                     <span id="botonEnviar"><input type="submit" value="Registrar proveedor" /></span>
                 </form>
             </div>

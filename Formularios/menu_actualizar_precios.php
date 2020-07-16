@@ -18,7 +18,7 @@
         <nav id="opciones">
             <ul>
                 <li><a href="menu_actualizar_producto.php">Actualizar Stock</a></li>
-                <li><a href="menu_registro_proveedor.php">Actualizar Precios</a></li>
+                <li><a href="menu_actualizar_precios.php">Actualizar Precios</a></li>
             </ul>
         </nav>
         <section id="registro">

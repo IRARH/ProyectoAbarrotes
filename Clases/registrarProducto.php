@@ -15,28 +15,47 @@ if(isset($_POST)){
     $costo_compra =  $_POST['costo_compra'];
     $costo_venta = $_POST['costo_venta'];
     $piezas_caja = $_POST['piezas_caja'];
-    $cantidad_cajas = $_POST['cantidad_cajas'];
+    $cantidad_piezas = $_POST['cantidad_piezas'];
+
+    //consulta para verificar que el producto no exista ya en la base 
+    $consulta_existencia = mysqli_query($conexion, "SELECT codigo_barras FROM productos WHERE codigo_barras = '$codigo'");
     
-    //consulta para obtener id del usuario que de la sesión
-    $queryId = mysqli_query($conexion, "SELECT id_user FROM usuarios WHERE user = '$sesion'");
-    if(mysqli_num_rows($queryId) > 0){
-        while($id = mysqli_fetch_assoc($queryId)){
-            $id_user = $id['id_user'];
-        }
+    //verificar si se realizó correctamente la consulta 
+    if($consulta_existencia){
 
-        $cantidad_piezas = ($cantidad_cajas * $piezas_caja);
-        $total_compra = ($costo_compra * $cantidad_piezas);
-        $total_venta = ($costo_venta * $cantidad_piezas);
+        //si existen datos mandar mensaje de error y si no, dar de alta el producto
+        if(mysqli_num_rows($consulta_existencia) == 0){
 
-        //inserción a la tabla usuarios
-        $consulta = "INSERT INTO productos VALUES ('$codigo', '$proveedor', '$producto', '$costo_compra', $costo_venta, $cantidad_piezas, $piezas_caja, $cantidad_cajas, $total_venta, $total_compra, '$fecha', $id_user)";
+            //consulta para obtener id del usuario que inició la sesión
+            $queryId = mysqli_query($conexion, "SELECT id_user FROM usuarios WHERE user = '$sesion'");
 
-        if(mysqli_query($conexion, $consulta)){
-            $exito = 'exitoso';
-            header("Location:../Formularios/menu_registro_producto.php?mensaje=$exito");
+            if(mysqli_num_rows($queryId) > 0){
+                while($id = mysqli_fetch_assoc($queryId)){
+                    $id_user = $id['id_user'];
+                }
+                
+                $cantidad_cajas = (float)($cantidad_piezas / $piezas_caja);
+                $total_compra = ($costo_compra * $cantidad_piezas);
+                $total_venta = ($costo_venta * $cantidad_piezas);
+
+                //inserción a la tabla usuarios
+                $consulta = "INSERT INTO productos VALUES ('$codigo', '$proveedor', '$producto', '$costo_compra', $costo_venta, $cantidad_piezas, $piezas_caja, $cantidad_cajas, $total_venta, $total_compra, '$fecha', $id_user)";
+
+                if(mysqli_query($conexion, $consulta)){
+                    $exito = 'exitoso';
+                    header("Location:../Formularios/menu_registro_producto.php?mensaje=$exito");
+                }else{
+                    $exito = 'error';
+                    header("Location:../Formularios/menu_registro_producto.php?mensaje=$exito");
+                }
+            }
         }else{
-            $exito = 'error';
+            $exito = 'existente';
             header("Location:../Formularios/menu_registro_producto.php?mensaje=$exito");
         }
-    }
+    } 
+
+
+    
+    
 }
