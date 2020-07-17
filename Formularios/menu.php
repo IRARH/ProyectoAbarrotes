@@ -41,6 +41,7 @@
                                 //traer la consulta de los datos
                                 $query = query();
                                 $total_venta = 0;
+                                $total_compra = 0;
                                 //verificar si hay datos en la base
                                 if($query){
             
@@ -51,8 +52,6 @@
                                         //variable que obtiene el arreglo con el query solicitado
                                         $dato_usuario = mysqli_fetch_assoc($obtener_usuario);
                             ?>
-
-
                             <tr>
                                 <td><?php echo $datos['codigo_barras'] ?></td>
                                 <td><?php echo $datos['proveedor'] ?></td>
@@ -67,7 +66,9 @@
                                 <td><?php echo $datos['fecha'] ?></td>
                                 <td><?php echo $dato_usuario['user'] ?></td>
                             </tr>
-                            <?php $total_venta += $datos['total_precio_venta'];
+                            <?php 
+                                $total_venta += $datos['total_precio_venta'];
+                                $total_compra += $datos['total_precio_compra'];
                                     }
                                 }else{
                                     echo "Sin datos en existencia";
@@ -76,12 +77,13 @@
                         </table>
                         
                     </div>
-                    <label class="label1">Total en Almacén</label>
-                    <input type="text" name="total" id="total" value="$ <?= $total_venta ?>"/>
                 </form>
-
-
-                
+            </div>
+            <div id="total">
+                <label class="label1">Total en Compra</label>
+                <input type="text" name="total" value="$ <?= $total_compra ?>"/>
+                <label class="label1">Total en Venta</label>
+                <input type="text" name="total" value="$ <?= $total_venta ?>"/>
             </div>
         </section>
         <footer>
