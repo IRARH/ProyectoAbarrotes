@@ -46,8 +46,15 @@
                     </form>
 
                     <?php
-                    require_once '../Clases/busqueda_para_actualizacion_precio.php';
-                    while ($muestra = mysqli_fetch_array($busqueda)) {
+            
+                    if(isset($_POST['codigo'])):
+                        require_once '../Clases/conexion.php';
+         
+                        $codigo = $_POST['codigo'];
+                        $obtenerDatos = mysqli_query(conexion(), "SELECT * from productos where codigo_barras='$codigo'");
+                    
+                        if(mysqli_num_rows($obtenerDatos) > 0):
+                            while($muestra = mysqli_fetch_assoc($obtenerDatos)):
                     ?>
 
                     
@@ -69,10 +76,16 @@
 
                         <span id="botonEnviar"><input type="submit" value="Actualizar" name="btn_buscar" /></span>
                     
-                       
                         </form>
 
-                    <?php } ?>
+                    <?php 
+                     endwhile; 
+                    endif;
+                    if(mysqli_num_rows($obtenerDatos) == 0):
+                        echo "<div id='mensajeExistente'>No existen datos con el código de barras proporcionado</div>";
+                    endif;
+                endif;
+                ?>
 
              
             </div>

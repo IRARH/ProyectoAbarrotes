@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <title>Medu de actualizacion</title>
+    <title>Menú de actualizacion</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="../Estilos/styles_menu_actualizar.css" />
 </head>

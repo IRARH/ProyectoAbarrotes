@@ -9,21 +9,28 @@ if($_POST){
     $piezas_caja = $_POST['piezas_caja'];
     $cantidad_cajas = (float)($cantidad_piezas / $piezas_caja);
 
-    echo $codigo."<br/>";
-    echo $nombre_producto."<br/>";
-    echo $cantidad_piezas."<br/>";
-    echo $piezas_caja."<br/>";
-    echo $cantidad_cajas."<br/>";
+    $busqueda = mysqli_query(conexion(), "SELECT * FROM productos WHERE codigo_barras = '$codigo'");
 
-    $query = "UPDATE productos SET nombre_producto = '$nombre_producto', cantidad_piezas = '$cantidad_piezas', " 
-    .""."piezas_caja = '$piezas_caja', cantidad_cajas = '$cantidad_cajas' WHERE codigo_barras = '$codigo'"; 
+    if($busqueda){
 
-    if(mysqli_query(conexion(), $query)){
-        $mensaje = "exitoso";
-        header("Location:../Formularios/menu_actualizar_producto.php?mensaje=$mensaje");
-    }else{
-        $mensaje = "error";
-        header("Location:../Formularios/menu_actualizar_producto.php?mensaje=$mensaje");
+        while($datos = mysqli_fetch_array($busqueda)){
+            $totalVenta = $datos['costo_venta'];
+            $totalCompra = $datos['costo_compra'];
+        }
+        
+        $totalVentaActualizada = (float)($cantidad_piezas * $totalVenta);
+        $totalCompraActualizada = (float)($cantidad_piezas * $totalCompra);
+
+        $query = "UPDATE productos SET nombre_producto = '$nombre_producto', cantidad_piezas = '$cantidad_piezas', " 
+        .""."piezas_caja = '$piezas_caja', cantidad_cajas = '$cantidad_cajas', total_precio_venta = '$totalVentaActualizada', total_precio_compra = '$totalCompraActualizada' WHERE codigo_barras = '$codigo'"; 
+
+        if(mysqli_query(conexion(), $query)){
+            $mensaje = "exitoso";
+            header("Location:../Formularios/menu_actualizar_producto.php?mensaje=$mensaje");
+        }else{
+            $mensaje = "error";
+            header("Location:../Formularios/menu_actualizar_producto.php?mensaje=$mensaje");
+        }
     }
 }
 

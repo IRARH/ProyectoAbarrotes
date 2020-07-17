@@ -49,7 +49,7 @@
                 <form action="../Clases/eliminar_registro.php" method="POST">
 
                     <?php
-
+                     
                     require_once '../Clases/busqueda_para_eliminacion.php';
                     while ($muestra = mysqli_fetch_array($busqueda)) {
 
