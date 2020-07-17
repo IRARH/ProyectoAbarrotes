@@ -1,4 +1,5 @@
 <?php
+/*
 require_once 'conexion.php';
 $mensaje = "";
 $codigo = "";
@@ -13,4 +14,3 @@ if ($codigo != "") {
         header("Location:../Formularios/menu_eliminar.php?mensaje=$mensaje");
 }
 
-}

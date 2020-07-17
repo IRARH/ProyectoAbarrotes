@@ -14,10 +14,8 @@
     <?php require_once 'barraLateral.php'; ?>
     <div id="palabras">
         <?php
-
         if (isset($_GET['mensaje'])) :
             $mensaje = $_GET['mensaje'];
-
             if ($mensaje == 'exitoso') :
                 echo "<div id='mensajeExitoso'>Eliminación de datos Correcta</div>";
                 header("Refresh: 2; URL=menu_eliminar.php");
@@ -30,7 +28,6 @@
                 echo "<div id='mensajeExistente'>No hay datos para mostrar</div>";
                 header("Refresh: 2; URL=menu_eliminar.php");
             endif;
-
         endif;
         ?>
 
@@ -49,41 +46,52 @@
                 <form action="../Clases/eliminar_registro.php" method="POST">
 
                     <?php
-                     
-                    require_once '../Clases/busqueda_para_eliminacion.php';
-                    while ($muestra = mysqli_fetch_array($busqueda)) {
+
+                    if (isset($_POST['codigo'])) :
+                        require_once '../Clases/conexion.php';
+
+                        $codigo = $_POST['codigo'];
+                        $obtenerDatos = mysqli_query(conexion(), "SELECT * FROM productos WHERE codigo_barras = '$codigo'");
+
+                        if (mysqli_num_rows($obtenerDatos) > 0) :
+                            while ($muestra = mysqli_fetch_assoc($obtenerDatos)) :
 
                     ?>
-                        <table>
-                            <tr>
-                                <td class=color>Codigo de Barras</td>
-                                <td class=color>Proveedor</td>
-                                <td class=color>Nombre del producto</td>
-                                <td class=color>Costo Compra</td>
-                                <td class=color>Costo Venta</td>
-                                <td class=color>Cantidad de Piezas</td>
-                            </tr>
-                            <input type="text" name="codigo_barras" id="codigo_barras" style='display: none' value="<?php echo $muestra['codigo_barras'] ?> " />
-                            <?php
+                                <table>
+                                    <tr>
+                                        <td class=color>Codigo de Barras</td>
+                                        <td class=color>Proveedor</td>
+                                        <td class=color>Nombre del producto</td>
+                                        <td class=color>Costo Compra</td>
+                                        <td class=color>Costo Venta</td>
+                                        <td class=color>Cantidad de Piezas</td>
+                                    </tr>
+                                    <input type="text" name="codigo_barras" id="codigo_barras" style='display: none' value="<?php echo $muestra['codigo_barras'] ?> " />
+                                    <?php
 
-                            // costo_compra, costo_venta, piezas_caja 
+                                    // costo_compra, costo_venta, piezas_caja 
 
-                            echo '<tr>';
-                            echo '<td>' . $muestra['codigo_barras'] . '</td>';
-                            echo '<td>' . $muestra['proveedor'] . '</td>';
-                            echo '<td>' . $muestra['nombre_producto'] . '</td>';
-                            echo '<td>' . $muestra['costo_compra'] . '</td>';
-                            echo '<td>' . $muestra['costo_venta'] . '</td>';
-                            echo '<td>' . $muestra['piezas_caja'] . '</td>';
-                            //echo '<td>' . "<a href='../Clases/eliminar_registro.php?res=$muestra[codigo_barras]'>" . 'eliminar' . '</a>' . '</td>';
-                            ?>
-                        </table>
-                        <span id="botonEliminar"><input type="submit" value="Eliminar" name="btn_eliminar" id="btn_eliminar" /></span>
+                                    echo '<tr>';
+                                    echo '<td>' . $muestra['codigo_barras'] . '</td>';
+                                    echo '<td>' . $muestra['proveedor'] . '</td>';
+                                    echo '<td>' . $muestra['nombre_producto'] . '</td>';
+                                    echo '<td>' . $muestra['costo_compra'] . '</td>';
+                                    echo '<td>' . $muestra['costo_venta'] . '</td>';
+                                    echo '<td>' . $muestra['piezas_caja'] . '</td>';
+                                    //echo '<td>' . "<a href='../Clases/eliminar_registro.php?res=$muestra[codigo_barras]'>" . 'eliminar' . '</a>' . '</td>';
+                                    ?>
+                                </table>
+                                <span id="botonEliminar"><input type="submit" value="Eliminar" name="btn_eliminar" id="btn_eliminar" /></span>
             </div>
             </form>
 
-        <?php } ?>
-
+<?php
+                            endwhile;
+                        endif;
+                        if (mysqli_num_rows($obtenerDatos) == 0) :
+                            echo "<div id='mensajeExistente'>No existen datos con el código de barras proporcionado</div>";
+                        endif;
+                    endif; ?>
 
 
     </div>
