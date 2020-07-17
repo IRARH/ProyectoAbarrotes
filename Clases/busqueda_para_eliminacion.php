@@ -1,6 +1,7 @@
 <?php
 require_once 'conexion.php';
 $codigo = "";
+
 $codigo = $_POST['codigo'];
 
 if ($codigo != "") {

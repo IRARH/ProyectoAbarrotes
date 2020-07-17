@@ -23,14 +23,17 @@
 
                 if($mensaje == 'exitoso'):
                     echo "<div id='mensajeExitoso'>Datos insertados correctamente</div>";
+                    header("Refresh: 2; URL=menu_registro_producto.php");
                 endif;
                 
                 if($mensaje == 'error'):
                     echo "<div id='mensajeError'>Hubo un error en la inserción</div>";
+                    header("Refresh: 2; URL=menu_registro_producto.php");
                 endif;
 
                 if($mensaje == 'existente'):
-                    echo "<div id='mensajeExistente'>El código de barras ya está registrado</div>";
+                    echo "<div id='mensajeExistente'>Ya existe un producto con el código de barras proporcionado</div>";
+                    header("Refresh: 2; URL=menu_registro_producto.php");
                 endif;
             endif;
         ?>
@@ -42,7 +45,7 @@
                 <form action="../Clases/registrarProducto.php" method="POST">
 
                     <label for="codigo">Codigo de Barras</label>
-                    <input type="text" name="codigo" id="codigo" placeholder="escaneo código" required  />
+                    <input type="text" name="codigo" id="codigo" required  />
 
                     <label for="proveedor">Nombre del Proveedor</label>
                     <select name="proveedor">
@@ -63,19 +66,19 @@
                     </select>
 
                     <label for="marca">Nombre del Producto</label>
-                    <input type="text" name="producto" id="marca" placeholder="producto" required />
+                    <input type="text" name="producto" id="marca" required />
 
                     <label for="costo_compra">Costo Compra</label>
-                    <input type="text" name="costo_compra" id="costo_compra"  placeholder="costo compra" required />
+                    <input type="text" name="costo_compra" id="costo_compra" pattern="[0-9]*[\.]*[0-9]+" required />
 
                     <label for="costo_venta">Costo Venta</label>
-                    <input type="text" name="costo_venta" id="costo_venta" placeholder="costo venta" required />
+                    <input type="text" name="costo_venta" id="costo_venta" pattern="[0-9]*[\.]*[0-9]+" required />
 
                     <label for="piezas_caja">Piezas por Caja</label>
-                    <input type="text" name="piezas_caja" id="piezas_caja" pattern="[0-9]+" placeholder="piezas por caja" required />
+                    <input type="text" name="piezas_caja" id="piezas_caja" pattern="[0-9]+" required />
 
                     <label for="cantidad_piezas">Cantidad de Piezas</label>
-                    <input type="text" name="cantidad_piezas" id="cantidad_piezas" pattern="[0-9]+" placeholder="cantidad cajas" required />
+                    <input type="text" name="cantidad_piezas" id="cantidad_piezas" pattern="[0-9]+" required />
 
                     <span id="botonEnviar"><input type="submit" value="Registrar producto" /></span>
                 </form>

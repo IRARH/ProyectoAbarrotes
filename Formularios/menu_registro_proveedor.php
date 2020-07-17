@@ -42,7 +42,7 @@
                 <form action="../Clases/registrarProveedor.php" method="POST">
 
                     <label for="proveedor">Nombre del Proveedor</label>
-                    <input type="text" name="proveedor" id="proveedor" pattern="[A-Z]{1}[a-z ñ\s]+" placeholder="proveedor" required />
+                    <input type="text" name="proveedor" id="proveedor" pattern="[A-Z]{1}[a-z ñ\s]+" required />
                     <span id="botonEnviar"><input type="submit" value="Registrar proveedor" /></span>
                 </form>
             </div>
