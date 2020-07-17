@@ -164,12 +164,7 @@
         font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
     
-    .label1 {
-        font-weight: bold;
-        font-size: 18px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        margin-left: 8rem;
-    }
+    .label1 {}
     
     #palabras #principal_notas #total input[type="text"] {
         padding: 8px;
@@ -185,6 +180,10 @@
     }
     
     #palabras #principal_notas #total {
+        font-weight: bold;
+        font-size: 54px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding-left: 11rem;
         padding-top: 30px;
     }
     
