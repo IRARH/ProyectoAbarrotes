@@ -14,10 +14,8 @@
     <?php require_once 'barraLateral.php'; ?>
     <div id="palabras">
         <?php
-
         if (isset($_GET['mensaje'])) :
             $mensaje = $_GET['mensaje'];
-
             if ($mensaje == 'exitoso') :
                 echo "<div id='mensajeExitoso'>Eliminación de datos Correcta</div>";
                 header("Refresh: 2; URL=menu_eliminar.php");
@@ -30,7 +28,6 @@
                 echo "<div id='mensajeExistente'>No hay datos para mostrar</div>";
                 header("Refresh: 2; URL=menu_eliminar.php");
             endif;
-
         endif;
         ?>
 
@@ -50,10 +47,18 @@
 
                     <?php
 
-                    require_once '../Clases/busqueda_para_eliminacion.php';
-                    while ($muestra = mysqli_fetch_array($busqueda)) {
+if(isset($_POST['codigo'])):
+    require_once '../Clases/conexion.php';
 
-                    ?>
+    $codigo = $_POST['codigo'];
+    $obtenerDatos = mysqli_query(conexion(), "SELECT * FROM productos WHERE codigo_barras = '$codigo'");
+    
+    if(mysqli_num_rows($obtenerDatos) > 0):
+        while($muestra = mysqli_fetch_assoc($obtenerDatos)):
+            
+?>
+
+                
                         <table>
                             <tr>
                                 <td class=color>Codigo de Barras</td>
@@ -82,8 +87,13 @@
             </div>
             </form>
 
-        <?php } ?>
-
+        <?php 
+         endwhile; 
+                    endif;
+                    if(mysqli_num_rows($obtenerDatos) == 0):
+                        echo "<div id='mensajeExistente'>No existen datos con el código de barras proporcionado</div>";
+                    endif;
+                endif;?>
 
 
     </div>

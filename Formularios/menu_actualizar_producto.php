@@ -8,7 +8,10 @@
     <script src="../js/jquery.min.js"></script><!--Libreria Jquery -->
     <script type="text/javascript" src="../js/main.js"></script><!-- Script -->
     <script type="text/javascript" src="../js/busqueda.js"></script>
-    
+
+
+
+}
 </head>
 
 <body>
@@ -54,7 +57,7 @@
                 <?php
                 if(isset($_POST['codigo'])):
                     require_once '../Clases/conexion.php';
-     
+    
                     $codigo = $_POST['codigo'];
                     $obtenerDatos = mysqli_query(conexion(), "SELECT * FROM productos WHERE codigo_barras = '$codigo'");
                     
@@ -62,6 +65,7 @@
                         while($mostrar = mysqli_fetch_assoc($obtenerDatos)):
                             
                 ?>
+
                 <form action="../Clases/actualizar_stock.php" method="POST">
                    
                     <input type="hidden" name="codigo_barras" value="<?= $mostrar['codigo_barras'] ?>"  required />
@@ -90,17 +94,22 @@
                         endwhile; 
                     endif;
                     if(mysqli_num_rows($obtenerDatos) == 0):
+                     // echo '<script language="javascript">alert("Sin datos");</script>';
                         echo "<div id='mensajeExistente'>No existen datos con el código de barras proporcionado</div>";
+                       
                     endif;
                 endif;
                 ?>
             </div>
+          
         </section>
+       
         <footer>
             Abarrotes Estrella &copy;
 
             <a href="#" class="subir">Ir arriba</a>
         </footer>
+       
     </div>
 </body>
 

@@ -3,7 +3,7 @@
 function conexion(){
     $server = "localhost:3306";
     $usuario = "root";
-    $password = "admin.1234";
+    $password = "root";
     $dataBase = "abarrotes";
     
     $conexion = mysqli_connect($server, $usuario, $password, $dataBase);
