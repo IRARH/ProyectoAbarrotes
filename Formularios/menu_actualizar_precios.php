@@ -49,6 +49,8 @@
                     require_once '../Clases/busqueda_para_actualizacion_precio.php';
                     while ($muestra = mysqli_fetch_array($busqueda)) {
                     ?>
+
+                    
                     <form action="../Clases/actualizar_precio.php" method="POST">
                         <label for="codigo1">Codigo de Barras</label>
                         <input type="text" name="codigo1" id="codigo1" value="<?php echo $muestra['codigo_barras'] ?>" />

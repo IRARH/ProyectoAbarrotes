@@ -179,34 +179,39 @@ label {
     border: 1px solid #ccc;
     color: #333;
     cursor: pointer;
-    width: 97%;
+    width: 78%;
     margin: 12px 10px 15px 0;
     display: inline-block;
     font-size: 18px;
 }
-
 #formulario span input[type="submit"] {
     background: #dc3545;
     opacity: 80%;
-    padding: 15px;
+    padding: 11px;
     border: 1px solid #ccc;
     cursor: pointer;
     color: white;
     border-radius: 4px;
-    width: 90%;
+    width: 18%;
     font-size: 15px;
     font-weight: 700;
-    margin: 15px;
+    margin: 0px;
 }
 
-#formulario #botonEnviar {
-    margin: 40px 0px 0px 0px;
-    padding: 6px;
-    background-color: #e3e4e5;
-    border: 0px solid #000000;
-    text-align: center;
-    width: 97.3%;
-    display: inline-block;
+
+
+#formulario span #btn_eliminar {
+    background: #dc3545;
+    opacity: 80%;
+    padding: 11px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    color: white;
+    border-radius: 4px;
+    width: 100%;
+    font-size: 15px;
+    font-weight: 700;
+    margin: 80px 3px 15px 0;
 }
 
 h3 {
@@ -216,28 +221,14 @@ h3 {
 #div1 {
     overflow: scroll;
     height: 300px;
-    width: 98.7%;
-}
-
-#div1 table td #botonEliminar {
-    background: #dc3545;
-    opacity: 80%;
-    padding: 7px;
-    border: 1px solid #ccc;
-    cursor: pointer;
-    color: white;
-    border-radius: 4px;
-    width: 100%;
-    font-size: 15px;
-    font-weight: 10;
-    margin: 15px;
+    width: 102.7%;
 }
 
 
 
 #div1 table {
     table-layout: fixed;
-    width: 145%;
+    width: 100%;
     border-collapse: collapse;
     text-align: center;
     color: black;
@@ -279,3 +270,46 @@ footer {
     float: right;
 }
 
+/* Div de mensajes (error, exitoso9*/
+#mensajeExitoso {
+    color: white;
+    margin-left: 95px;
+    line-height: 50px;
+    width: 85%;
+    background-color: #28a745;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 46px;
+}
+
+#mensajeError {
+    color: white;
+    margin-left: 95px;
+    line-height: 50px;
+    width: 85%;
+    background-color: #dc3545;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 46px;
+}
+
+#mensajeExistente {
+    color: white;
+    margin-left: 95px;
+    line-height: 50px;
+    width: 85%;
+    background-color: #ffc107;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 46px;
+}
+#conDatos {
+    color: white;
+    margin-left: 95px;
+    line-height: 50px;
+    width: 85%;
+    background-color:black;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 46px;
+}

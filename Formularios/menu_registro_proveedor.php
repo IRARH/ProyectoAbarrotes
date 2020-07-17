@@ -34,6 +34,7 @@
                 endif;
             endif;
         ?>
+        
         <section id="registro">
             <header id="encabezado_registro">
                 <h2>Registro de Proveedores </h2>

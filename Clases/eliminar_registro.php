@@ -3,9 +3,9 @@ require_once 'conexion.php';
 //Variable que se envia al realizar la consulta.
 $mensaje = "";
 //Comprobar si se recibe algo por GET
-if($_GET){
+if($_POST){
     //Obetner lo que se envio por GET
-    $respuesta = $_GET['res'];
+    $respuesta = $_POST['codigo_barras'];
     //Realizar consulta y validar si se ejecuta
     if(mysqli_query(conexion(), "DELETE from productos where codigo_barras='$respuesta'")){
         //Si la consulta es exitosa, devuelve la variabel mensaje con el valor exitoso.
