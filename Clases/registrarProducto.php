@@ -35,8 +35,8 @@ if(isset($_POST)){
                 }
                 
                 $cantidad_cajas = (float)($cantidad_piezas / $piezas_caja);
-                $total_compra = ($costo_compra * $cantidad_piezas);
-                $total_venta = ($costo_venta * $cantidad_piezas);
+                $total_compra = (float)($costo_compra * $cantidad_piezas);
+                $total_venta = (float)($costo_venta * $cantidad_piezas);
 
                 //inserción a la tabla usuarios
                 $consulta = "INSERT INTO productos VALUES ('$codigo', '$proveedor', '$producto', '$costo_compra', $costo_venta, $cantidad_piezas, $piezas_caja, $cantidad_cajas, $total_venta, $total_compra, '$fecha', $id_user)";
