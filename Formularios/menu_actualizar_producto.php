@@ -95,8 +95,7 @@
                     endif;
                     if(mysqli_num_rows($obtenerDatos) == 0):
                      // echo '<script language="javascript">alert("Sin datos");</script>';
-                        echo "<div id='mensajeExistente'>No existen datos con el código de barras proporcionado</div>";
-                       
+                    echo "<div id='mensajeExistente'>No existen datos con el código de barras proporcionado</div>";
                     endif;
                 endif;
                 ?>
