@@ -67,20 +67,20 @@
                 ?>
 
                 <form action="../Clases/actualizar_stock.php" method="POST">
-                   
-                    <input type="hidden" name="codigo_barras" value="<?= $mostrar['codigo_barras'] ?>"  required />
+                    <label for="proveedor">Nombre del Proveedor</label>
+                    <input type="text" name="codigo_barras" value="<?= $mostrar['codigo_barras'] ?>" readonly="readonly" required />
 
                     <label for="proveedor">Nombre del Proveedor</label>
-                    <input type="text" name="proveedor" id="proveedor" value="<?= $mostrar['proveedor'] ?>" disabled required />
+                    <input type="text" name="proveedor" id="proveedor" value="<?= $mostrar['proveedor'] ?>" readonly="readonly" required />
 
                     <label for="nombre">Nombre del Producto</label>
                     <input type="text" name="nombre" id="nombre" value="<?= $mostrar['nombre_producto'] ?>" required />
 
                     <label for="costo_compra">Costo Compra</label>
-                    <input type="text" name="costo_compra" id="costo_compra" value="<?= $mostrar['costo_compra'] ?>" disabled required />
+                    <input type="text" name="costo_compra" id="costo_compra" value="<?= $mostrar['costo_compra'] ?>" readonly="readonly" required />
 
                     <label for="costo_venta">Costo Venta</label>
-                    <input type="text" name="costo_venta" id="costo_venta" value="<?= $mostrar['costo_venta'] ?>" disabled required />
+                    <input type="text" name="costo_venta" id="costo_venta" value="<?= $mostrar['costo_venta'] ?>" readonly="readonly" required />
 
                     <label for="cantidad_piezas">Cantidad de Piezas</label>
                     <input type="text" name="cantidad_piezas" id="cantidad_piezas" pattern="[0-9]+" value="<?= $mostrar['cantidad_piezas'] ?>" required />
