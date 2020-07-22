@@ -201,7 +201,7 @@ label {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-form input[type="text"] {
+#formulario input[type="text"] {
     padding: 8px;
     border-radius: 2px;
     border: 1px solid #ccc;
@@ -211,6 +211,25 @@ form input[type="text"] {
     margin: 12px 10px 15px 0;
     display: inline-block;
     font-size: 18px;
+}
+
+#formulario input[type="text1"] {
+    padding: 8px;
+    border-radius: 2px;
+    border: 1px solid #ccc;
+    color: #333;
+    width: 24.8%;
+    margin: 12px 10px 15px 0;
+    display: inline-block;
+    font-size: 18px;
+}
+
+#formulario #soloLectura {
+    cursor: auto;
+}
+
+#formulario #apuntar {
+    cursor: pointer;
 }
 
 #formulario span input[type="submit"] {

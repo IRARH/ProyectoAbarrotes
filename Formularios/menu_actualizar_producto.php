@@ -38,6 +38,10 @@
                     echo "<div id='mensajeError'>Error en la actualización</div>";
                     header("Refresh: 2; URL=menu_actualizar_producto.php");
                 endif;
+                if($_GET['mensaje'] == 'noExistencia'):
+                    echo "<div id='mensajeExistente'>No existen datos con el código de barras proporcionado</div>";
+                    header("Refresh: 2; URL=menu_actualizar_producto.php");
+                endif;
             endif;
         ?>
         <section id="registro">
@@ -67,26 +71,32 @@
                 ?>
 
                 <form action="../Clases/actualizar_stock.php" method="POST">
-                    <label for="proveedor">Nombre del Proveedor</label>
-                    <input type="text" name="codigo_barras" value="<?= $mostrar['codigo_barras'] ?>" readonly="readonly" required />
+                    <label for="proveedor">Código Barras</label>
+                    <input id="soloLectura" type="text" name="codigo_barras" value="<?= $mostrar['codigo_barras'] ?>" readonly="readonly" required />
 
                     <label for="proveedor">Nombre del Proveedor</label>
-                    <input type="text" name="proveedor" id="proveedor" value="<?= $mostrar['proveedor'] ?>" readonly="readonly" required />
+                    <input id="soloLectura" type="text" name="proveedor"  value="<?= $mostrar['proveedor'] ?>" readonly="readonly" required />
 
                     <label for="nombre">Nombre del Producto</label>
-                    <input type="text" name="nombre" id="nombre" value="<?= $mostrar['nombre_producto'] ?>" required />
+                    <input id="apuntar" type="text" name="nombre"  value="<?= $mostrar['nombre_producto'] ?>" required />
 
                     <label for="costo_compra">Costo Compra</label>
-                    <input type="text" name="costo_compra" id="costo_compra" value="<?= $mostrar['costo_compra'] ?>" readonly="readonly" required />
+                    <input id="soloLectura" type="text" name="costo_compra" value="<?= $mostrar['costo_compra'] ?>" readonly="readonly" required />
 
                     <label for="costo_venta">Costo Venta</label>
-                    <input type="text" name="costo_venta" id="costo_venta" value="<?= $mostrar['costo_venta'] ?>" readonly="readonly" required />
+                    <input id="soloLectura" type="text" name="costo_venta" value="<?= $mostrar['costo_venta'] ?>" readonly="readonly" required />
 
                     <label for="cantidad_piezas">Cantidad de Piezas</label>
-                    <input type="text" name="cantidad_piezas" id="cantidad_piezas" pattern="[0-9]+" value="<?= $mostrar['cantidad_piezas'] ?>" required />
+                    <input id="soloLectura" type="text1" name="cantidad_piezas" pattern="[0-9]+" readonly="readonly" value="<?= $mostrar['cantidad_piezas'] ?>" required />
+
+                    <label for="cantidad_piezas_extra">Cantidad de piezas a añadir</label>
+                    <input id="apuntar" type="text1" name="cantidad_piezas_extra" pattern="{-}*[0-9]+" value="0" required />
 
                     <label for="piezas_caja">Piezas por Caja</label>
-                    <input type="text" name="piezas_caja" id="piezas_caja" pattern="[0-9]+" value="<?= $mostrar['piezas_caja'] ?>" required />
+                    <input id="soloLectura" type="text1" name="piezas_caja" pattern="[0-9]+" readonly="readonly" value="<?= $mostrar['piezas_caja'] ?>" required />
+
+                    <label for="piezas_caja_extra">Piezas por caja a añadir</label>
+                    <input id="apuntar" type="text1" name="piezas_caja_extra" pattern="{-}*[0-9]+" value="0" required />
 
                     <span id="botonEnviar"><input type="submit" value="Actualizar Stock" /></span>
                 </form>
@@ -94,8 +104,7 @@
                         endwhile; 
                     endif;
                     if(mysqli_num_rows($obtenerDatos) == 0):
-                     // echo '<script language="javascript">alert("Sin datos");</script>';
-                    echo "<div id='mensajeExistente'>No existen datos con el código de barras proporcionado</div>";
+                    header("Location:menu_actualizar_producto.php?mensaje=noExistencia");
                     endif;
                 endif;
                 ?>
