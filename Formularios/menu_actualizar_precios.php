@@ -45,7 +45,7 @@
             <form action="#" method="POST">
 
                     <label for="codigo">Ingrese Codigo de Barras</label>
-                    <input type="text" name="codigo" id="codigo" required />
+                    <input type="text" name="codigo" id="codigo" required  autofocus/>
 
                    <input type="submit" id="botonValidar" value="Validar" name="btn_buscar" />
                     </form>
