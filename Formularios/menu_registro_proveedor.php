@@ -48,11 +48,7 @@
                 </form>
             </div>
         </section>
-        <footer>
-	        Abarrotes Estrella &copy;
-
-	        <a href="#" class="subir">Ir arriba</a>
-        </footer>
+        <?php require_once 'footer.php' ?>
     </div>
 </body>
 </html>
