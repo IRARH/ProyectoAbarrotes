@@ -147,14 +147,8 @@
                     <span id="botonEnviar"><input type="submit" value="Registrar producto" /></span>
                 </form>
             </div>
-
-
         </section>
-        <footer>
-            Abarrotes Estrella &copy;
-            <a href="#" class="subir">Ir arriba</a>
-        </footer>
-
+        <?php require_once 'footer.php' ?>
 </body>
 
 </html>

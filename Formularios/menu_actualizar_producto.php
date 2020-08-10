@@ -8,10 +8,6 @@
     <script src="../js/jquery.min.js"></script><!--Libreria Jquery -->
     <script type="text/javascript" src="../js/main.js"></script><!-- Script -->
     <script type="text/javascript" src="../js/busqueda.js"></script>
-
-
-
-}
 </head>
 
 <body>
@@ -111,13 +107,7 @@
             </div>
           
         </section>
-       
-        <footer>
-            Abarrotes Estrella &copy;
-
-            <a href="#" class="subir">Ir arriba</a>
-        </footer>
-       
+        <?php require_once 'footer.php' ?>
     </div>
 </body>
 

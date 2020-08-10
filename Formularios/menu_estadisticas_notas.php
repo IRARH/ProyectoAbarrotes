@@ -186,11 +186,7 @@
             <label id="dinero">Dinero en Notas: </label>
             <input type="text" name="total_piezas" />
         </div>
-        <footer>
-	        Abarrotes Estrella &copy;
-
-	        <a href="#" class="subir">Ir arriba</a>
-        </footer>
+        <?php require_once 'footer.php' ?>
     </div>
 </body>
 </html>

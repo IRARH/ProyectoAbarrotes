@@ -145,9 +145,10 @@ body {
     width: 96%;
     border: 2px solid #e3e4e5;
     margin: 0px auto;
-    margin-top: 5em;
+    margin-top: 0em;
     background: #F9F9F9;
     padding-bottom: 70px;
+    height: 42rem;
 }
 
 #productos_generales {
@@ -176,14 +177,31 @@ body {
     margin: 0px auto;
 }
 
+#contenedor #productos_busqueda #encabezado h2 {
+    margin-top: 30px;
+}
+
 #div1 {
     overflow: scroll;
-    height: 400px;
+    height: 600px;
+    width: 93%;
+    margin: 0px auto;
+}
+
+#div1 #mensajeError {
+    color: white;
+    margin-left: 95px;
+    line-height: 50px;
+    width: 82%;
+    background-color: #dc3545;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 46px;
 }
 
 #div1 table {
     table-layout: fixed;
-    width: 150%;
+    width: 220%;
     border-collapse: collapse;
     text-align: center;
     color: black;
@@ -216,7 +234,7 @@ body {
     margin-left: 23px;
     width: 95%;
     background-color: #F9F9F9;
-    padding: 8px;
+    padding: 6px;
     margin-top: 40px;
     border: 2px solid #e3e4e5;
 }
@@ -229,18 +247,19 @@ body {
     margin-left: 20px;
 }
 
-#contenedor form input[type="text"] {
+#contenedor #formulario_busqueda input[type="text"] {
     padding: 12px;
     border-radius: 5px;
     border: 1px solid #ccc;
     color: #333;
     cursor: pointer;
     width: 20%;
-    margin: 30px 80px 30px 7px;
+    margin: 30px 80px 30px 36px;
     display: inline-block;
 }
 
-#contenedor form input[type="submit"] {
+
+/*#contenedor form input[type="submit"] {
     padding: 10px;
     border: 1px solid #ccc;
     cursor: pointer;
@@ -250,7 +269,7 @@ body {
     border-radius: 10px;
     font-weight: bold;
     color: white;
-}
+}*/
 
 #contenedor #resultados_busqueda {
     margin-left: 553px;
