@@ -14,26 +14,29 @@
     
     <div id="palabras">
 
-        <nav id="opciones">
-            <ul>
-                <li><a href="menu_notas_registrar_nota.php">Registrar Nota</a></li>
-                <li><a href="menu_notas_actualizar_nota.php">Actualizar Nota</a></li>
-            </ul>
-        </nav>
+       
         <section id="principal_notas">
             <header id="encabezado">
                 <h2>Registro de Nota </h2>
             </header>
             <div id="formulario">
-                <form action="#" method="POST">
-                    <label for="fecha">Fecha</label>
-                    <input type="date" id="fecha" name="fecha" min="2020-01-01" max="2100-12-31"></br></br>
+                <form id="formValidar" action="#" method="POST">
 
                     <label for="codigo">Ingresa Codigo de Barra</label>
-                    <input type="text" name="codigo" id="codigo" required placeholder="escaneo codigo" />
+                    <input type="text" name="codigo" id="codigo" required />
+
+                    <span id="botonValidar"><input type="submit" value="Validar existencia"/></span>
 
                     <label for="destinatario">Destinatario</label>
-                    <input type="text" name="destinatario" id="destinatario" required placeholder="destinatario" />
+                    <input type="text" name="destinatario" id="destinatario" required />
+                </form>
+                
+
+                <form>
+
+                </form>
+
+                <form>
                     <div id="div1">
                         <table>
                             <tr>
@@ -81,67 +84,14 @@
                                 <td>$15</td>
                                 <td>30</td>
                             </tr>
-                            <tr>
-                                <td>10201021</td>
-                                <td>Frijol</td>
-                                <td>Costeña</td>
-                                <td>Lata</td>
-                                <td>2</td>
-                                <td>$15</td>
-                                <td>30</td>
-                            </tr>
-                            <tr>
-                                <td>10201021</td>
-                                <td>Frijol</td>
-                                <td>Costeña</td>
-                                <td>Lata</td>
-                                <td>2</td>
-                                <td>$15</td>
-                                <td>30</td>
-                            </tr>
-                            <tr>
-                                <td>10201021</td>
-                                <td>Frijol</td>
-                                <td>Costeña</td>
-                                <td>Lata</td>
-                                <td>2</td>
-                                <td>$15</td>
-                                <td>30</td>
-                            </tr>
-                            <tr>
-                                <td>10201021</td>
-                                <td>Frijol</td>
-                                <td>Costeña</td>
-                                <td>Lata</td>
-                                <td>2</td>
-                                <td>$15</td>
-                                <td>30</td>
-                            </tr>
-                            <tr>
-                                <td>10201021</td>
-                                <td>Frijol</td>
-                                <td>Costeña</td>
-                                <td>Lata</td>
-                                <td>2</td>
-                                <td>$15</td>
-                                <td>30</td>
-                            </tr>
-                            <tr>
-                                <td>10201021</td>
-                                <td>Frijol</td>
-                                <td>Costeña</td>
-                                <td>Lata</td>
-                                <td>2</td>
-                                <td>$15</td>
-                                <td>30</td>
-                            </tr>
+                            
                         </table>
                     </div>
 
                     <label class="label1">Total</label>
                     <input type="text1" name="total" id="total" required />
                     
-                    <span id="botonEnviar"><input type="submit" value="Registrar producto" /></span>
+                    <span id="botonEnviar"><input type="submit" value="Registrar Nota"/></span>
                 </form>
             </div>
         </section>

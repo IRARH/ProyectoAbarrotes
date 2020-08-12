@@ -7,7 +7,7 @@
         <img id="actualizar" src="Imagenes/actualizar.png" height="30px" width="25px" /><a href="menu_actualizar.php">Actualizar Stock</a>
         <img id="eliminar" src="Imagenes/eliminar.png" height="25px" width="25px" /><a href="menu_eliminar.php">Eliminar Producto</a>
         <img id="buscar" src="Imagenes/buscar.png" height="25px" width="25px" /><a href="menu_ver_y_buscar.php">Ver y Buscar</a>
-        <img id="nota" src="Imagenes/nota.png" height="25px" width="25px" /><a href="menu_notas.php">Registrar Nota</a>
+        <img id="nota" src="Imagenes/nota.png" height="25px" width="25px" /><a href="menu_notas_registrar_nota.php">Registrar Nota</a>
         <img id="estadistica" src="Imagenes/estadisticas.png" height="25px" width="25px" /> <a href="menu_estadisticas_notas.php">Estadísticas Notas</a>
         <img id="inventario" src="Imagenes/inventario.png" height="25px" width="25px" /><a href="menu_estadisticas_inventario.php">Inventario</a>
     </div>

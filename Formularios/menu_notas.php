@@ -12,7 +12,6 @@
         <nav id="opciones">
 			<ul>
 				<li><a href="menu_notas_registrar_nota.php">Registrar Nota</a></li>
-                <li><a href="menu_notas_actualizar_nota.php">Actualizar Nota</a></li>
 			</ul>
 		</nav>
     </div>
