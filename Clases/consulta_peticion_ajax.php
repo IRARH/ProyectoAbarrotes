@@ -69,8 +69,6 @@ if(isset($_POST['productos']))
 		}
 }
 
-
-
 echo $tabla;
 ?>
 

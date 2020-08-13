@@ -23,17 +23,9 @@
                 <form id="formValidar" action="#" method="POST">
 
                     <label for="codigo">Ingresa Codigo de Barra</label>
-                    <input type="text" name="codigo" id="codigo" required />
+                    <input type="text" name="codigo" id="codigo" required /><br>
 
-                    <span id="botonValidar"><input type="submit" value="Validar existencia"/></span>
-
-                    <label for="destinatario">Destinatario</label>
-                    <input type="text" name="destinatario" id="destinatario" required />
-                </form>
-                
-
-                <form>
-
+                    <span id="botonEnviar"><input type="submit" value="Validar existencia producto"/></span>
                 </form>
 
                 <form>
@@ -41,57 +33,20 @@
                         <table>
                             <tr>
                                 <td class=color>Codigo de Barras</td>
-                                <td class=color> Nombre de Producto</td>
-                                <td class=color>Marca</td>
-                                <td class=color>Tipo</td>
-                                <td class=color>Cantidad</td class=color>
-                                <td class=color>Precio</td>
-                                <td class=color>Subtotal</td>
+                                <td class=color>Nombre producto</td>
+                                <td class=color>Destinatario</td>
+                                <td class=color>Cantidad salida</td>
+                                <td class=color>Precio venta</td>
+                                <td class=color>Subtotal</td class=color>
+                                
                             </tr>
-                            <tr>
-                                <td>10201021</td>
-                                <td>Cerveza</td>
-                                <td>Corona</td>
-                                <td>Caguama</td>
-                                <td>10</td>
-                                <td>10</td>
-                                <td>500</td>
-                            </tr>
-                            <tr>
-                                <td>10201021</td>
-                                <td>Cerveza</td>
-                                <td>Victoria</td>
-                                <td>Caguama</td>
-                                <td>10</td>
-                                <td>10</td>
-                                <td>500</td>
-                            </tr>
-                            <tr>
-                                <td>10201021</td>
-                                <td>Cerveza</td>
-                                <td>Tecate</td>
-                                <td>Caguama</td>
-                                <td>10</td>
-                                <td>10</td>
-                                <td>500</td>
-                            </tr>
-                            <tr>
-                                <td>10201021</td>
-                                <td>Frijol</td>
-                                <td>Costeña</td>
-                                <td>Lata</td>
-                                <td>2</td>
-                                <td>$15</td>
-                                <td>30</td>
-                            </tr>
-                            
                         </table>
                     </div>
 
                     <label class="label1">Total</label>
                     <input type="text1" name="total" id="total" required />
                     
-                    <span id="botonEnviar"><input type="submit" value="Registrar Nota"/></span>
+                    <span id="botonEnviar"><input type="submit" value="Generar Nota"/></span>
                 </form>
             </div>
         </section>
