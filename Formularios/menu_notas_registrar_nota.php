@@ -20,7 +20,7 @@
                 <h2>Registro de Nota </h2>
             </header>
             <div id="formulario">
-                <form id="formValidar" action="#" method="POST">
+                <form id="formValidar" action="menu_descuento_nota.php" method="POST">
 
                     <label for="codigo">Ingresa Codigo de Barra</label>
                     <input type="text" name="codigo" id="codigo" required /><br>
@@ -28,7 +28,7 @@
                     <span id="botonEnviar"><input type="submit" value="Validar existencia producto"/></span>
                 </form>
 
-                <form>
+                <form action="#" method="POST">
                     <div id="div1">
                         <table>
                             <tr>
