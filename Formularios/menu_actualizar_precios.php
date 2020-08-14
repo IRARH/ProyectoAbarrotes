@@ -82,8 +82,7 @@
 
                         <span id="botonEnviar"><input type="submit" value="Actualizar" name="btn_buscar" /></span>
                     
-                     
-
+                
                         </form>
 
                     <?php 
