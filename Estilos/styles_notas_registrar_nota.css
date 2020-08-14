@@ -365,3 +365,26 @@ footer {
     padding-left: 30px;
     padding-right: 30px;
 }
+
+#mensajeError {
+    color: white;
+    margin-left: 95px;
+    line-height: 50px;
+    width: 85%;
+    background-color: #dc3545;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 46px;
+}
+
+
+#mensajeExitoso {
+    Color: white;
+    margin-left: 95px;
+    line-height: 50px;
+    width: 85%;
+    background-color: #28a745;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 46px;
+}

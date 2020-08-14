@@ -14,14 +14,14 @@
         <nav id="opciones">
         </nav>
 
+
         <section id="registro">
             <header id="encabezado_registro">
                 <h2>Ingreso de Productos a la Nota</h2>
             </header>
-
             <div id="formulario">
-                <form action="#" method="POST">
-                </form>
+                <form action="../Clases/registrarProductoVenta.php" method="POST">
+               
             <?php
             if(isset($_POST)){
                 require_once "../Clases/conexion.php";
@@ -31,7 +31,7 @@
                 if(mysqli_num_rows($query) > 0){   
                 while($datosProducto = mysqli_fetch_array($query)){
             ?>
-                <form action="#" method="POST">
+            
                     <label for="proveedor">Código Barras</label>
                     <input id="soloLectura" type="text" name="codigo_barras" value="<?= $datosProducto['codigo_barras'] ?>" readonly="readonly" required />
 
@@ -52,14 +52,19 @@
 
                     <label for="cantidadRetiro">Piezas a descontar</label>
                     <input id="apuntar" type="text1" name="cantidadRetiro" pattern="{-}*[0-9]+" value="0" required />
+                    
+                    <input id="destinatario" type="hidden"  name="destinatario" value="<?= $destinatario ?>"  />
 
                     <span id="botonEnviar"><input type="submit" value="Agregar a Nota" /></span>
                 </form>
+
+
                 <?php } }else if(mysqli_num_rows($query) == 0){
                         header('Location:./menu_notas_registrar_nota.php?mensaje=codigoInexistente');
                 } }  ?>
             </div>
 
+            
         </section>
         <?php require_once 'footer.php' ?>
     </div>
