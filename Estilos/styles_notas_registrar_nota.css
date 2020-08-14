@@ -286,7 +286,7 @@ h3 {
 
 #div1 table {
     table-layout: fixed;
-    width: 103%;
+    width: 148%;
     border-collapse: collapse;
     text-align: center;
     color: black;
@@ -306,6 +306,32 @@ h3 {
     height: 30px;
     font-weight: bold;
     padding: 10px;
+}
+#formulario #div1 #editar {
+    text-decoration: none;
+    background-color: #28a745;
+    opacity: 100%;
+    padding: 10px;
+    cursor: pointer;
+    color: white;
+    border-radius: 4px;
+    width: 90%;
+    font-size: 15px;
+    font-weight: 700;
+    margin: 10px;
+}
+#formulario #div1 #eliminar {
+    text-decoration: none;
+    background: #dc3545;
+    opacity: 100%;
+    padding: 10px;
+    cursor: pointer;
+    color: white;
+    border-radius: 4px;
+    width: 90%;
+    font-size: 15px;
+    font-weight: 700;
+    margin: 5px;
 }
 
 footer {

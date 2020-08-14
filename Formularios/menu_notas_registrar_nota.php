@@ -26,6 +26,12 @@
                 echo "<div id='mensajeNoExistente'>No existen datos con el código de barras proporcionado</div>";
                 header("Refresh: 2; URL=menu_notas_registrar_nota.php");
             }
+
+            if ($_GET['mensaje'] == "codigoExistente") {
+                echo "<div id='mensajeNoExistente'>Producto Duplicado en la Nota</div>";
+                header("Refresh: 2; URL=menu_notas_registrar_nota.php");
+            }
+           
         }
 
         ?>
@@ -43,9 +49,10 @@
                 echo "<div id='mensajeError'>Hubo un error al agregar datos a la nota</div>";
                 header("Refresh: 2; URL=menu_notas_registrar_nota.php");
             endif;
-        endif;
+            endif
+            ?>
 
-        ?>
+
 
         <section id="principal_notas">
             <header id="encabezado">
@@ -55,6 +62,7 @@
                 <form id="formValidar" action="menu_descuento_nota.php" method="POST">
                     <?php
                     require_once '../Clases/conexion.php';
+                    
                     $query = mysqli_query(conexion(), "SELECT * FROM ventas");
                     if (mysqli_num_rows($query) > 0) {
                         $cont = 0;
@@ -67,6 +75,8 @@
                                 break;
                             }
                         endwhile;
+
+
                     ?>
                         <label for="tienda">Destinatario</label>
                         <input type="text" name="tienda" id="tienda" value="<?= $tienda ?>" readonly /><br><br />
@@ -86,6 +96,10 @@
                         <span id="botonValidar"><input type="submit" value="Validar existencia producto" /></span>
                 </form>
 
+
+
+
+
                 <form action="#" method="POST">
                     <div id="div1">
                         <table>
@@ -96,8 +110,27 @@
                                 <td class=color>Cantidad salida</td>
                                 <td class=color>Precio venta</td>
                                 <td class=color>Subtotal</td class=color>
-
+                                <td colspan="2" class=color>Opción</td>
                             </tr>
+                            <?php
+                            $query = "select v.codigo_barras, p.nombre_producto, v.destinatario, v.cantidad_retiro, v.precio_venta, v.subtotal from ventas v INNER JOIN productos p on p.codigo_barras = v.codigo_barras";
+                            $productos_en_nota = mysqli_query(conexion(), $query);
+                            if(mysqli_num_rows($productos_en_nota) > 0):
+                                while($datos = mysqli_fetch_assoc($productos_en_nota)):
+                                ?>
+                            <tr>
+                                <td><?= $datos['codigo_barras'] ?></td>
+                                <td><?= $datos['nombre_producto'] ?></td>
+                                <td><?= $datos['destinatario'] ?></td>
+                                <td><?= $datos['cantidad_retiro'] ?></td>
+                                <td><?= $datos['precio_venta'] ?></td>
+                                <td><?= $datos['subtotal'] ?></td>
+                                <td colspan="2"><a id="editar" href="#">Editar</a><a id="eliminar" href="#">Eliminar</a></td>
+                            </tr>
+                            <?php 
+                                endwhile;
+                            endif;
+                            ?>
                         </table>
                     </div>
 
@@ -106,7 +139,7 @@
 
                     <span id="botonGenerarNota"><input type="submit" value="Generar Nota" /></span>
                 </form>
-                
+
                 <form action="../Clases/cancelarNota.php">
                     <span id="botonCancelarNota"><input type="submit" value="Cancelar Nota" /></span>
                 </form>

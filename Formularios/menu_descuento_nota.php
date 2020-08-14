@@ -21,12 +21,17 @@
             </header>
             <div id="formulario">
                 <form action="../Clases/registrarProductoVenta.php" method="POST">
-               
             <?php
             if(isset($_POST)){
                 require_once "../Clases/conexion.php";
                 $codigo = $_POST['codigo'];
                 $destinatario = $_POST['tienda'];
+
+                $duplicado = mysqli_query(conexion(), "SELECT * FROM ventas WHERE codigo_barras ='$codigo'");
+                if(mysqli_num_rows($duplicado) > 0){ 
+                    header('Location:./menu_notas_registrar_nota.php?mensaje=codigoExistente');
+
+                }  else{
                 $query = mysqli_query(conexion(),"SELECT * FROM productos WHERE codigo_barras = '$codigo'"); 
                 if(mysqli_num_rows($query) > 0){   
                 while($datosProducto = mysqli_fetch_array($query)){
@@ -59,9 +64,9 @@
                 </form>
 
 
-                <?php } }else if(mysqli_num_rows($query) == 0){
+                <?php  } }else if(mysqli_num_rows($query) == 0){
                         header('Location:./menu_notas_registrar_nota.php?mensaje=codigoInexistente');
-                } }  ?>
+                } } }  ?>
             </div>
 
             
