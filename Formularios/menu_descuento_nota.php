@@ -22,32 +22,42 @@
             <div id="formulario">
                 <form action="#" method="POST">
                 </form>
-
+            <?php
+            if(isset($_POST)){
+                require_once "../Clases/conexion.php";
+                $codigo = $_POST['codigo'];
+                $destinatario = $_POST['tienda'];
+                $query = mysqli_query(conexion(),"SELECT * FROM productos WHERE codigo_barras = '$codigo'"); 
+                if(mysqli_num_rows($query) > 0){   
+                while($datosProducto = mysqli_fetch_array($query)){
+            ?>
                 <form action="#" method="POST">
                     <label for="proveedor">Código Barras</label>
-                    <input id="soloLectura" type="text" name="codigo_barras" value="" readonly="readonly" required />
+                    <input id="soloLectura" type="text" name="codigo_barras" value="<?= $datosProducto['codigo_barras'] ?>" readonly="readonly" required />
 
                     <label for="proveedor">Nombre del Proveedor</label>
-                    <input id="soloLectura" type="text" name="proveedor" value="<?= $mostrar['proveedor'] ?>" readonly="readonly" required />
+                    <input id="soloLectura" type="text" name="proveedor" value="<?= $datosProducto['proveedor'] ?>" readonly="readonly" required />
 
                     <label for="nombre">Nombre del Producto</label>
-                    <input id="apuntar" type="text" name="nombre" value="<?= $mostrar['nombre_producto'] ?>" readonly="readonly" required />
+                    <input id="apuntar" type="text" name="nombre" value="<?= $datosProducto['nombre_producto'] ?>" readonly="readonly" required />
 
                     <label for="costo_compra">Costo Compra</label>
-                    <input id="soloLectura" type="text" name="costo_compra" value="<?= $mostrar['costo_compra'] ?>" readonly="readonly" required />
+                    <input id="soloLectura" type="text" name="costo_compra" value="<?= $datosProducto['costo_compra'] ?>" readonly="readonly" required />
 
                     <label for="costo_venta">Costo Venta</label>
-                    <input id="soloLectura" type="text" name="costo_venta" value="<?= $mostrar['costo_venta'] ?>" readonly="readonly" required />
+                    <input id="soloLectura" type="text" name="costo_venta" value="<?= $datosProducto['costo_venta'] ?>" readonly="readonly" required />
 
                     <label for="cantidad_piezas">Stock de Piezas</label>
-                    <input id="soloLectura" type="text1" name="cantidad_piezas" pattern="[0-9]+" readonly="readonly" value="<?= $mostrar['cantidad_piezas'] ?>" required />
+                    <input id="soloLectura" type="text1" name="cantidad_piezas" pattern="[0-9]+" readonly="readonly" value="<?= $datosProducto['cantidad_piezas'] ?>" required />
 
-                    <label for="cantidad_piezas_extra">Piezas a descontar</label>
-                    <input id="apuntar" type="text1" name="cantidad_piezas_extra" pattern="{-}*[0-9]+" value="0" required />
+                    <label for="cantidadRetiro">Piezas a descontar</label>
+                    <input id="apuntar" type="text1" name="cantidadRetiro" pattern="{-}*[0-9]+" value="0" required />
 
                     <span id="botonEnviar"><input type="submit" value="Agregar a Nota" /></span>
                 </form>
-
+                <?php } }else if(mysqli_num_rows($query) == 0){
+                        header('Location:./menu_notas_registrar_nota.php?mensaje=codigoInexistente');
+                } }  ?>
             </div>
 
         </section>

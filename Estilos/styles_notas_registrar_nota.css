@@ -137,6 +137,28 @@ body {
 
 /* estilo notas */
 
+#palabras #mensajeCancelado {
+    color: white;
+    margin-left: 76px;
+    line-height: 50px;
+    width: 88%;
+    background-color: #dc3545;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 46px;
+}
+
+#palabras #mensajeNoExistente {
+    color: white;
+    margin-left: 76px;
+    line-height: 50px;
+    width: 88%;
+    background-color: #ffc107;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 46px;
+}
+
 #principal_notas {
     width: 88%;
     border: 1px solid #e3e4e5;
@@ -179,7 +201,31 @@ label {
     border: 1px solid #ccc;
     color: #333;
     cursor: pointer;
-    width: 97.3%;
+    width: 47%;
+    margin: 12px 10px 15px 0;
+    display: inline-block;
+    font-size: 18px;
+}
+
+#formulario #formValidar #tienda {
+    padding: 8px;
+    border-radius: 2px;
+    border: 1px solid #ccc;
+    color: #333;
+    cursor: pointer;
+    width: 85%;
+    margin: 12px 10px 15px 0;
+    display: inline-block;
+    font-size: 18px;
+}
+
+#formulario #formValidar #select {
+    padding: 8px;
+    border-radius: 2px;
+    border: 1px solid #ccc;
+    color: #333;
+    cursor: pointer;
+    width: 98%;
     margin: 12px 10px 15px 0;
     display: inline-block;
     font-size: 18px;
@@ -207,7 +253,7 @@ label {
     cursor: pointer;
     color: white;
     border-radius: 4px;
-    width: 90%;
+    width: 24%;
     font-size: 15px;
     font-weight: 700;
     margin: 15px;
@@ -225,25 +271,6 @@ label {
     font-size: 15px;
     font-weight: 700;
     margin: 15px;
-}
-
-#formulario #botonEnviar {
-    margin: 30px 0px 0px 0px;
-    padding: 6px;
-    background-color: #e3e4e5;
-    border: 0px solid #000000;
-    text-align: center;
-    width: 97.3%;
-    display: inline-block;
-}
-
-#formulario #botonValidar {
-    margin: 30px 0px 0px 0px;
-    padding: 6px;
-    border: 0px solid #000000;
-    text-align: center;
-    width: 30%;
-    display: inline-block;
 }
 
 h3 {
