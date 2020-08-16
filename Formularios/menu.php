@@ -55,10 +55,11 @@
                                         $dato_usuario = mysqli_fetch_assoc($obtener_usuario);
                             ?>
                             <tr>
+                                
                                 <td><?php echo $datos['codigo_barras'] ?></td>
                                 <td><?php echo $datos['proveedor'] ?></td>
                                 <td><?php echo $datos['nombre_producto'] ?></td>
-                                <td><?php echo $datos['costo_compra'] ?></td>
+                                <td><?php echo '$ ',$datos['costo_compra']?></td>
                                 <td><?php echo $datos['costo_venta'] ?></td>
                                 <td><?php echo $datos['cantidad_piezas'] ?></td>
                                 <td><?php echo $datos['total_precio_compra'] ?></td>

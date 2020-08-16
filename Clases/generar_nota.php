@@ -62,7 +62,7 @@ if(mysqli_num_rows($queryVenta) > 0){
     }
     mysqli_query(conexion(), "TRUNCATE TABLE ventas");
     header('Location:../Formularios/menu_notas_registrar_nota.php?mensaje=notaGenerada');
-
+    
 }else if(mysqli_num_rows($queryVenta) == 0){
     header('Location:../Formularios/menu_notas_registrar_nota.php?mensaje=sinDatos');
 }
