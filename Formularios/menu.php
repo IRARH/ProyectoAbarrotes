@@ -27,10 +27,12 @@
                                 <td class="color">Costo compra</td>
                                 <td class="color">Costo venta</td>
                                 <td class="color">Cantidad piezas</td>
+                                <td class="color">Total Compra</td>
+                                <td class="color">Total venta</td>
+                                
                                 <td class="color">Piezas p/ caja</td>
                                 <td class="color">Cantidad cajas</td>
-                                <td class="color">Total venta</td>
-                                <td class="color">Total Compra</td>
+                              
                                 <td class="color">Fecha</td>
                                 <td class="color">Usuario</td>
                             </tr>
@@ -59,10 +61,12 @@
                                 <td><?php echo $datos['costo_compra'] ?></td>
                                 <td><?php echo $datos['costo_venta'] ?></td>
                                 <td><?php echo $datos['cantidad_piezas'] ?></td>
+                                <td><?php echo $datos['total_precio_compra'] ?></td>
+                                <td><?php echo $datos['total_precio_venta'] ?></td>
+                              
                                 <td><?php echo $datos['piezas_caja'] ?></td>
                                 <td><?php echo $datos['cantidad_cajas'] ?></td>
-                                <td><?php echo $datos['total_precio_venta'] ?></td>
-                                <td><?php echo $datos['total_precio_compra'] ?></td>
+        
                                 <td><?php echo $datos['fecha'] ?></td>
                                 <td><?php echo $dato_usuario['user'] ?></td>
                             </tr>
