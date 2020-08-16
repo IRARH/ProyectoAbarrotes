@@ -255,37 +255,8 @@ label {
     display: inline-block;
 }
 
-#mensajeExitoso {
-    color: white;
-    margin-left: 95px;
-    line-height: 50px;
-    width: 85%;
-    background-color: #28a745;
-    text-align: center;
-    font-weight: 600;
-    margin-top: 46px;
-}
-
-#mensajeError {
-    color: white;
-    margin-left: 95px;
-    line-height: 50px;
-    width: 85%;
-    background-color: #dc3545;
-    text-align: center;
-    font-weight: 600;
-    margin-top: 46px;
-}
-
-#mensajeExistente {
-    color: white;
-    margin: 0px auto;
-    line-height: 50px;
-    width: 85%;
-    background-color: #ffc107;
-    text-align: center;
-    font-weight: 600;
-    margin-top: 46px;
+#palabras #registro #formulario #mensajeStock {
+    color: #dc3545;
 }
 
 #formulario #botonEnviar {
