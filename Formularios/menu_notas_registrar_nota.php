@@ -16,43 +16,70 @@
     <div id="palabras">
 
         <?php
+        if (isset($_GET['mensaje'])) :
 
-        if (isset($_GET['mensaje'])) {
-            if ($_GET['mensaje'] == "cancelado") {
-                echo "<div id='mensajeCancelado'>Nota cancelada </div>";
+            if ($_GET['mensaje'] == "cancelado") :
+                echo "<div id='mensajeExitoso'>Nota cancelada </div>";
                 header("Refresh: 2; URL=menu_notas_registrar_nota.php");
-            }
-            if ($_GET['mensaje'] == "codigoInexistente") {
+            endif;
+            if ($_GET['mensaje'] == "codigoInexistente") :
                 echo "<div id='mensajeNoExistente'>No existen datos con el código de barras proporcionado</div>";
                 header("Refresh: 2; URL=menu_notas_registrar_nota.php");
-            }
+            endif;
 
-            if ($_GET['mensaje'] == "codigoExistente") {
-                echo "<div id='mensajeNoExistente'>Producto Duplicado en la Nota</div>";
+            if ($_GET['mensaje'] == "codigoExistente") :
+                echo "<div id='mensajeExistente'>Producto existente en la Nota</div>";
                 header("Refresh: 2; URL=menu_notas_registrar_nota.php");
-            }
-           
-        }
+            endif;
 
-        ?>
-
-        <?php
-        if (isset($_GET['mensaje'])) :
-            $mensaje = $_GET['mensaje'];
-
-            if ($mensaje == 'exitoso') :
+            if ($_GET['mensaje'] == 'exitoso') :
                 echo "<div id='mensajeExitoso'>Datos agregados a la Nota</div>";
                 header("Refresh: 2; URL=menu_notas_registrar_nota.php");
             endif;
 
-            if ($mensaje == 'error') :
+            if ($_GET['mensaje'] == 'error') :
                 echo "<div id='mensajeError'>Hubo un error al agregar datos a la nota</div>";
                 header("Refresh: 2; URL=menu_notas_registrar_nota.php");
             endif;
-            endif
-            ?>
 
+            if ($_GET['mensaje'] == 'actualizacionCorrecta') :
+                echo "<div id='mensajeExitoso'>Datos actualizados en nota</div>";
+                header("Refresh: 2; URL=menu_notas_registrar_nota.php");
+            endif;
 
+            if ($_GET['mensaje'] == 'actualizacionFallida') :
+                echo "<div id='mensajeError'>Datos no actualizados en nota</div>";
+                header("Refresh: 2; URL=menu_notas_registrar_nota.php");
+            endif;
+
+            if ($_GET['mensaje'] == 'eliminacionCorrecta') :
+                echo "<div id='mensajeExitoso'>Producto eliminado de nota</div>";
+                header("Refresh: 2; URL=menu_notas_registrar_nota.php");
+            endif;
+
+            if ($_GET['mensaje'] == 'eliminacionnFallida') :
+                echo "<div id='mensajeError'>Error para eliminar producto de nota</div>";
+                header("Refresh: 2; URL=menu_notas_registrar_nota.php");
+            endif;
+           
+            if ($_GET['mensaje'] == "sinDatos") :
+                echo "<div id='mensajeExistente'>No hay datos para generar una nota</div>";
+                header("Refresh: 2; URL=menu_notas_registrar_nota.php");
+            endif;
+
+            if ($_GET['mensaje'] == "noDatos") :
+                echo "<div id='mensajeExistente'>No hay datos para cancelar</div>";
+                header("Refresh: 2; URL=menu_notas_registrar_nota.php");
+            endif;
+
+            if ($_GET['mensaje'] == 'notaGenerada') :
+                echo "<div id='mensajeExitoso'>Se generó la nota</div>";
+                header("Refresh: 2; URL=menu_notas_registrar_nota.php");
+            endif;
+
+        endif;
+
+        ?>
 
         <section id="principal_notas">
             <header id="encabezado">
@@ -71,11 +98,10 @@
                         while ($destinatario = mysqli_fetch_assoc($queryTienda)) :
                             $tienda = $destinatario['destinatario'];
                             $cont++;
-                            if ($cont == 1) {
+                            if ($cont == 1){
                                 break;
                             }
                         endwhile;
-
 
                     ?>
                         <label for="tienda">Destinatario</label>
@@ -96,11 +122,10 @@
                         <span id="botonValidar"><input type="submit" value="Validar existencia producto" /></span>
                 </form>
 
-
-
-
-
-                <form action="#" method="POST">
+                <form action="../Clases/generar_nota.php" method="POST">
+                    <header id="notas">
+                        <h2>Datos en nota </h2>
+                    </header>
                     <div id="div1">
                         <table>
                             <tr>
@@ -113,10 +138,13 @@
                                 <td colspan="2" class=color>Opción</td>
                             </tr>
                             <?php
-                            $query = "select v.codigo_barras, p.nombre_producto, v.destinatario, v.cantidad_retiro, v.precio_venta, v.subtotal from ventas v INNER JOIN productos p on p.codigo_barras = v.codigo_barras";
+                            $query = "select v.codigo_barras, p.nombre_producto, v.destinatario, v.cantidad_retiro, v.precio_venta, v.subtotal from ventas v 
+                            INNER JOIN productos p ON p.codigo_barras = v.codigo_barras";
                             $productos_en_nota = mysqli_query(conexion(), $query);
+                            $subtotal = 0;
                             if(mysqli_num_rows($productos_en_nota) > 0):
                                 while($datos = mysqli_fetch_assoc($productos_en_nota)):
+                                    $subtotal += $datos['subtotal'];
                                 ?>
                             <tr>
                                 <td><?= $datos['codigo_barras'] ?></td>
@@ -125,17 +153,19 @@
                                 <td><?= $datos['cantidad_retiro'] ?></td>
                                 <td><?= $datos['precio_venta'] ?></td>
                                 <td><?= $datos['subtotal'] ?></td>
-                                <td colspan="2"><a id="editar" href="#">Editar</a><a id="eliminar" href="#">Eliminar</a></td>
+                                <td colspan="2"><a id="editar" href="./menu_descuento_nota_actualizar.php?codigo=<?= $datos['codigo_barras'] ?>&destinatario=<?= $datos['destinatario'] ?> ">Editar</a>
+                                <a id="eliminar" href="../Clases/eliminar_producto_nota.php?codigo=<?= $datos['codigo_barras'] ?>">Eliminar</a></td>
                             </tr>
                             <?php 
+                            
                                 endwhile;
                             endif;
                             ?>
                         </table>
-                    </div>
+                        </div>
 
-                    <label class="label1">Total</label>
-                    <input type="text1" name="total" id="total" />
+                    <label class="label1">Subtotal</label>
+                    <input type="text1" name="total" id="total" value="<?= $subtotal ?>"/>
 
                     <span id="botonGenerarNota"><input type="submit" value="Generar Nota" /></span>
                 </form>
@@ -148,5 +178,4 @@
         </section>
         <?php require_once 'footer.php' ?>
 </body>
-
 </html>

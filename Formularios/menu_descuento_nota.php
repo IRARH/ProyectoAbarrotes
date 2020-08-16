@@ -2,27 +2,29 @@
 <html lang="es">
 
 <head>
-    <title>Ingreso de Productos a la Nota</title>
+    <title>Productos a retirar en la Nota</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="../Estilos/styles_menu_descuento_nota.css" />
+    <script src="../js/jquery.min.js"></script> <!--Libreria Jquery -->
+    <script type="text/javascript" src="../js/main.js"></script><!-- Script footer -->
+    <script src="../js/peticionAjax_stock.js"></script><!-- Script petición -->
 </head>
 
 <body>
     <?php require_once 'barraLateral.php'; ?>
 
     <div id="palabras">
-        <nav id="opciones">
-        </nav>
-
 
         <section id="registro">
+
             <header id="encabezado_registro">
                 <h2>Ingreso de Productos a la Nota</h2>
             </header>
+
             <div id="formulario">
                 <form action="../Clases/registrarProductoVenta.php" method="POST">
             <?php
-            if(isset($_POST)){
+            if(isset($_POST['codigo'])){
                 require_once "../Clases/conexion.php";
                 $codigo = $_POST['codigo'];
                 $destinatario = $_POST['tienda'];
@@ -36,9 +38,9 @@
                 if(mysqli_num_rows($query) > 0){   
                 while($datosProducto = mysqli_fetch_array($query)){
             ?>
-            
+                
                     <label for="proveedor">Código Barras</label>
-                    <input id="soloLectura" type="text" name="codigo_barras" value="<?= $datosProducto['codigo_barras'] ?>" readonly="readonly" required />
+                    <input type="text" name="codigo_barras" id="codigo_barras" value="<?= $datosProducto['codigo_barras'] ?>" readonly="readonly" required />
 
                     <label for="proveedor">Nombre del Proveedor</label>
                     <input id="soloLectura" type="text" name="proveedor" value="<?= $datosProducto['proveedor'] ?>" readonly="readonly" required />
@@ -56,17 +58,22 @@
                     <input id="soloLectura" type="text1" name="cantidad_piezas" pattern="[0-9]+" readonly="readonly" value="<?= $datosProducto['cantidad_piezas'] ?>" required />
 
                     <label for="cantidadRetiro">Piezas a descontar</label>
-                    <input id="apuntar" type="text1" name="cantidadRetiro" pattern="{-}*[0-9]+" value="0" required />
+                    <input  type="text1" name="cantidadRetiro" id="cantidadRetiro" pattern="{-}*[0-9]+" value="0" required /><br/>
+
+                    <div id="mensajeStock">
+
+                    </div>
                     
                     <input id="destinatario" type="hidden"  name="destinatario" value="<?= $destinatario ?>"  />
-
                     <span id="botonEnviar"><input type="submit" value="Agregar a Nota" /></span>
                 </form>
 
 
                 <?php  } }else if(mysqli_num_rows($query) == 0){
                         header('Location:./menu_notas_registrar_nota.php?mensaje=codigoInexistente');
-                } } }  ?>
+                } } } ?>
+
+                
             </div>
 
             

@@ -153,7 +153,40 @@ body {
     margin-left: 76px;
     line-height: 50px;
     width: 88%;
+    background-color: #dc3545;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 46px;
+}
+
+#palabras #mensajeExistente {
+    color: white;
+    margin-left: 76px;
+    line-height: 50px;
+    width: 88%;
     background-color: #ffc107;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 46px;
+}
+
+#palabras #mensajeError {
+    color: white;
+    margin-left: 76px;
+    line-height: 50px;
+    width: 88%;
+    background-color: #dc3545;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 46px;
+}
+
+#palabras #mensajeExitoso {
+    Color: white;
+    margin-left: 76px;
+    line-height: 50px;
+    width: 88%;
+    background-color: #28a745;
     text-align: center;
     font-weight: 600;
     margin-top: 46px;
@@ -171,6 +204,12 @@ body {
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-bottom: 40px;
+}
+
+#principal_notas #notas {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 80px;
 }
 
 #encabezado h4 {
@@ -192,7 +231,8 @@ label {
     font-weight: bold;
     font-size: 18px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-left: 34rem;
+    margin-left: 32.4rem;
+    margin-top: 10px;
 }
 
 #formulario #formValidar input[type="text"] {
@@ -201,7 +241,7 @@ label {
     border: 1px solid #ccc;
     color: #333;
     cursor: pointer;
-    width: 47%;
+    width: 40%;
     margin: 12px 10px 15px 0;
     display: inline-block;
     font-size: 18px;
@@ -242,7 +282,7 @@ label {
     margin-bottom: 15px;
     display: inline-block;
     font-size: 18px;
-    width: 31.5%;
+    width: 20%;
 }
 
 #formulario #formValidar span input[type="submit"] {
@@ -253,7 +293,7 @@ label {
     cursor: pointer;
     color: white;
     border-radius: 4px;
-    width: 24%;
+    width: 26%;
     font-size: 15px;
     font-weight: 700;
     margin: 15px;
@@ -267,10 +307,12 @@ label {
     cursor: pointer;
     color: white;
     border-radius: 4px;
-    width: 90%;
+    width: 98%;
     font-size: 15px;
     font-weight: 700;
-    margin: 15px;
+    margin-left: 0px;
+    margin-top: 35px;
+    margin-bottom: 20px;
 }
 
 h3 {
@@ -280,8 +322,8 @@ h3 {
 #div1 {
     overflow: scroll;
     height: 300px;
-    margin-top: 100px;
-    width: 98.7%;
+    margin-top: 30px;
+    width: 98%;
 }
 
 #div1 table {
@@ -307,6 +349,7 @@ h3 {
     font-weight: bold;
     padding: 10px;
 }
+
 #formulario #div1 #editar {
     text-decoration: none;
     background-color: #28a745;
@@ -320,6 +363,7 @@ h3 {
     font-weight: 700;
     margin: 10px;
 }
+
 #formulario #div1 #eliminar {
     text-decoration: none;
     background: #dc3545;
@@ -390,27 +434,4 @@ footer {
     text-decoration: none;
     padding-left: 30px;
     padding-right: 30px;
-}
-
-#mensajeError {
-    color: white;
-    margin-left: 95px;
-    line-height: 50px;
-    width: 85%;
-    background-color: #dc3545;
-    text-align: center;
-    font-weight: 600;
-    margin-top: 46px;
-}
-
-
-#mensajeExitoso {
-    Color: white;
-    margin-left: 95px;
-    line-height: 50px;
-    width: 85%;
-    background-color: #28a745;
-    text-align: center;
-    font-weight: 600;
-    margin-top: 46px;
 }
