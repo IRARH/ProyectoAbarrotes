@@ -10,7 +10,7 @@
 <body>
 
     <?php require_once 'barraLateral.php'; ?>
-    
+
     <div id="palabras">
         <section id="principal_notas">
             <header id="encabezado">
@@ -29,16 +29,16 @@
                                 <td class="color">Cantidad piezas</td>
                                 <td class="color">Total Compra</td>
                                 <td class="color">Total venta</td>
-                                
+
                                 <td class="color">Piezas p/ caja</td>
                                 <td class="color">Cantidad cajas</td>
-                              
+
                                 <td class="color">Fecha</td>
                                 <td class="color">Usuario</td>
                             </tr>
-                            <?php  
+                            <?php
                                 require_once '../Clases/obtenerDatos.php';
-                            
+
 
                                 //traer la consulta de los datos
                                 $query = query();
@@ -46,7 +46,7 @@
                                 $total_compra = 0;
                                 //verificar si hay datos en la base
                                 if($query){
-            
+
                                     //recorrer el query e imprimir los datos
                                     while($datos = mysqli_fetch_array($query)){
                                         //consulta para obtener quien da de alta el producto
@@ -55,32 +55,32 @@
                                         $dato_usuario = mysqli_fetch_assoc($obtener_usuario);
                             ?>
                             <tr>
-                                
+
                                 <td><?php echo $datos['codigo_barras'] ?></td>
                                 <td><?php echo $datos['proveedor'] ?></td>
                                 <td><?php echo $datos['nombre_producto'] ?></td>
                                 <td><?php echo '$ ',$datos['costo_compra']?></td>
-                                <td><?php echo $datos['costo_venta'] ?></td>
+                                <td><?php echo '$ ',$datos['costo_venta'] ?></td>
                                 <td><?php echo $datos['cantidad_piezas'] ?></td>
-                                <td><?php echo $datos['total_precio_compra'] ?></td>
-                                <td><?php echo $datos['total_precio_venta'] ?></td>
-                              
+                                <td><?php echo '$ ',$datos['total_precio_compra'] ?></td>
+                                <td><?php echo '$ ',$datos['total_precio_venta'] ?></td>
+
                                 <td><?php echo $datos['piezas_caja'] ?></td>
                                 <td><?php echo $datos['cantidad_cajas'] ?></td>
-        
+
                                 <td><?php echo $datos['fecha'] ?></td>
                                 <td><?php echo $dato_usuario['user'] ?></td>
                             </tr>
-                            <?php 
+                            <?php
                                 $total_venta += $datos['total_precio_venta'];
                                 $total_compra += $datos['total_precio_compra'];
                                     }
                                 }else{
                                     echo "Sin datos en existencia";
-                                } 
+                                }
                                 ?>
                         </table>
-                        
+
                     </div>
                 </form>
             </div>
