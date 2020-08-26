@@ -13,115 +13,27 @@
         <div id="formulario_busqueda">
             <h2 id='titulo_estadistica'>Estadísticas de Notas</h2>
             <h3>Busqueda Especifica</h3>
-
-            <form action="#" method="POST">
-                <label id='destinatario'>Seleccionar Tienda</label>
-                <select name="destinatario" id="destinatario">
-                    <option>Rayo</option>
-                    <option>Estrella</option>
-                </select>
-
+            <form action="../Clases/busquedaNota.php" method="POST">
+          <?php
+                    require_once '../Clases/conexion.php';
+                    ?>
+                        <label for="tienda">Destinatario</label>
+                    <?php 
+                        $queryDestinatarios = mysqli_query(conexion(), "SELECT * FROM tiendas"); ?>
+                        <label for="select">Elige destinatario</label><select id="select" name="tienda">
+                            <?php
+                            while ($tiendas = mysqli_fetch_assoc($queryDestinatarios)) : ?>
+                                <option><?= $tiendas['nombre'] ?> </option>
+                        <?php endwhile;
+                        ?>
+                        </select>
                 <label id='fecha'>Fecha </label>
-                <input type="date" id="fecha" name="fecha"  min="2020-01-01" max="2100-12-31"> 
+                <input type="date" id="fecha" name="fecha"  min="2020-01-01" max="2100-12-31">
 
                 <input type="submit" value="BUSCAR" />
-                <br>
-
-                <label id='url' >URL del archivo: </label>
-                <input type="text" name="url" id="url" placeholder="url de búsqueda" />
             </form>
-
         </div>
-        <section id="productos_busqueda">
-            <header id="encabezado">
-                <h2>Tabla de Nota</h2>
-            </header>
-            <div id="tabla_busqueda">
-                <div id="div1">
-                    <table>
-                        <tr>
-                            <td class=color>Codigo de Barras</td>
-                            <td class=color>Nombre del Producto</td>
-                            <td class=color>Marca</td>
-                            <td class=color>Tipo</td>
-                            <td class=color>Cantidad</td>
-                            <td class=color>Precio</td>
-                            <td class=color>Subtotal</td>
-                        </tr>
-                        <tr>
-                            <td>10201021</td>
-                            <td>Corona</td>
-                            <td>Cerveza</td>
-                            <td>Corona</td>
-                            <td>Caguama</td>
-                            <td>20</td>
-                            <td>35</td>
-                        </tr>
-                        <tr>
-                            <td>10201021</td>
-                            <td>Corona</td>
-                            <td>Cerveza</td>
-                            <td>Corona</td>
-                            <td>Caguama</td>
-                            <td>20</td>
-                            <td>35</td>
-                        </tr>
-                        <tr>
-                            <td>10201021</td>
-                            <td>Corona</td>
-                            <td>Cerveza</td>
-                            <td>Corona</td>
-                            <td>Caguama</td>
-                            <td>20</td>
-                            <td>35</td>
-                        </tr>
-                        <tr>
-                            <td>10201021</td>
-                            <td>Corona</td>
-                            <td>Cerveza</td>
-                            <td>Corona</td>
-                            <td>Caguama</td>
-                            <td>20</td>
-                            <td>35</td>
-                        </tr>
-                        <tr>
-                            <td>10201021</td>
-                            <td>Corona</td>
-                            <td>Cerveza</td>
-                            <td>Corona</td>
-                            <td>Caguama</td>
-                            <td>20</td>
-                            <td>35</td>
-                        </tr>
-                        <tr>
-                            <td>10201021</td>
-                            <td>Corona</td>
-                            <td>Cerveza</td>
-                            <td>Corona</td>
-                            <td>Caguama</td>
-                            <td>20</td>
-                            <td>35</td>
-                        </tr>
-                        <tr>
-                            <td>10201021</td>
-                            <td>Corona</td>
-                            <td>Cerveza</td>
-                            <td>Corona</td>
-                            <td>Caguama</td>
-                            <td>20</td>
-                            <td>35</td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
         </section>
-        <div id="resultados_busqueda">
-            <label for="total_piezas_busqueda">Total / pza</label>
-            <input type="text" name="total_piezas_busqueda" id="total_piezas_busqueda" />
-
-            <label for="total_busqueda">Total dinero</label>
-            <input type="text" name="total_busqueda" id="total_busqueda" />
-        </div>
         <section id="productos_generales">
             <header id="encabezado">
 
@@ -142,55 +54,6 @@
 
                     <input type="submit" value="BUSCAR" />
                 </form>
-
-
-
-                <h2>Arhivos encontrados</h2>
-            </header>
-            <div id="tabla_general">
-                <div id="div3">
-                    <table>
-                        <tr>
-                            <td class=color>Fecha</td>
-                            <td class=color>URL</td>
-                        </tr>
-                        <tr>
-                            <td>22 Junio</td>
-                            <td>http://servidor.gio/1234</td>
-                        </tr>
-                        <tr>
-                            <td>22 Junio</td>
-                            <td>http://servidor.gio/1234</td>
-                        </tr>
-                        <tr>
-                            <td>22 Junio</td>
-                            <td>http://servidor.gio/1234</td>
-                        </tr>
-                        <tr>
-                            <td>22 Junio</td>
-                            <td>http://servidor.gio/1234</td>
-                        </tr>
-                        <tr>
-                            <td>22 Junio</td>
-                            <td>http://servidor.gio/1234</td>
-                        </tr>
-                        <tr>
-                            <td>22 Junio</td>
-                            <td>http://servidor.gio/1234</td>
-                        </tr>
-                        <tr>
-                            <td>22 Junio</td>
-                            <td>http://servidor.gio/1234</td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
         </section>
-        <div id="final">
-            <label id="dinero">Dinero en Notas: </label>
-            <input type="text" name="total_piezas" />
-        </div>
-        <?php require_once 'footer.php' ?>
-    </div>
 </body>
 </html>

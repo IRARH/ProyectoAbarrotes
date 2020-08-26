@@ -50,13 +50,10 @@
 
                     if (isset($_POST['codigo'])) :
                         require_once '../Clases/conexion.php';
-
                         $codigo = $_POST['codigo'];
                         $obtenerDatos = mysqli_query(conexion(), "SELECT * FROM productos WHERE codigo_barras = '$codigo'");
-
                         if (mysqli_num_rows($obtenerDatos) > 0) :
                             while ($muestra = mysqli_fetch_assoc($obtenerDatos)) :
-
                     ?>
                                 <table>
                                     <tr>

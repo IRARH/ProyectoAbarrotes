@@ -3,6 +3,7 @@ require_once 'conexion.php';
 //Variable que se envia al realizar la consulta.
 $mensaje = "";
 //Comprobar si se recibe algo por GET
+
 if($_POST){
     //Obetner lo que se envio por GET
     $respuesta = $_POST['codigo_barras'];

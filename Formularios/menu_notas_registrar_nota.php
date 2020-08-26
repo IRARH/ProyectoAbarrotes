@@ -128,7 +128,6 @@
               
                 </form>
                 <span id="botonVerNota"><input type="submit" value="Previsualizar Nota " onclick="location.href='pdfGenerador.php'"/></span>
-       
 
                 <form action="../Clases/generar_nota.php" method="POST">
                     <header id="notas">

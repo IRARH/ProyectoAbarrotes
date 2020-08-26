@@ -11,7 +11,6 @@ $query = "select v.codigo_barras, p.nombre_producto, v.destinatario, v.cantidad_
 $busqueda = mysqli_query(conexion(), $query);
 $su = mysqli_query(conexion(),$suma);
 $valida = mysqli_query(conexion(),$validacion);
-
 if(mysqli_num_rows($valida) == 0){
     header('Location:./menu_notas_registrar_nota.php?mensaje=sinDatosVer');
 } 
@@ -122,7 +121,7 @@ while($row = $su->fetch_assoc()){
 
 
 //$pdf->Output();
-$pdf->Output('I', 'Empleados.pdf')
+$pdf->Output('I', 'Empleados.pdf');
 
 ?>
 
