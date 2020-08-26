@@ -1,3 +1,5 @@
+<script src="../js/jquery.min.js"></script>
+    <!--Libreria Jquery -->
 <?php
 /////// CONEXIÓN A LA BASE DE DATOS /////////
 require_once 'conexion.php';
@@ -23,10 +25,25 @@ if(isset($_POST['cantidad']) && isset($_POST['codigo']))
     }
     if($diferencia < 0){
         $mensaje = "<h5>Cantidad a retirar superior al Stock</h5>";
+        ?>
+        <script>
+            $(document).ready(function(){
+                var boton = $('#boton');
+                $('#boton').attr('disabled', true);
+            })
+        </script>
+    <?php
     }
     else if($diferencia == 0){
         $mensaje = "<h5>Stock de producto en 0 si retira la cantidad seleccionada</h5>";
-    }
+    }else{?>
+        <script>
+            $(document).ready(function(){
+                var boton = $('#boton');
+                boton.attr('disabled', false);
+            })
+        </script>
+   <?php }
 }
 
 echo $mensaje;

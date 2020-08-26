@@ -65,7 +65,7 @@
                     </div>
                     
                     <input id="destinatario" type="hidden"  name="destinatario" value="<?= $destinatario ?>"  />
-                    <span id="botonEnviar"><input type="submit" value="Agregar a Nota" /></span>
+                    <span id="botonEnviar"><input type="submit" id="boton" value="Agregar a Nota" /></span>
                 </form>
 
 

@@ -22,6 +22,12 @@
                 echo "<div id='mensajeExitoso'>Nota cancelada </div>";
                 header("Refresh: 2; URL=menu_notas_registrar_nota.php");
             endif;
+
+            if ($_GET['mensaje'] == "notaGenerada") :
+                echo "<div id='mensajeExitoso'>Nota Generada </div>";
+                header("Refresh: 2; URL=menu_notas_registrar_nota.php");
+            endif;
+
             if ($_GET['mensaje'] == "codigoInexistente") :
                 echo "<div id='mensajeNoExistente'>No existen datos con el código de barras proporcionado</div>";
                 header("Refresh: 2; URL=menu_notas_registrar_nota.php");
@@ -73,11 +79,9 @@
             endif;
 
             if ($_GET['mensaje'] == 'sinDatosVer') :
-                echo "<div id='mensajeExistente'>No hay datos para ver una Nota</div>";
+                echo "<div id='mensajeExistente'>No hay datos para visualizar en Nota</div>";
                 header("Refresh: 2; URL=menu_notas_registrar_nota.php");
-
-            endif;
-            
+            endif;            
         endif;
 
         ?>
@@ -123,7 +127,7 @@
                         <span id="botonValidar"><input type="submit" value="Validar existencia producto" /></span>
               
                 </form>
-                <span id="botonVerNota"><input type="submit" value="Ver Nota " onclick="location.href='pdfGenerador.php'"/></span>
+                <span id="botonVerNota"><input type="submit" value="Previsualizar Nota " onclick="location.href='pdfGenerador.php'"/></span>
        
 
                 <form action="../Clases/generar_nota.php" method="POST">
@@ -158,7 +162,7 @@
                                         <td><?= $datos['precio_venta'] ?></td>
                                         <td><?= $datos['subtotal'] ?></td>
                                         <td colspan="2"><a id="editar" href="./menu_descuento_nota_actualizar.php?codigo=<?= $datos['codigo_barras'] ?>&destinatario=<?= $datos['destinatario'] ?> ">Editar</a>
-                                            <a id="eliminar" href="../Clases/eliminar_producto_nota.php?codigo=<?= $datos['codigo_barras'] ?>">Eliminar</a></td>
+                                        <a id="eliminar" href="../Clases/eliminar_producto_nota.php?codigo=<?= $datos['codigo_barras'] ?>">Eliminar</a></td>
                                     </tr>
                             <?php
 
@@ -171,16 +175,11 @@
                     <label class="label1">Subtotal</label>
                     <input type="text1" name="total" id="total" value="<?= $subtotal ?>" />
 
-                    <span id="botonGenerarNota"><input type="submit" value="Actualizar iventario de acuerdo a la nota" /></span>
+                    <span id="botonGenerarNota"><input type="submit" value="Generar Nota" /></span>
                 </form>
 
+                    <span id="botonCancelarNota"><input type="submit" value="Cancelar Nota" onclick="location.href='../Clases/cancelarNota.php'" /></span>
                
-               
-               
-
-                <form action="../Clases/cancelarNota.php">
-                    <span id="botonCancelarNota"><input type="submit" value="Cancelar Nota" /></span>
-                </form>
 
             </div>
         </section>

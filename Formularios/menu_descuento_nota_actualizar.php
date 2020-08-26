@@ -63,7 +63,7 @@
                             </div>
 
                             <input id="destinatario" type="hidden" name="destinatario" value="<?= $dest ?>" />
-                            <span id="botonEnviar"><input type="submit" value="Actualizar datos en Nota" /></span>
+                            <span id="botonEnviar"><input type="submit" id="boton" value="Actualizar datos en Nota" /></span>
                         </form>
                 <?php }
                 }  ?>
