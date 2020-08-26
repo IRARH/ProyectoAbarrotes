@@ -9,7 +9,16 @@
 </head>
 <body>
     <?php require_once 'barraLateral.php'; ?>
-    <div id="contenedor">
+  <div id='contenedor'>
+     <?php
+    if (isset($_GET['mensaje'])):
+        if ($_GET['mensaje'] == 'sinDatosVer') :
+            echo "<div id='mensajeExistente'>No hay datos para visualizar en Nota</div>";
+            header("Refresh: 30; URL=menu_estadisticas_notas.php");
+        endif;
+     endif;
+    ?>
+
         <div id="formulario_busqueda">
             <h2 id='titulo_estadistica'>Estadísticas de Notas</h2>
             <h3>Busqueda Especifica</h3>
@@ -33,6 +42,7 @@
                 <input type="submit" value="BUSCAR" />
             </form>
         </div>
+
         </section>
         <section id="productos_generales">
             <header id="encabezado">

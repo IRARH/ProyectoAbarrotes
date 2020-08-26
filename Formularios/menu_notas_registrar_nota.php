@@ -12,9 +12,7 @@
 
 <body>
     <?php require_once 'barraLateral.php'; ?>
-
     <div id="palabras">
-
         <?php
         if (isset($_GET['mensaje'])) :
 

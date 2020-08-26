@@ -432,3 +432,13 @@ footer {
     display: block;
     float: right;
 }
+#contenedor #mensajeExistente{
+    color: white;
+    margin-left: 76px;
+    line-height: 50px;
+    width: 88%;
+    background-color: #ffc107;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 46px;
+}
