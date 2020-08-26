@@ -9,11 +9,11 @@
 </head>
 <body>
     <?php require_once 'barraLateral.php'; ?>
-    
     <div id="contenedor">
         <div id="formulario_busqueda">
             <h2 id='titulo_estadistica'>Estadísticas de Notas</h2>
             <h3>Busqueda Especifica</h3>
+
             <form action="#" method="POST">
                 <label id='destinatario'>Seleccionar Tienda</label>
                 <select name="destinatario" id="destinatario">
@@ -22,7 +22,7 @@
                 </select>
 
                 <label id='fecha'>Fecha </label>
-                <input type="date" id="fecha" name="fecha"  min="2020-01-01" max="2100-12-31">
+                <input type="date" id="fecha" name="fecha"  min="2020-01-01" max="2100-12-31"> 
 
                 <input type="submit" value="BUSCAR" />
                 <br>
@@ -30,6 +30,7 @@
                 <label id='url' >URL del archivo: </label>
                 <input type="text" name="url" id="url" placeholder="url de búsqueda" />
             </form>
+
         </div>
         <section id="productos_busqueda">
             <header id="encabezado">
@@ -123,9 +124,9 @@
         </div>
         <section id="productos_generales">
             <header id="encabezado">
+
                 <form id="busqueda_rango" action="#" method="POST">
                     <h2>Busqueda por Rango</h2>
-                    
 
                     <label id='tienda'>Seleccionar Tienda</label>
                     <select name="tienda" id="tienda">
@@ -141,6 +142,9 @@
 
                     <input type="submit" value="BUSCAR" />
                 </form>
+
+
+
                 <h2>Arhivos encontrados</h2>
             </header>
             <div id="tabla_general">

@@ -12,6 +12,7 @@
 
 <body>
     <?php require_once 'barraLateral.php'; ?>
+
     <div id="palabras">
         <?php
         if (isset($_GET['mensaje'])) :
@@ -82,10 +83,9 @@
                                     ?>
                                 </table>
                                 <span id="botonEliminar"><input type="submit" value="Eliminar" name="btn_eliminar" id="btn_eliminar" /></span>
-            </div>
-            </form>
-
-<?php
+                         </div>
+                    </form>
+                    <?php
                             endwhile;
                         endif;
                         if (mysqli_num_rows($obtenerDatos) == 0) :
