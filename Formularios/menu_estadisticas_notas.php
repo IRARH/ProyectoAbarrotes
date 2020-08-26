@@ -9,17 +9,18 @@
 </head>
 <body>
     <?php require_once 'barraLateral.php'; ?>
+
   <div id='contenedor'>
      <?php
     if (isset($_GET['mensaje'])):
         if ($_GET['mensaje'] == 'sinDatosVer') :
             echo "<div id='mensajeExistente'>No hay datos para visualizar en Nota</div>";
-            header("Refresh: 30; URL=menu_estadisticas_notas.php");
+            header("Refresh: 3; URL=menu_estadisticas_notas.php");
         endif;
      endif;
     ?>
 
-        <div id="formulario_busqueda">
+       <div id="formulario_busqueda">
             <h2 id='titulo_estadistica'>Estadísticas de Notas</h2>
             <h3>Busqueda Especifica</h3>
             <form action="../Clases/busquedaNota.php" method="POST">
@@ -47,14 +48,21 @@
         <section id="productos_generales">
             <header id="encabezado">
 
-                <form id="busqueda_rango" action="#" method="POST">
+                <form id="busqueda_rango" action="../Clases/busquedaNotaRango.php" method="POST">
+
                     <h2>Busqueda por Rango</h2>
 
-                    <label id='tienda'>Seleccionar Tienda</label>
-                    <select name="tienda" id="tienda">
-                        <option>Rayo</option>
-                        <option>Estrella</option>
-                    </select>
+                    <label for="tienda">Destinatario</label>
+                    <?php
+                        $queryDestinatarios = mysqli_query(conexion(), "SELECT * FROM tiendas"); ?>
+                        <label for="select">Elige destinatario</label><select id="select" name="tienda">
+                            <?php
+                            while ($tiendas = mysqli_fetch_assoc($queryDestinatarios)) : ?>
+                                <option><?= $tiendas['nombre'] ?> </option>
+                        <?php endwhile;
+                        ?>
+                        </select>
+
 
                     <label id='fecha_inicial'>Fecha Inicial</label>
                     <input type="date" id="fecha_inicial" name="fecha_inicial" min="2020-01-01" max="2100-12-31">
