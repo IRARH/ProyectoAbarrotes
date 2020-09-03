@@ -78,7 +78,7 @@ body {
 
 #principal #salir #sesion {
     position: absolute;
-    right: 15rem;
+    right: 11rem;
     top: 0px;
     text-transform: none;
 }
@@ -95,7 +95,7 @@ body {
 
 #palabras {
     margin-left: 200px;
-    padding-top: 88px;
+    padding-top: 100px;
     padding-left: 34px;
 }
 

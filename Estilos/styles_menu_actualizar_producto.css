@@ -78,7 +78,7 @@ body {
 
 #principal #salir #sesion {
     position: absolute;
-    right: 15rem;
+    right: 11rem;
     top: 0px;
     text-transform: none;
 }
@@ -105,7 +105,7 @@ body {
 #opciones {
     font-family: Helvetica, Arial;
     background: rgb(51, 51, 51, 0.70);
-    width: 43%;
+    width: 85%;
     text-transform: uppercase;
     margin: 0px auto;
 }
@@ -113,7 +113,7 @@ body {
 #opciones ul {
     line-height: 46px;
     list-style: none;
-    padding-left: 35px;
+    padding-left: 50px;
 }
 
 #opciones ul li {
@@ -272,14 +272,14 @@ label {
 footer {
     font-family: Helvetica, Arial;
     color: white;
-    height: 65px;
+    height: 42px;
     background: rgb(51, 51, 51, 0.70);
     margin: 0px auto;
-    width: 66%;
+    width: 82%;
     padding-left: 20px;
     padding-right: 20px;
     margin-top: 75px;
-    line-height: 60px;
+    line-height: 40px;
 }
 
 .subir {

@@ -49,7 +49,6 @@
                 </form>
             </div>
         </section>
-        <?php require_once 'footer.php' ?>
     </div>
 </body>
 </html>
