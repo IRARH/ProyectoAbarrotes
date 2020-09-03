@@ -5,6 +5,7 @@
     <title>Eliminar Producto</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="../Estilos/styles_menu_eliminar.css" />
+    <link rel="icon" type="image/x-icon" href="./Imagenes/favicon.png" />
     <script src="../js/jquery.min.js"></script>
     <!--Libreria Jquery -->
     <script type="text/javascript" src="../js/main.js"></script><!-- Script -->

@@ -4,6 +4,7 @@
     <title>Menu de opciones de notas</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="../Estilos/styles_menu_notas.css" />
+    <link rel="icon" type="image/x-icon" href="./Imagenes/favicon.png" />
 </head>
 <body>
     <?php require_once 'barraLateral.php'; ?>

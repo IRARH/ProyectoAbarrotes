@@ -5,6 +5,7 @@
     <title>Actualizar Precios</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="../Estilos/styles_notas_registrar_nota.css" />
+    <link rel="icon" type="image/x-icon" href="./Imagenes/favicon.png" />
     <script src="../js/jquery.min.js"></script>
     <!--Libreria Jquery -->
     <script type="text/javascript" src="../js/main.js"></script><!-- Script -->
@@ -120,7 +121,7 @@
                         </select><br />
 
                         <label for="codigo">Ingresa Codigo de Barra</label>
-                        <input type="text" name="codigo" id="codigo" required />
+                        <input type="text" name="codigo" id="codigo" autofocus required />
 
                         <span id="botonValidar"><input type="submit" value="Validar existencia producto" /></span>
               
