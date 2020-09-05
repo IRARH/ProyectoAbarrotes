@@ -1,9 +1,150 @@
-/*Estilos para menu*/
-
 body {
     font-family: Helvetica;
 }
 
+/*estilos generales*/
+
+h1{
+    font-size: 27px;
+    text-align: center;
+    font-weight: 800;
+}
+
+label {
+	font-weight: bold;
+    font-size: 20px;
+    display: block;
+}
+
+#labelAlterado {
+    display: block;
+	font-weight: bold;
+	font-size: 20px;
+    font-family: Helvetica;
+    margin-bottom: -9px !important;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    color: #333;
+    cursor: pointer;
+    width: 97%;
+    margin: 20px 10px 15px 0;
+    display: block;
+    font-size: 18px;
+    outline: 0;
+}
+
+input[type="text"]:focus {
+    box-shadow: 0px 0px 2px #fcde00;
+    font-weight: bold;
+}
+
+.soloLectura:focus {
+    box-shadow: 0px 0px 2px #dc3545 !important;
+    font-weight: normal !important;
+}
+
+/*caja de texto para validar*/
+#registro #codigo{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    color: #333;
+    cursor: pointer;
+    width: 97%;
+    margin: 20px 10px 15px 0;
+    display: block;
+    font-size: 18px;
+    outline: 0;
+}
+
+#registro #codigo:focus{
+    box-shadow: 0px 0px 2px #fcde00;
+    font-weight: bold;
+}
+
+/*boton para actualizar*/
+#registro #formulario #enviar {
+    background: #dc3545;
+    padding: 16px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    color: white;
+    border-radius: 4px;
+    width: 90%;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 15px;
+    outline: 0;
+}
+
+#registro #formulario #enviar:hover {
+    box-shadow: 0px 0px 3px gray;
+    outline: 0;
+}
+
+#registro #formulario #enviar:active {
+    box-shadow: 0px 0px 4px gray inset;
+    text-shadow: 0px 0px 4px gray;
+    outline: 0;
+}
+
+/*boton para buscar por código*/
+#registro #botonValidar{
+    background: #dc3545;
+    padding: 15px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    color: white;
+    border-radius: 4px;
+    width: 90%;
+    font-size: 15px;
+    font-weight: 700;
+    margin: 15px;
+    outline: 0;
+}
+
+#registro #botonValidar:hover{
+    box-shadow: 0px 0px 3px gray;
+    outline: 0;
+}
+
+#registro #botonValidar:active{
+    box-shadow: 0px 0px 4px gray inset;
+    text-shadow: 0px 0px 4px gray;
+    outline: 0;
+}
+
+#formulario #botonBuscar {
+    margin: 30px 0px 0px 0px;
+    padding: 6px;
+    background-color: #e3e4e5;
+    border: 0px solid #000000;
+    text-align: center;
+    width: 98%;
+    display: inline-block;
+}
+
+#formulario span{
+    margin: 30px 0px 0px 0px;
+    padding: 6px;
+    background-color: #e3e4e5;
+    border: 0px solid #000000;
+    text-align: center;
+    width: 98%;
+    display: inline-block;
+}
+
+/*formulario que trae datos*/
+#actualizar{
+    margin-top: 60px;
+}
+
+
+/*Estilos para menu*/
 .navegacion {
     height: 100%;
     width: 200px;
@@ -41,7 +182,7 @@ body {
 .navegacion img {
     display: block;
     float: left;
-    margin-top: 35px;
+    margin-top: 32px;
     margin-left: 10px;
 }
 
@@ -57,40 +198,64 @@ body {
 }
 
 #principal {
-    margin-left: 200px;
-    background: black;
-    position: fixed;
-    top: 0;
+	margin-left: 200px;
+	background: black;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	font-family: Helvetica, Arial;
+	text-transform: uppercase;
+	color: white;
+    padding: 4px;
+    height: 70px;
+}
+
+#principal {
+	margin-left: 200px;
+	background: black;
+	position: fixed;
+	top: 0;
     left: 0;
-    width: 100%;
-    letter-spacing: 10px;
-    font-family: Helvetica, Arial;
-    text-transform: uppercase;
-    color: white;
+	width: 86.2%;
+	font-family: Helvetica, Arial;
+	text-transform: uppercase;
+	color: white;
     padding: 5px;
+    height: 76px;
 }
 
 #principal #salir {
-    position: absolute;
-    right: 15rem;
-    top: 9px;
+    display: block;
+    float: left;
+    letter-spacing: 8px;
 }
 
 #principal #salir #sesion {
-    position: absolute;
-    right: 11rem;
-    top: 0px;
+    display: block;
+    float: left;
     text-transform: none;
+    letter-spacing: 7px;
+    line-height: 3px;
 }
 
 #principal #salir a {
-    color: white;
-    text-decoration: none;
-    cursor: pointer;
+	color: white;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+#principal #salir a:hover{
+    transition: all 300ms;
+    color: #ccc;
 }
 
 #principal h2 {
-    text-align: left;
+    display: block;
+    float: left;
+    letter-spacing: 8px;
+    margin-right: 15rem;
+    line-height: 40px;
 }
 
 #palabras {
@@ -104,7 +269,7 @@ body {
 
 #opciones {
     font-family: Helvetica, Arial;
-    background: rgb(51, 51, 51, 0.70);
+    background: #333333;
     width: 85%;
     text-transform: uppercase;
     margin: 0px auto;
@@ -147,7 +312,6 @@ body {
 
 #encabezado {
     text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-bottom: 40px;
 }
 
@@ -160,78 +324,6 @@ body {
     margin: 0px auto;
 }
 
-label {
-    font-weight: bold;
-    font-size: 15px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-form input[type="text"] {
-    padding: 8px;
-    border-radius: 2px;
-    border: 1px solid #ccc;
-    color: #333;
-    cursor: pointer;
-    width: 97%;
-    margin: 12px 10px 15px 0;
-    display: inline-block;
-    font-size: 18px;
-}
-
-
-form #codigo{
-    padding: 8px;
-    border-radius: 2px;
-    border: 1px solid #ccc;
-    color: #333;
-    cursor: pointer;
-    width: 77%;
-    margin: 12px 10px 15px 0;
-    display: inline-block;
-    font-size: 18px;
-}
-
-#formulario span input[type="submit"] {
-    background: #dc3545;
-    opacity: 80%;
-    padding: 15px;
-    border: 1px solid #ccc;
-    cursor: pointer;
-    color: white;
-    border-radius: 4px;
-    width: 90%;
-    font-size: 15px;
-    font-weight: 700;
-    margin: 15px;
-}
-
-#formulario #botonValidar{
-    margin: 30px 0px 0px 0px;
-    height: 40px;
-   /*background-color: #e3e4e5;*/
-    border: 0px solid #000000;
-    color: white;
-    text-align: center;
-    width: 18.3%;
-    display: inline-block;
-    border-radius: 4px;
-    background: #dc3545;
-    opacity: 80%;
-    font-size: 15px;
-    margin-top: 20px;
-    
-}
-
-#formulario #botonEnviar {
-    margin: 30px 0px 0px 0px;
-    padding: 11px;
-   background-color: #e3e4e5;
-    border: 0px solid #000000;
-    text-align: center;
-    width: 100.3%;
-    display: inline-block;
-}
-
 #encabezado_registro {
     text-align: center;
     margin-bottom: 45px;
@@ -242,7 +334,7 @@ footer {
     font-family: Helvetica, Arial;
     color: white;
     height: 42px;
-    background: rgb(51, 51, 51, 0.70);
+    background: #333;
     margin: 0px auto;
     width: 82%;
     padding-left: 20px;

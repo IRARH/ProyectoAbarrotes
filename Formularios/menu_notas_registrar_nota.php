@@ -5,7 +5,7 @@
     <title>Actualizar Precios</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="../Estilos/styles_notas_registrar_nota.css" />
-    <link rel="icon" type="image/x-icon" href="./Imagenes/favicon.png" />
+    <link rel="icon" type="image/x-icon" href="./Imagenes/favicon.ico" />
     <script src="../js/jquery.min.js"></script>
     <!--Libreria Jquery -->
     <script type="text/javascript" src="../js/main.js"></script><!-- Script -->
@@ -80,20 +80,19 @@
             if ($_GET['mensaje'] == 'sinDatosVer') :
                 echo "<div id='mensajeExistente'>No hay datos para visualizar en Nota</div>";
                 header("Refresh: 2; URL=menu_notas_registrar_nota.php");
-            endif;            
+            endif;
         endif;
 
         ?>
 
         <section id="principal_notas">
             <header id="encabezado">
-                <h2>Registro de Nota </h2>
+                <h1>Registro de Nota </h1>
             </header>
             <div id="formulario">
                 <form id="formValidar" action="menu_descuento_nota.php" method="POST">
                     <?php
                     require_once '../Clases/conexion.php';
-
                     $query = mysqli_query(conexion(), "SELECT * FROM ventas");
                     if (mysqli_num_rows($query) > 0) {
                         $cont = 0;
@@ -124,13 +123,13 @@
                         <input type="text" name="codigo" id="codigo" autofocus required />
 
                         <span id="botonValidar"><input type="submit" value="Validar existencia producto" /></span>
-              
+
                 </form>
-                <span id="botonVerNota"><input type="submit" value="Previsualizar Nota " onclick="location.href='pdfGenerador.php'"/></span>
+                <span id="botonVerNota"><input type="submit" value="Previsualizar Nota " onclick="location.href='pdfGenerador.php'" /></span>
 
                 <form action="../Clases/generar_nota.php" method="POST">
                     <header id="notas">
-                        <h2>Datos en nota </h2>
+                        <h1>Datos en nota </h1>
                     </header>
                     <div id="div1">
                         <table>
@@ -160,7 +159,7 @@
                                         <td><?= $datos['precio_venta'] ?></td>
                                         <td><?= $datos['subtotal'] ?></td>
                                         <td colspan="2"><a id="editar" href="./menu_descuento_nota_actualizar.php?codigo=<?= $datos['codigo_barras'] ?>&destinatario=<?= $datos['destinatario'] ?> ">Editar</a>
-                                        <a id="eliminar" href="../Clases/eliminar_producto_nota.php?codigo=<?= $datos['codigo_barras'] ?>">Eliminar</a></td>
+                                            <a id="eliminar" href="../Clases/eliminar_producto_nota.php?codigo=<?= $datos['codigo_barras'] ?>">Eliminar</a></td>
                                     </tr>
                             <?php
 
@@ -169,15 +168,15 @@
                             ?>
                         </table>
                     </div>
-
-                    <label class="label1">Subtotal</label>
-                    <input type="text1" name="total" id="total" value="<?= $subtotal ?>" />
-
+                    <div id="monto">
+                        <label class="label1">Subtotal</label>
+                        <input id="subtotal" type="text" name="total" id="total" value="$ <?= $subtotal ?>" />
+                    </div>
                     <span id="botonGenerarNota"><input type="submit" value="Generar Nota" /></span>
                 </form>
 
-                    <span id="botonCancelarNota"><input type="submit" value="Cancelar Nota" onclick="location.href='../Clases/cancelarNota.php'" /></span>
-               
+                <span id="botonCancelarNota"><input type="submit" value="Cancelar Nota" onclick="location.href='../Clases/cancelarNota.php'" /></span>
+
 
             </div>
         </section>

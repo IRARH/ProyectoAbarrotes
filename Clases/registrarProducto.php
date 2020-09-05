@@ -6,6 +6,9 @@ require_once '../Formularios/barraLateral.php';
 $conexion = conexion();
 
 if(isset($_POST)){
+    //definir zona horaria
+    date_default_timezone_set('UTC');
+    date_default_timezone_set("America/Mexico_City");
 
     $sesion = $_SESSION['usuario']['user'];
     $fecha = date("Y") . "/" . date("m") . "/" . date("d");

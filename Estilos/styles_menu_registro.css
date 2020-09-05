@@ -41,7 +41,7 @@ body {
 .navegacion img {
     display: block;
     float: left;
-    margin-top: 35px;
+    margin-top: 32px;
     margin-left: 10px;
 }
 
@@ -57,40 +57,50 @@ body {
 }
 
 #principal {
-    margin-left: 200px;
-    background: black;
-    position: fixed;
-    top: 0;
+	margin-left: 200px;
+	background: black;
+	position: fixed;
+	top: 0;
     left: 0;
-    width: 100%;
-    letter-spacing: 10px;
-    font-family: Helvetica, Arial;
-    text-transform: uppercase;
-    color: white;
+	width: 86.2%;
+	font-family: Helvetica, Arial;
+	text-transform: uppercase;
+	color: white;
     padding: 5px;
+    height: 76px;
 }
 
 #principal #salir {
-    position: absolute;
-    right: 15rem;
-    top: 9px;
+    display: block;
+    float: left;
+    letter-spacing: 8px;
 }
 
 #principal #salir #sesion {
-    position: absolute;
-    right: 11rem;
-    top: 0px;
+    display: block;
+    float: left;
     text-transform: none;
+    letter-spacing: 7px;
+    line-height: 3px;
 }
 
 #principal #salir a {
-    color: white;
-    text-decoration: none;
-    cursor: pointer;
+	color: white;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+#principal #salir a:hover{
+    transition: all 300ms;
+    color: #ccc;
 }
 
 #principal h2 {
-    text-align: left;
+    display: block;
+    float: left;
+    letter-spacing: 8px;
+    margin-right: 15rem;
+    line-height: 40px;
 }
 
 #palabras {
@@ -104,7 +114,7 @@ body {
 
 #opciones {
     font-family: Helvetica, Arial;
-    background: rgb(51, 51, 51, 0.70);
+    background: #333333;
     width: 85%;
     text-transform: uppercase;
     margin: 0px auto;

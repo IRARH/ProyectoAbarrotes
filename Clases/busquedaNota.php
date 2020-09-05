@@ -1,3 +1,4 @@
+
 <?php
 
 require('../Libreria_PDF/fpdf.php');
@@ -96,3 +97,4 @@ $pdf->Output('I', 'Empleados.pdf');
 
 }
 }
+?>
