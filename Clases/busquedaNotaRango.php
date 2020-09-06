@@ -13,7 +13,7 @@ if($_POST){
     $sumaSubtotales = mysqli_query(conexion(),$suma);
     $busqueda = mysqli_query(conexion(), $consulta);
     if(mysqli_num_rows($busqueda) == 0){
-        header('Location:../Formularios/menu_estadisticas_notas.php?mensaje=sinDatosVer');
+        header('Location:../Formularios/menu_estadisticas_notas.php?mensaje=sinDatosRango');
     }else{
 class PDF extends FPDF
 {

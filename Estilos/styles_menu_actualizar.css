@@ -1,7 +1,7 @@
 /*Estilos para menu*/
 
 body {
-    font-family: "Lato", sans-serif;
+    font-family: Helvetica;
 }
 
 .navegacion {
@@ -12,7 +12,7 @@ body {
     left: 0;
     background-color: black;
     overflow-x: hidden;
-    padding-top: 100px;
+    padding-top: 70px;
 }
 
 .navegacion a {
@@ -22,69 +22,34 @@ body {
     display: block;
     letter-spacing: 1px;
     text-align: right;
-    padding: 18px;
-    margin-top: 13px;
+    padding: 12px;
+    margin-top: 25px;
 }
 
 .navegacion a:hover {
     color: black;
     background: white;
     opacity: 100%;
-    transition: all 700ms;
+    transition: all 900ms;
+}
+
+.navegacion a:active{
+    box-shadow: 0px 0px 8px gray inset;
+    transition: all 100ms;
 }
 
 .navegacion img {
-    position: fixed;
-    top: 17px;
-    left: 48px;
+    display: block;
+    float: left;
+    margin-top: 32px;
+    margin-left: 10px;
 }
 
-.navegacion #menu {
-    position: fixed;
-    top: 125px;
-    left: 11px;
-}
-
-.navegacion #nuevo {
-    position: fixed;
-    top: 191px;
-    left: 11px;
-}
-
-.navegacion #actualizar {
-    position: fixed;
-    top: 258px;
-    left: 11px;
-}
-
-.navegacion #eliminar {
-    position: fixed;
-    top: 323px;
-    left: 11px;
-}
-
-.navegacion #buscar {
-    position: fixed;
-    top: 392px;
-    left: 11px;
-}
-
-.navegacion #nota {
-    position: fixed;
-    top: 458px;
-    left: 11px;
-}
-
-.navegacion #estadistica {
-    position: fixed;
-    top: 523px;
-    left: 11px;
-}
-
-.navegacion #inventario {
-    position: fixed;
-    top: 590px;
-    left: 13px;
+.navegacion #estrella{
+    float: none;
+    clear: both;
+    margin: 0px auto;
+    margin-top: -55px;
 }
 
 .titulo_menu {
@@ -92,40 +57,50 @@ body {
 }
 
 #principal {
-    margin-left: 200px;
-    background: black;
-    position: fixed;
-    top: 0;
+	margin-left: 200px;
+	background: black;
+	position: fixed;
+	top: 0;
     left: 0;
-    width: 100%;
-    letter-spacing: 10px;
-    font-family: Helvetica, Arial;
-    text-transform: uppercase;
-    color: white;
+	width: 86.2%;
+	font-family: Helvetica, Arial;
+	text-transform: uppercase;
+	color: white;
     padding: 5px;
+    height: 76px;
 }
 
 #principal #salir {
-    position: absolute;
-    right: 15rem;
-    top: 9px;
+    display: block;
+    float: left;
+    letter-spacing: 8px;
 }
 
 #principal #salir #sesion {
-    position: absolute;
-    right: 15rem;
-    top: 0px;
+    display: block;
+    float: left;
     text-transform: none;
+    letter-spacing: 7px;
+    line-height: 3px;
 }
 
 #principal #salir a {
-    color: white;
-    text-decoration: none;
-    cursor: pointer;
+	color: white;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+#principal #salir a:hover{
+    transition: all 300ms;
+    color: #ccc;
 }
 
 #principal h2 {
-    text-align: left;
+    display: block;
+    float: left;
+    letter-spacing: 8px;
+    margin-right: 15rem;
+    line-height: 40px;
 }
 
 #palabras {
@@ -147,7 +122,6 @@ body {
 
 #encabezado {
     text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-bottom: 40px;
 }
 
@@ -163,41 +137,6 @@ body {
 label {
     font-weight: bold;
     font-size: 15px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-form input[type="text"] {
-    padding: 8px;
-    border-radius: 2px;
-    border: 1px solid #ccc;
-    color: #333;
-    cursor: pointer;
-    width: 97%;
-    margin: 12px 10px 15px 0;
-    display: inline-block;
-    font-size: 18px;
-}
-
-#final input[type="submit"] {
-    background: #dc3545;
-    opacity: 80%;
-    padding: 15px;
-    border: 1px solid #ccc;
-    cursor: pointer;
-    color: white;
-    border-radius: 4px;
-    width: 90%;
-    margin-left: -1px;
-    margin: 12px 8px 15px 0;
-    font-size: 15px;
-    font-weight: 700;
-    margin: 0px auto;
-}
-
-#final span a {
-    margin: 0 auto;
-    text-decoration: none;
-    color: #1a73e8;
 }
 
 #final {
@@ -218,7 +157,7 @@ footer {
     font-family: Helvetica, Arial;
     color: white;
     height: 65px;
-    background: rgb(51, 51, 51, 0.70);
+    background: #333;
     margin: 0px auto;
     width: 66%;
     padding-left: 20px;
@@ -236,11 +175,10 @@ footer {
 
 
 /* Estilos para menu_actualizar.php*/
-
 #opciones {
     font-family: Helvetica, Arial;
-    background: rgb(51, 51, 51, 0.70);
-    width: 43%;
+    background: #333333;
+    width: 85%;
     text-transform: uppercase;
     margin: 0px auto;
 }
@@ -248,7 +186,7 @@ footer {
 #opciones ul {
     line-height: 46px;
     list-style: none;
-    padding-left: 35px;
+    padding-left: 50px;
 }
 
 #opciones ul li {

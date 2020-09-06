@@ -4,6 +4,10 @@ require_once 'conexion.php';
 $conexion = conexion();
 
 if (isset($_POST)) {
+    //definir zona horaria
+    date_default_timezone_set('UTC');
+    date_default_timezone_set("America/Mexico_City");
+    
     $codigo_barras = $_POST['codigo_barras'];
     $destinatario = $_POST['destinatario'];
     $cantidad_retiro = $_POST['cantidadRetiro'];

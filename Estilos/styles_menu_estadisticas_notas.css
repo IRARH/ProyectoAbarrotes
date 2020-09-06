@@ -1,7 +1,74 @@
-body {
-    font-family: "Lato", sans-serif;
+body{
+    font-family: Helvetica;
 }
 
+/*Estilos generales*/
+select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    color: #333;
+    cursor: pointer;
+    width: 13%;
+    margin: 30px 50px 30px 10px;
+    display: inline-block;
+    font-size: 18px;
+    outline: 0;
+}
+
+select:focus {
+    box-shadow: 0px 0px 2px #fcde00;
+    font-weight: bold;
+}
+
+input[type="date"]{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    color: #333;
+    cursor: pointer;
+    width: 12%;
+    margin: 30px 50px 30px 10px;
+    display: inline-block;
+    font-size: 12px;
+    outline: 0;
+}
+
+input[type="date"]:focus{
+    box-shadow: 0px 0px 2px #fcde00;
+    font-weight: bold;
+}
+
+input[type="submit"] {
+    padding: 12px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    width: 33%;
+    background-color: #dc3545;
+    display: inline-block;
+    border-radius: 4px;
+    font-weight: bold;
+    color: white;
+    outline: 0;
+}
+
+input[type="submit"]:hover {
+    box-shadow: 0px 0px 3px gray;
+    outline: 0;
+}
+
+input[type="submit"]:active {
+    box-shadow: 0px 0px 4px gray inset;
+    text-shadow: 0px 0px 4px gray;
+    outline: 0;
+}
+
+label{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/*estilos menú*/
 .navegacion {
     height: 100%;
     width: 200px;
@@ -10,7 +77,7 @@ body {
     left: 0;
     background-color: black;
     overflow-x: hidden;
-    padding-top: 100px;
+    padding-top: 70px;
 }
 
 .navegacion a {
@@ -20,70 +87,34 @@ body {
     display: block;
     letter-spacing: 1px;
     text-align: right;
-    padding: 18px;
-    margin-top: 13px;
-    /* border-bottom: 2px solid white;*/
+    padding: 12px;
+    margin-top: 25px;
 }
 
 .navegacion a:hover {
     color: black;
     background: white;
     opacity: 100%;
-    transition: all 700ms;
+    transition: all 900ms;
+}
+
+.navegacion a:active{
+    box-shadow: 0px 0px 8px gray inset;
+    transition: all 100ms;
 }
 
 .navegacion img {
-    position: fixed;
-    top: 17px;
-    left: 48px;
+    display: block;
+    float: left;
+    margin-top: 32px;
+    margin-left: 10px;
 }
 
-.navegacion #menu {
-    position: fixed;
-    top: 125px;
-    left: 11px;
-}
-
-.navegacion #nuevo {
-    position: fixed;
-    top: 191px;
-    left: 11px;
-}
-
-.navegacion #actualizar {
-    position: fixed;
-    top: 258px;
-    left: 11px;
-}
-
-.navegacion #eliminar {
-    position: fixed;
-    top: 323px;
-    left: 11px;
-}
-
-.navegacion #buscar {
-    position: fixed;
-    top: 392px;
-    left: 11px;
-}
-
-.navegacion #nota {
-    position: fixed;
-    top: 458px;
-    left: 11px;
-}
-
-.navegacion #estadistica {
-    position: fixed;
-    top: 523px;
-    left: 11px;
-}
-
-.navegacion #inventario {
-    position: fixed;
-    top: 590px;
-    left: 13px;
+.navegacion #estrella{
+    float: none;
+    clear: both;
+    margin: 0px auto;
+    margin-top: -55px;
 }
 
 .titulo_menu {
@@ -91,40 +122,50 @@ body {
 }
 
 #principal {
-    margin-left: 200px;
-    background: black;
-    position: fixed;
-    top: 0;
+	margin-left: 200px;
+	background: black;
+	position: fixed;
+	top: 0;
     left: 0;
-    width: 100%;
-    letter-spacing: 10px;
-    font-family: Helvetica, Arial;
-    text-transform: uppercase;
-    color: white;
+	width: 86.2%;
+	font-family: Helvetica, Arial;
+	text-transform: uppercase;
+	color: white;
     padding: 5px;
+    height: 76px;
 }
 
 #principal #salir {
-    position: absolute;
-    right: 15rem;
-    top: 9px;
+    display: block;
+    float: left;
+    letter-spacing: 8px;
 }
 
 #principal #salir #sesion {
-    position: absolute;
-    right: 15rem;
-    top: 0px;
+    display: block;
+    float: left;
     text-transform: none;
+    letter-spacing: 7px;
+    line-height: 3px;
 }
 
 #principal #salir a {
-    color: white;
-    text-decoration: none;
-    cursor: pointer;
+	color: white;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+#principal #salir a:hover{
+    transition: all 300ms;
+    color: #ccc;
 }
 
 #principal h2 {
-    text-align: left;
+    display: block;
+    float: left;
+    letter-spacing: 8px;
+    margin-right: 15rem;
+    line-height: 40px;
 }
 
 #contenedor {
@@ -133,8 +174,28 @@ body {
     padding-left: 34px;
 }
 
+/* Estilo de la tabla generales y para buscar*/
 
-/* Estilo de la tabla generalesy para buscar*/
+#titulo_principal {
+    font-size: 27px;
+    text-align: center;
+    font-weight: 800;
+}
+
+#titulo_secundarioEspecifico {
+    font-size: 20px;
+    display: block;
+    margin-top: 30px;
+    margin-left: 30px;
+    font-weight: 800;
+}
+
+#titulo_secundarioRango{
+    font-size: 20px;
+    display: block;
+    margin-top: 30px;
+    font-weight: 800;
+}
 
 #productos_busqueda {
     width: 96%;
@@ -147,7 +208,6 @@ body {
 
 #encabezado {
     text-align: left;
-    font-family: arial, Geneva, Tahoma, sans-serif;
     margin-bottom: 40px;
     margin-left: 42px;
 }
@@ -175,15 +235,8 @@ body {
     text-align: center;
     color: black;
     font-size: 18.5px;
-    font-family: arial, Geneva, Tahoma, sans-serif;
     letter-spacing: 1px;
     border: 2px solid #EDECEC;
-}
-
-#contenedor #formulario_busqueda label {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    letter-spacing: 1px;
 }
 
 #contenedor #formulario_busqueda {
@@ -203,30 +256,6 @@ body {
     margin-left: 167px;
 }
 
-#contenedor form input[type="text"] {
-    padding: 12px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    color: #333;
-    cursor: pointer;
-    width: 40%;
-    margin: 30px 80px 30px 7px;
-    display: inline-block;
-}
-
-#contenedor form input[type="submit"] {
-    padding: 5px;
-    border: 1px solid #ccc;
-    cursor: pointer;
-    width: 20%;
-    background-color: #dc3545;
-    display: inline-block;
-    border-radius: 10px;
-    font-weight: bold;
-    color: white;
-    margin-left: 30px;
-}
-
 #contenedor #resultados_busqueda {
     margin-left: 553px;
     margin-top: 20px;
@@ -237,75 +266,19 @@ body {
     margin-top: 20px;
 }
 
-#contenedor #final label {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    letter-spacing: 1px;
-    font-weight: bold;
+#contenedor #formulario_busqueda form{
+    margin-left: 30px;
 }
-
-#contenedor #final input[type="text"] {
-    padding: 12px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    color: #333;
-    cursor: pointer;
-    width: 20%;
-    margin: 30px 80px 30px 7px;
-    display: inline-block;
-}
-
 
 /* Notas estadisticas */
-
-#contenedor #formulario_busqueda #fecha {
-    text-align: center;
-    font-size: 18px;
-    margin-left: 20px;
-}
 
 #contenedor #formulario_busqueda #destinatario {
     text-align: center;
     font-size: 18px;
 }
 
-#contenedor #busqueda_rango #fecha_inicial {
-    text-align: center;
-    font-size: 18px;
-    margin-left: 20px;
-}
-
-#contenedor #busqueda_rango #fecha_final {
-    text-align: center;
-    font-size: 18px;
-    margin-left: 10px;
-}
-
-#contenedor #formulario_busqueda #titulo_estadistica {
-    text-align: center;
-    font-size: 1.5em;
-}
-
 #contenedor #formulario_busqueda #url {
     text-align: center;
-}
-
-#contenedor #resultados_busqueda input[type="text"] {
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    color: #333;
-    cursor: pointer;
-    width: 20%;
-    margin: 30px 80px 30px 7px;
-    display: inline-block;
-}
-
-#contenedor #resultados_busqueda label {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    font-weight: bold;
-    margin-left: 11px;
 }
 
 #contenedor #formulario_busqueda #selector {
@@ -337,6 +310,7 @@ body {
     margin-top: 2em;
     background: #F9F9F9;
     padding-bottom: 40px;
+    margin-left: 25px;
 }
 
 #div3 table {
@@ -347,21 +321,8 @@ body {
     text-align: center;
     color: black;
     font-size: 18.5px;
-    font-family: arial, Geneva, Tahoma, sans-serif;
     letter-spacing: 1px;
     border: 2px solid #EDECEC;
-}
-
-#contenedor #final input[type="text1"] {
-    padding: 12px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    color: #333;
-    cursor: pointer;
-    width: 20%;
-    margin: 30px 80px 30px 7px;
-    display: inline-block;
-    margin-left: 30px;
 }
 
 #contenedor #final #dinero {
@@ -379,36 +340,13 @@ body {
     height: 300px;
 }
 
-#contenedor #productos_generales #fecha_inicial {
-    font-size: 18px;
-    margin-left: 25px;
-}
-
-#contenedor #productos_generales #fecha_final {
-    font-size: 18px;
-    margin-left: 20px;
-}
-
-#contenedor #productos_generales input[type="submit"] {
-    padding: 5px;
-    border: 1px solid #ccc;
-    cursor: pointer;
-    width: 20%;
-    background-color: #dc3545;
-    display: inline-block;
-    border-radius: 10px;
-    font-weight: bold;
-    color: white;
-    margin-left: 25px;
-}
-
 #contenedor #productos_generales #tienda {
     text-align: center;
     font-size: 18px;
 }
 
 #contenedor #productos_generales #selector {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica;
     font-size: 16px;
     font-weight: bold;
 }
@@ -416,14 +354,14 @@ body {
 footer {
     font-family: Helvetica, Arial;
     color: white;
-    height: 65px;
-    background: rgb(51, 51, 51, 0.70);
+    height: 42px;
+    background: #333;
     margin: 0px auto;
-    width: 66%;
+    width: 93%;
     padding-left: 20px;
     padding-right: 20px;
     margin-top: 75px;
-    line-height: 60px;
+    line-height: 40px;
 }
 
 .subir {
@@ -434,10 +372,10 @@ footer {
 }
 #contenedor #mensajeExistente{
     color: white;
-    margin-left: 76px;
+    margin-left: 26px;
     line-height: 50px;
-    width: 88%;
-    background-color: #ffc107;
+    width: 96.5%;
+    background-color: #dc3545;
     text-align: center;
     font-weight: 600;
     margin-top: 46px;

@@ -1,9 +1,112 @@
-/* estilo menu.php */
-
 body {
-    font-family: "Lato", sans-serif;
+    font-family: Helvetica;
 }
 
+/*estilos generales*/
+h1{
+    font-size: 27px;
+    text-align: center;
+    font-weight: 800;
+}
+
+label {
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    color: #333;
+    cursor: pointer;
+    width: 78%;
+    margin: 12px 10px 15px 0;
+    display: inline-block;
+    font-size: 18px;
+    outline: 0;
+}
+
+input[type="text"]:focus {
+    box-shadow: 0px 0px 2px #fcde00;
+    font-weight: bold;
+}
+
+#formulario span input[type="submit"] {
+    background: #dc3545;
+    padding: 12px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    color: white;
+    border-radius: 4px;
+    width: 18%;
+    font-size: 15px;
+    font-weight: 700;
+    margin: 0px;
+    outline: 0;
+}
+
+#formulario span input[type="submit"]:hover {
+    box-shadow: 0px 0px 3px gray;
+    outline: 0;
+}
+
+#formulario span input[type="submit"]:active {
+    box-shadow: 0px 0px 4px gray inset;
+    text-shadow: 0px 0px 4px gray;
+    outline: 0;
+}
+
+#formulario span #btn_eliminar {
+    background: #dc3545;
+    padding: 12px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    color: white;
+    border-radius: 4px;
+    width: 140%;
+    font-size: 15px;
+    font-weight: 700;
+    margin: 80px 3px 15px 0;
+    outline: 0;
+}
+
+#formulario span #btn_eliminar:hover {
+    box-shadow: 0px 0px 3px gray;
+    outline: 0;
+}
+
+#formulario span #btn_eliminar:active {
+    box-shadow: 0px 0px 4px gray inset;
+    text-shadow: 0px 0px 4px gray;
+    outline: 0;
+}
+
+/* Div de mensajes (error, exitoso9*/
+#mensajeExitoso {
+    color: white;
+    margin-left: 75px;
+    line-height: 50px;
+    width: 88.2%;
+    background-color: #28a745;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 46px;
+}
+
+#mensajeError {
+    color: white;
+    margin-left: 75px;
+    line-height: 50px;
+    width: 88.2%;
+    background-color: #dc3545;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 46px;
+}
+
+/*estilos menú*/
 .navegacion {
     height: 100%;
     width: 200px;
@@ -12,7 +115,7 @@ body {
     left: 0;
     background-color: black;
     overflow-x: hidden;
-    padding-top: 100px;
+    padding-top: 70px;
 }
 
 .navegacion a {
@@ -22,69 +125,34 @@ body {
     display: block;
     letter-spacing: 1px;
     text-align: right;
-    padding: 18px;
-    margin-top: 13px;
+    padding: 12px;
+    margin-top: 25px;
 }
 
 .navegacion a:hover {
     color: black;
     background: white;
     opacity: 100%;
-    transition: all 700ms;
+    transition: all 900ms;
+}
+
+.navegacion a:active{
+    box-shadow: 0px 0px 8px gray inset;
+    transition: all 100ms;
 }
 
 .navegacion img {
-    position: fixed;
-    top: 17px;
-    left: 48px;
+    display: block;
+    float: left;
+    margin-top: 32px;
+    margin-left: 10px;
 }
 
-.navegacion #menu {
-    position: fixed;
-    top: 125px;
-    left: 11px;
-}
-
-.navegacion #nuevo {
-    position: fixed;
-    top: 191px;
-    left: 11px;
-}
-
-.navegacion #actualizar {
-    position: fixed;
-    top: 258px;
-    left: 11px;
-}
-
-.navegacion #eliminar {
-    position: fixed;
-    top: 323px;
-    left: 11px;
-}
-
-.navegacion #buscar {
-    position: fixed;
-    top: 392px;
-    left: 11px;
-}
-
-.navegacion #nota {
-    position: fixed;
-    top: 458px;
-    left: 11px;
-}
-
-.navegacion #estadistica {
-    position: fixed;
-    top: 523px;
-    left: 11px;
-}
-
-.navegacion #inventario {
-    position: fixed;
-    top: 590px;
-    left: 13px;
+.navegacion #estrella{
+    float: none;
+    clear: both;
+    margin: 0px auto;
+    margin-top: -55px;
 }
 
 .titulo_menu {
@@ -92,45 +160,55 @@ body {
 }
 
 #principal {
-    margin-left: 200px;
-    background: black;
-    position: fixed;
-    top: 0;
+	margin-left: 200px;
+	background: black;
+	position: fixed;
+	top: 0;
     left: 0;
-    width: 100%;
-    letter-spacing: 10px;
-    font-family: Helvetica, Arial;
-    text-transform: uppercase;
-    color: white;
+	width: 86.2%;
+	font-family: Helvetica, Arial;
+	text-transform: uppercase;
+	color: white;
     padding: 5px;
+    height: 76px;
 }
 
 #principal #salir {
-    position: absolute;
-    right: 15rem;
-    top: 9px;
+    display: block;
+    float: left;
+    letter-spacing: 8px;
 }
 
 #principal #salir #sesion {
-    position: absolute;
-    right: 15rem;
-    top: 0px;
+    display: block;
+    float: left;
     text-transform: none;
+    letter-spacing: 7px;
+    line-height: 3px;
 }
 
 #principal #salir a {
-    color: white;
-    text-decoration: none;
-    cursor: pointer;
+	color: white;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+#principal #salir a:hover{
+    transition: all 300ms;
+    color: #ccc;
 }
 
 #principal h2 {
-    text-align: left;
+    display: block;
+    float: left;
+    letter-spacing: 8px;
+    margin-right: 15rem;
+    line-height: 40px;
 }
 
 #palabras {
     margin-left: 200px;
-    padding-top: 88px;
+    padding-top: 100px;
     padding-left: 34px;
 }
 
@@ -147,12 +225,7 @@ body {
 
 #encabezado {
     text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-bottom: 40px;
-}
-
-#encabezado h4 {
-    font-size: 18px;
 }
 
 #formulario {
@@ -160,107 +233,48 @@ body {
     margin: 0px auto;
 }
 
-label {
-    font-weight: bold;
-    font-size: 15px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.label1 {
-    font-weight: bold;
-    font-size: 18px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-left: 57rem;
-}
-
-#formulario input[type="text"] {
-    padding: 8px;
-    border-radius: 2px;
-    border: 1px solid #ccc;
-    color: #333;
-    cursor: pointer;
-    width: 78%;
-    margin: 12px 10px 15px 0;
-    display: inline-block;
-    font-size: 18px;
-}
-#formulario span input[type="submit"] {
-    background: #dc3545;
-    opacity: 80%;
-    padding: 11px;
-    border: 1px solid #ccc;
-    cursor: pointer;
-    color: white;
-    border-radius: 4px;
-    width: 18%;
-    font-size: 15px;
-    font-weight: 700;
-    margin: 0px;
-}
-
-
-
-#formulario span #btn_eliminar {
-    background: #dc3545;
-    opacity: 80%;
-    padding: 11px;
-    border: 1px solid #ccc;
-    cursor: pointer;
-    color: white;
-    border-radius: 4px;
-    width: 100%;
-    font-size: 15px;
-    font-weight: 700;
-    margin: 80px 3px 15px 0;
-}
-
-h3 {
-    text-align: center;
-}
-
 #div1 {
     overflow: scroll;
     height: 300px;
     width: 102.7%;
+    margin-top: 40px;
 }
-
-
 
 #div1 table {
     table-layout: fixed;
-    width: 100%;
+    width: 140%;
     border-collapse: collapse;
     text-align: center;
     color: black;
-    font-size: 18.5px;
-    font-family: arial, Geneva, Tahoma, sans-serif;
-    letter-spacing: 1px;
-    border: 2px solid #EDECEC;
+    font-size: 17px;
+    border: 2px solid #333333;
 }
 
-#div1 tr {
-    border-bottom: 15pt solid #EDECEC;
+#div1 td {
+    border-bottom: 1px solid #333333;
+    border-right: 1px solid #333333;
+    line-height: 50px;
 }
 
 #div1 .color {
-    font-size: 18px;
-    background-color: darkgray;
-    height: 30px;
-    font-weight: bold;
-    padding: 10px;
+	font-size: 18px;
+    background-color: #333333;
+    color: white;
+	font-weight: bold;
+	padding: 8px;
 }
 
 footer {
     font-family: Helvetica, Arial;
     color: white;
-    height: 65px;
-    background: rgb(51, 51, 51, 0.70);
+    height: 42px;
+    background: #333;
     margin: 0px auto;
-    width: 66%;
+    width: 85%;
     padding-left: 20px;
     padding-right: 20px;
     margin-top: 75px;
-    line-height: 60px;
+    line-height: 40px;
 }
 
 .subir {
@@ -270,39 +284,6 @@ footer {
     float: right;
 }
 
-/* Div de mensajes (error, exitoso9*/
-#mensajeExitoso {
-    color: white;
-    margin-left: 95px;
-    line-height: 50px;
-    width: 85%;
-    background-color: #28a745;
-    text-align: center;
-    font-weight: 600;
-    margin-top: 46px;
-}
-
-#mensajeError {
-    color: white;
-    margin-left: 95px;
-    line-height: 50px;
-    width: 85%;
-    background-color: #dc3545;
-    text-align: center;
-    font-weight: 600;
-    margin-top: 46px;
-}
-
-#mensajeExistente {
-    color: white;
-    margin-left: 95px;
-    line-height: 50px;
-    width: 85%;
-    background-color: #ffc107;
-    text-align: center;
-    font-weight: 600;
-    margin-top: 46px;
-}
 #conDatos {
     color: white;
     margin-left: 95px;

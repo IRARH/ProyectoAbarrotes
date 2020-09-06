@@ -1,6 +1,11 @@
 <?php
 require('../Libreria_PDF/fpdf.php');
 require '../Clases/conexion.php';
+
+//definir zona horaria
+date_default_timezone_set('UTC');
+date_default_timezone_set("America/Mexico_City");
+
 $fecha = date("Y") . "/" . date("m") . "/" . date("d");
 
 $validacion = "SELECT * FROM ventas";

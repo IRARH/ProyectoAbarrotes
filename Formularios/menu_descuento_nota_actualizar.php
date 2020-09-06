@@ -5,6 +5,7 @@
     <title>Datos a actualizar en nota la Nota</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="../Estilos/styles_menu_descuento_nota.css" />
+    <link rel="icon" type="image/x-icon" href="./Imagenes/favicon.ico" />
     <script src="../js/jquery.min.js"></script>
     <!--Libreria Jquery -->
     <script type="text/javascript" src="../js/main.js"></script><!-- Script footer -->
@@ -19,7 +20,7 @@
         <section id="registro">
 
             <header id="encabezado_registro">
-                <h2>Actualización de cantidad de productos a retirar en Nota</h2>
+                <h1>Actualización de cantidad de productos a retirar en Nota</h1>
             </header>
 
             <div id="formulario">
@@ -41,22 +42,22 @@
                             <input type="text" name="codigo_barras" id="codigo_barras" value="<?= $datos['codigo_barras'] ?>" readonly="readonly" required />
 
                             <label for="proveedor">Nombre del Proveedor</label>
-                            <input id="soloLectura" type="text" name="proveedor" value="<?= $datos['proveedor'] ?>" readonly="readonly" required />
+                            <input type="text" name="proveedor" value="<?= $datos['proveedor'] ?>" readonly="readonly" required />
 
                             <label for="nombre">Nombre del Producto</label>
-                            <input id="apuntar" type="text" name="nombre" value="<?= $datos['nombre_producto'] ?>" readonly="readonly" required />
+                            <input type="text" name="nombre" value="<?= $datos['nombre_producto'] ?>" readonly="readonly" required />
 
                             <label for="costo_compra">Costo Compra</label>
-                            <input id="soloLectura" type="text" name="costo_compra" value="<?= $datos['costo_compra'] ?>" readonly="readonly" required />
+                            <input type="text" name="costo_compra" value="<?= $datos['costo_compra'] ?>" readonly="readonly" required />
 
                             <label for="costo_venta">Costo Venta</label>
-                            <input id="soloLectura" type="text" name="costo_venta" value="<?= $datos['costo_venta'] ?>" readonly="readonly" required />
+                            <input type="text" name="costo_venta" value="<?= $datos['costo_venta'] ?>" readonly="readonly" required />
 
                             <label for="cantidad_piezas">Stock de Piezas</label>
-                            <input id="soloLectura" type="text1" name="cantidad_piezas" pattern="[0-9]+" readonly="readonly" value="<?= $datos['cantidad_piezas'] ?>" required />
+                            <input id="noEditable" type="text" name="cantidad_piezas" pattern="[0-9]+" readonly="readonly" value="<?= $datos['cantidad_piezas'] ?>" required />
 
                             <label for="cantidadRetiro">Piezas a descontar</label>
-                            <input type="text1" name="cantidadRetiro" id="cantidadRetiro" pattern="{-}*[0-9]+" value="<?= $datos['cantidad_retiro'] ?>" required /><br />
+                            <input type="text" name="cantidadRetiro" id="cantidadRetiro" pattern="{-}*[0-9]+" value="<?= $datos['cantidad_retiro'] ?>" required /><br />
 
                             <div id="mensajeStock">
 

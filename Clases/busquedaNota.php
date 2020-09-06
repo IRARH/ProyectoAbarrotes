@@ -1,3 +1,4 @@
+
 <?php
 
 require('../Libreria_PDF/fpdf.php');
@@ -12,7 +13,7 @@ if($_POST){
     $sumaSubtotales = mysqli_query(conexion(),$suma);
     $busqueda = mysqli_query(conexion(), $consulta);
     if(mysqli_num_rows($busqueda) == 0){
-        header('Location:../Formularios/menu_estadisticas_notas.php?mensaje=sinDatosVer');
+        header('Location:../Formularios/menu_estadisticas_notas.php?mensaje=sinDatosEspecificos');
     }else{
 
 class PDF extends FPDF
@@ -96,3 +97,4 @@ $pdf->Output('I', 'Empleados.pdf');
 
 }
 }
+?>

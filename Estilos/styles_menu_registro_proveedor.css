@@ -1,9 +1,65 @@
-/*Estilos para menu*/
 
 body {
-    font-family: "Lato", sans-serif;
+    font-family: Helvetica;
 }
 
+/*estilos generales*/
+h1{
+    font-size: 27px;
+    text-align: center;
+    font-weight: 800;
+}
+
+label {
+	font-weight: bold;
+	font-size: 20px;
+	font-family: Helvetica;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    color: #333;
+    cursor: pointer;
+    width: 97%;
+    margin: 12px 10px 15px 0;
+    display: inline-block;
+    font-size: 18px;
+    outline: 0;
+}
+
+input[type="text"]:focus {
+    box-shadow: 0px 0px 2px #fcde00;
+    font-weight: bold;
+}
+
+input[type="submit"] {
+    background: #dc3545;
+    padding: 15px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    color: white;
+    border-radius: 4px;
+    width: 90%;
+    font-size: 15px;
+    font-weight: 700;
+    margin: 15px;
+    outline: 0;
+}
+
+input[type="submit"]:hover {
+    box-shadow: 0px 0px 3px gray;
+    outline: 0;
+}
+
+input[type="submit"]:active {
+    box-shadow: 0px 0px 4px gray inset;
+    text-shadow: 0px 0px 4px gray;
+    outline: 0;
+}
+
+/*estilos para menú*/
 .navegacion {
     height: 100%;
     width: 200px;
@@ -12,7 +68,7 @@ body {
     left: 0;
     background-color: black;
     overflow-x: hidden;
-    padding-top: 100px;
+    padding-top: 70px;
 }
 
 .navegacion a {
@@ -22,69 +78,34 @@ body {
     display: block;
     letter-spacing: 1px;
     text-align: right;
-    padding: 18px;
-    margin-top: 13px;
+    padding: 12px;
+    margin-top: 25px;
 }
 
 .navegacion a:hover {
     color: black;
     background: white;
     opacity: 100%;
-    transition: all 700ms;
+    transition: all 900ms;
+}
+
+.navegacion a:active{
+    box-shadow: 0px 0px 8px gray inset;
+    transition: all 100ms;
 }
 
 .navegacion img {
-    position: fixed;
-    top: 17px;
-    left: 48px;
+    display: block;
+    float: left;
+    margin-top: 32px;
+    margin-left: 10px;
 }
 
-.navegacion #menu {
-    position: fixed;
-    top: 125px;
-    left: 11px;
-}
-
-.navegacion #nuevo {
-    position: fixed;
-    top: 191px;
-    left: 11px;
-}
-
-.navegacion #actualizar {
-    position: fixed;
-    top: 258px;
-    left: 11px;
-}
-
-.navegacion #eliminar {
-    position: fixed;
-    top: 323px;
-    left: 11px;
-}
-
-.navegacion #buscar {
-    position: fixed;
-    top: 392px;
-    left: 11px;
-}
-
-.navegacion #nota {
-    position: fixed;
-    top: 458px;
-    left: 11px;
-}
-
-.navegacion #estadistica {
-    position: fixed;
-    top: 523px;
-    left: 11px;
-}
-
-.navegacion #inventario {
-    position: fixed;
-    top: 590px;
-    left: 13px;
+.navegacion #estrella{
+    float: none;
+    clear: both;
+    margin: 0px auto;
+    margin-top: -55px;
 }
 
 .titulo_menu {
@@ -92,45 +113,55 @@ body {
 }
 
 #principal {
-    margin-left: 200px;
-    background: black;
-    position: fixed;
-    top: 0;
+	margin-left: 200px;
+	background: black;
+	position: fixed;
+	top: 0;
     left: 0;
-    width: 100%;
-    letter-spacing: 10px;
-    font-family: Helvetica, Arial;
-    text-transform: uppercase;
-    color: white;
+	width: 86.2%;
+	font-family: Helvetica, Arial;
+	text-transform: uppercase;
+	color: white;
     padding: 5px;
+    height: 76px;
 }
 
 #principal #salir {
-    position: absolute;
-    right: 15rem;
-    top: 9px;
+    display: block;
+    float: left;
+    letter-spacing: 8px;
 }
 
 #principal #salir #sesion {
-    position: absolute;
-    right: 15rem;
-    top: 0px;
+    display: block;
+    float: left;
     text-transform: none;
+    letter-spacing: 7px;
+    line-height: 3px;
 }
 
 #principal #salir a {
-    color: white;
-    text-decoration: none;
-    cursor: pointer;
+	color: white;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+#principal #salir a:hover{
+    transition: all 300ms;
+    color: #ccc;
 }
 
 #principal h2 {
-    text-align: left;
+    display: block;
+    float: left;
+    letter-spacing: 8px;
+    margin-right: 15rem;
+    line-height: 40px;
 }
 
 #palabras {
     margin-left: 200px;
-    padding-top: 88px;
+    padding-top: 100px;
     padding-left: 34px;
 }
 
@@ -172,7 +203,7 @@ body {
 
 #opciones {
     font-family: Helvetica, Arial;
-    background: rgb(51, 51, 51, 0.70);
+    background: #333333;
     width: 85%;
     text-transform: uppercase;
     margin: 0px auto;
@@ -215,7 +246,6 @@ body {
 
 #encabezado {
     text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-bottom: 40px;
 }
 
@@ -226,38 +256,6 @@ body {
 #formulario {
     width: 85%;
     margin: 0px auto;
-}
-
-label {
-    font-weight: bold;
-    font-size: 15px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-#formulario input[type="text"] {
-    padding: 8px;
-    border-radius: 2px;
-    border: 1px solid #ccc;
-    color: #333;
-    cursor: pointer;
-    width: 97%;
-    margin: 12px 10px 15px 0;
-    display: inline-block;
-    font-size: 18px;
-}
-
-#formulario span input[type="submit"] {
-    background: #dc3545;
-    opacity: 80%;
-    padding: 15px;
-    border: 1px solid #ccc;
-    cursor: pointer;
-    color: white;
-    border-radius: 4px;
-    width: 90%;
-    font-size: 15px;
-    font-weight: 700;
-    margin: 15px;
 }
 
 #formulario #botonEnviar {
@@ -279,14 +277,14 @@ label {
 footer {
     font-family: Helvetica, Arial;
     color: white;
-    height: 65px;
-    background: rgb(51, 51, 51, 0.70);
+    height: 42px;
+    background: #333;
     margin: 0px auto;
-    width: 66%;
+    width: 82%;
     padding-left: 20px;
     padding-right: 20px;
     margin-top: 75px;
-    line-height: 60px;
+    line-height: 40px;
 }
 
 .subir {
