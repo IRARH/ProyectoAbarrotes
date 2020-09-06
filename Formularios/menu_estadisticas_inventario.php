@@ -21,11 +21,12 @@
                 <label id='fecha_final'>Fecha</label>
                 <input type="date" id="fecha" name="fecha" min="2020-01-01" max="2100-12-31">
                 <input type="submit" value="BUSCAR" />
+             
                 <br>
                 <label id='inv_inicial'>Inventario Inicial</label>
                 <input type="text" name="inv_inicial" id="inv_inicial"/>
 
-                <label id='inv_final'>Inventario Incial</label>
+                <label id='inv_final'>Inventario Actual</label>
                 <input type="text" name="inv_final" id="inv_final" />
 
             </form>
