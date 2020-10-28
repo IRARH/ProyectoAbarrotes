@@ -2,7 +2,7 @@
 
 function conexion(){
     $server = "localhost:3306";
-    $usuario = "root";
+    $usuario = "admin";
     $password = "admin.1234";
     $dataBase = "abarrotes";
     
